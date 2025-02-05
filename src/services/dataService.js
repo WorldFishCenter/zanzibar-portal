@@ -1,10 +1,27 @@
-// Get the API URL from environment variables, fallback to production URL if not set
-const API_URL = process.env.REACT_APP_API_URL || '/api';
+// Get the API URL from environment variables or determine based on environment
+const getBaseApiUrl = () => {
+  // If REACT_APP_API_URL is set, use it
+  if (process.env.REACT_APP_API_URL) {
+    return process.env.REACT_APP_API_URL;
+  }
+  
+  // In production, use relative path
+  if (process.env.NODE_ENV === 'production') {
+    return '/api';
+  }
+  
+  // In development, default to localhost
+  return 'http://localhost:3001/api';
+};
+
+const API_URL = getBaseApiUrl();
 
 // Helper function to get the full API URL
 const getApiUrl = (endpoint) => {
   const url = `${API_URL}${endpoint}`;
-  console.log('Requesting API URL:', url); // Debug logging
+  console.log('Environment:', process.env.NODE_ENV);
+  console.log('Base API URL:', API_URL);
+  console.log('Requesting API URL:', url);
   return url;
 };
 

@@ -38,17 +38,33 @@ const connectToDatabase = async () => {
   }
 };
 
+// CORS configuration
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://zanzibar-portal.vercel.app', 'https://worldfishcenter.github.io'] 
+    : 'http://localhost:3000',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Error:', err);
-  res.status(500).json({ error: 'Internal server error', details: err.message });
+  const statusCode = err.statusCode || 500;
+  const message = err.message || 'Internal server error';
+  res.status(statusCode).json({ 
+    error: message,
+    details: process.env.NODE_ENV === 'development' ? err.stack : undefined
+  });
 });
 
-// Health check endpoint
+// Health check endpoint with improved error handling
 app.get('/api/health', async (req, res) => {
   try {
     // Test database connection
@@ -58,6 +74,7 @@ app.get('/api/health', async (req, res) => {
     res.json({ 
       status: 'ok', 
       timestamp: new Date().toISOString(),
+      environment: process.env.NODE_ENV,
       database: {
         connected: true,
         collections: collections.length
@@ -65,10 +82,12 @@ app.get('/api/health', async (req, res) => {
     });
   } catch (error) {
     console.error('Health check failed:', error);
-    res.status(500).json({ 
+    res.status(503).json({ 
       status: 'error',
       timestamp: new Date().toISOString(),
-      error: error.message
+      environment: process.env.NODE_ENV,
+      error: 'Service temporarily unavailable',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }
 });
