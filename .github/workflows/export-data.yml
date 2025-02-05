@@ -5,8 +5,8 @@ on:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
   workflow_dispatch:      # Allows manual trigger
   push:
-    paths:
-      - 'scripts/exportData.js'  # Run when export script is modified
+    branches:
+      - main            # Run on push to main branch
 
 jobs:
   export-data:
