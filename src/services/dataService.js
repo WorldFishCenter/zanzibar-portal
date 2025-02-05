@@ -3,7 +3,9 @@ const API_URL = process.env.REACT_APP_API_URL || '/api';
 
 // Helper function to get the full API URL
 const getApiUrl = (endpoint) => {
-  return `${API_URL}${endpoint}`;
+  const url = `${API_URL}${endpoint}`;
+  console.log('Requesting API URL:', url); // Debug logging
+  return url;
 };
 
 // Complete list of landing sites
@@ -43,15 +45,26 @@ const fetchWithRetry = async (url, options = {}, retries = MAX_RETRIES) => {
   }
 };
 
-// Check server health
+// Check server health with retry logic
 const checkServerHealth = async () => {
-  try {
-    const response = await fetch(getApiUrl('/health'));
-    return response.ok;
-  } catch (error) {
-    console.error('Server health check failed:', error);
-    return false;
+  for (let i = 0; i < MAX_RETRIES; i++) {
+    try {
+      console.log('Checking server health...', i + 1); // Debug logging
+      const response = await fetch(getApiUrl('/health'));
+      if (response.ok) {
+        console.log('Server health check passed'); // Debug logging
+        return true;
+      }
+      console.log('Server health check failed, retrying...'); // Debug logging
+      await sleep(RETRY_DELAY);
+    } catch (error) {
+      console.error('Server health check error:', error); // Debug logging
+      if (i < MAX_RETRIES - 1) {
+        await sleep(RETRY_DELAY);
+      }
+    }
   }
+  return false;
 };
 
 export const getDistrictData = (landingSite) => {
@@ -69,19 +82,23 @@ const fetchAllData = async () => {
     try {
       const isHealthy = await checkServerHealth();
       if (!isHealthy) {
-        throw new Error('Server is not responding');
+        console.error('Server health check failed after retries'); // Debug logging
+        throw new Error('Unable to connect to the server. Please try again later.');
       }
 
+      console.log('Fetching data for landing sites:', LANDING_SITES); // Debug logging
       const response = await fetchWithRetry(getApiUrl('/cpue?landingSites=' + JSON.stringify(LANDING_SITES)));
+      console.log('Response status:', response.status); // Debug logging
 
       const rawData = await response.json();
+      console.log('Received data count:', Array.isArray(rawData) ? rawData.length : 'invalid data'); // Debug logging
       
       if (rawData.error) {
         throw new Error(rawData.error);
       }
 
       if (!Array.isArray(rawData)) {
-        throw new Error('Invalid data format received from server');
+        throw new Error('Invalid data format received from server. Please try again later.');
       }
 
       // Process and organize data by landing site
@@ -110,8 +127,8 @@ const fetchAllData = async () => {
       lastAllDataFetch = Date.now();
       return processedData;
     } catch (error) {
-      console.error('Error fetching all data:', error);
-      throw error;
+      console.error('Error in fetchAllData:', error); // Debug logging
+      throw new Error(`Unable to fetch data: ${error.message}`);
     }
   }
   return allDataCache;
