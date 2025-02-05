@@ -1,5 +1,3 @@
-import { DISTRICTS } from '../data/districts';
-
 // Get the API URL from environment variables, fallback to production URL if not set
 const API_URL = process.env.REACT_APP_API_URL || '/api';
 
@@ -18,10 +16,9 @@ const LANDING_SITES = [
 ];
 
 // Cache for API responses
-const cache = new Map();
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 let allDataCache = null;
 let lastAllDataFetch = 0;
+const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
 // Retry configuration
 const MAX_RETRIES = 3;

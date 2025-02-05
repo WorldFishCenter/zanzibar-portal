@@ -68,41 +68,30 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
             {/* Landing Site Selector */}
             <div className="navbar-nav ms-auto">
               <div className="nav-item dropdown">
-                <a 
+                <button 
                   className="nav-link dropdown-toggle"
-                  href="#"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
-                  style={{ minWidth: '200px' }}
+                  style={{ minWidth: '200px', border: 'none', background: 'none', padding: '0.5rem 0.75rem' }}
                 >
                   <IconMap2 className="icon me-2" />
                   <span>{formatLandingSiteName(selectedLandingSite)}</span>
-                </a>
+                </button>
                 <div className="dropdown-menu" style={{ maxHeight: '400px', overflowY: 'auto' }}>
-                  <a 
-                    href="#"
-                    role="button"
+                  <button 
                     className={`dropdown-item ${selectedLandingSite === 'all' ? 'active' : ''}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setSelectedLandingSite('all');
-                    }}
+                    onClick={() => setSelectedLandingSite('all')}
                   >
                     All Landing Sites
-                  </a>
+                  </button>
                   {LANDING_SITES.map(site => (
-                    <a 
+                    <button 
                       key={site}
-                      href="#"
-                      role="button"
                       className={`dropdown-item ${selectedLandingSite === site ? 'active' : ''}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setSelectedLandingSite(site);
-                      }}
+                      onClick={() => setSelectedLandingSite(site)}
                     >
                       {formatLandingSiteName(site)}
-                    </a>
+                    </button>
                   ))}
                 </div>
               </div>

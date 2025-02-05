@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Chart from 'react-apexcharts';
-import { IconScale } from '@tabler/icons-react';
 import { getChartConfig } from '../../utils/chartConfigs';
 import { getCatchData } from '../../services/dataService';
 
