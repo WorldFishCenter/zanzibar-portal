@@ -2,7 +2,7 @@ import React from 'react';
 import Chart from 'react-apexcharts';
 import { IconCurrencyDollar, IconTrendingUp, IconChartBar } from '@tabler/icons-react';
 import { getChartConfig } from '../../utils/chartConfigs';
-import { generateTimeSeriesData, formatCurrency, formatNumber } from '../../utils/dataUtils';
+import { generateTimeSeriesData, formatCurrency } from '../../utils/dataUtils';
 
 const Revenue = ({ theme, district }) => {
   // Revenue overview chart config
