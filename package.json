@@ -18,7 +18,6 @@
     "apexcharts": "3.45.2",
     "deck.gl": "8.9.32",
     "mapbox-gl": "2.15.0",
-    "mongodb": "^6.13.0",
     "react": "18.2.0",
     "react-apexcharts": "1.4.1",
     "react-dom": "18.2.0",
