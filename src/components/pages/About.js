@@ -20,23 +20,23 @@ const About = () => {
               <h4>Key Features</h4>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <strong>🔍 Data Collection:</strong> Intuitive tools for collecting key fishing data, 
+                  <strong><span role="img" aria-label="Magnifying Glass">🔍</span> Data Collection:</strong> Intuitive tools for collecting key fishing data, 
                   including digital catch surveys and vessel tracking.
                 </li>
                 <li className="mb-2">
-                  <strong>⚙️ Data Processing:</strong> Data is cleaned, standardized, and transformed into 
+                  <strong><span role="img" aria-label="Gear">⚙️</span> Data Processing:</strong> Data is cleaned, standardized, and transformed into 
                   tidy formats, using FishBase for weight and nutrient composition information.
                 </li>
                 <li className="mb-2">
-                  <strong>📊 Data Analysis:</strong> Identifies trends and patterns, estimating key fishery 
+                  <strong><span role="img" aria-label="Chart">📊</span> Data Analysis:</strong> Identifies trends and patterns, estimating key fishery 
                   indicators such as average catch per trip and revenue.
                 </li>
                 <li className="mb-2">
-                  <strong>✓ Data Validation:</strong> Rigorous scrutiny and refinement of information to 
+                  <strong><span role="img" aria-label="Check Mark">✓</span> Data Validation:</strong> Rigorous scrutiny and refinement of information to 
                   ensure accuracy and reliability.
                 </li>
                 <li className="mb-2">
-                  <strong>📈 Data Visualization:</strong> Interactive dashboards displaying data through 
+                  <strong><span role="img" aria-label="Chart Increasing">📈</span> Data Visualization:</strong> Interactive dashboards displaying data through 
                   maps, charts, and customizable tables.
                 </li>
               </ul>
@@ -44,19 +44,19 @@ const About = () => {
               <h4>Impact and Goals</h4>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <strong>🎯 Improved Decision-Making:</strong> Enabling evidence-based decisions at all levels
+                  <strong><span role="img" aria-label="Target">🎯</span> Improved Decision-Making:</strong> Enabling evidence-based decisions at all levels
                 </li>
                 <li className="mb-2">
-                  <strong>🌊 Sustainable Management:</strong> Supporting sustainable fishing practices
+                  <strong><span role="img" aria-label="Wave">🌊</span> Sustainable Management:</strong> Supporting sustainable fishing practices
                 </li>
                 <li className="mb-2">
-                  <strong>👥 Community Engagement:</strong> Incorporating community members as enumerators
+                  <strong><span role="img" aria-label="People">👥</span> Community Engagement:</strong> Incorporating community members as enumerators
                 </li>
                 <li className="mb-2">
-                  <strong>🔍 Transparency:</strong> Making fisheries information accessible to all
+                  <strong><span role="img" aria-label="Magnifying Glass">🔍</span> Transparency:</strong> Making fisheries information accessible to all
                 </li>
                 <li className="mb-2">
-                  <strong>💪 Empowerment:</strong> Providing data to inform fisher business decisions
+                  <strong><span role="img" aria-label="Flexed Biceps">💪</span> Empowerment:</strong> Providing data to inform fisher business decisions
                 </li>
               </ul>
 
