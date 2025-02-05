@@ -1,0 +1,43 @@
+name: Daily Data Export
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:      # Allows manual trigger
+  push:
+    paths:
+      - 'scripts/exportData.js'  # Run when export script is modified
+
+jobs:
+  export-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history for git operations
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install mongodb
+      
+      - name: Export data from MongoDB
+        run: node scripts/exportData.js
+        env:
+          REACT_APP_MONGODB_URI: ${{ secrets.REACT_APP_MONGODB_URI }}
+      
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Action Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Commit and push if changed
+        run: |
+          git add src/data/
+          git diff --staged --quiet || (git commit -m "Update data export [skip ci]" && git push) 

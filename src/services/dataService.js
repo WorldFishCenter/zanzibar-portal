@@ -1,3 +1,8 @@
+// Import static data
+import cpueData from '../data/cpue.json';
+import landingSites from '../data/landing-sites.json';
+import summaryStats from '../data/summary-stats.json';
+
 // API configuration
 const getBaseUrl = () => {
   // In production, use VERCEL_URL if available
@@ -97,13 +102,13 @@ const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 const cache = new Map();
 
 // Helper function to get/set cache
-const withCache = async (key, fetchFn) => {
+const withCache = (key, fetchFn) => {
   const cached = cache.get(key);
   if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
     return cached.data;
   }
 
-  const data = await fetchFn();
+  const data = fetchFn();
   cache.set(key, {
     timestamp: Date.now(),
     data
@@ -115,38 +120,21 @@ const withCache = async (key, fetchFn) => {
 // Fetch catch data for landing sites
 export const getCatchData = async (selectedLandingSite) => {
   try {
-    const isHealthy = await checkServerHealth();
-    if (!isHealthy) {
-      throw new Error('Service is currently unavailable. Please try again later.');
-    }
-
-    const data = await withCache(
+    const data = withCache(
       `catch-${selectedLandingSite}`,
-      async () => {
-        const response = await apiCall('/cpue', {
-          method: 'GET',
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-
-        if (!Array.isArray(response)) {
-          throw new Error('Invalid response format');
+      () => {
+        // Filter and process data based on selected landing site
+        if (selectedLandingSite === 'all') {
+          return processAllSitesData(cpueData);
         }
-
-        return response;
+        return processSingleSiteData(cpueData, selectedLandingSite);
       }
     );
 
-    // Process data based on selected landing site
-    if (selectedLandingSite === 'all') {
-      return processAllSitesData(data);
-    }
-
-    return processSingleSiteData(data, selectedLandingSite);
+    return data;
   } catch (error) {
-    console.error('Error fetching catch data:', error);
-    throw new Error(`Failed to fetch catch data: ${error.message}`);
+    console.error('Error processing catch data:', error);
+    throw new Error(`Failed to process catch data: ${error.message}`);
   }
 };
 
@@ -199,12 +187,19 @@ const processSingleSiteData = (data, landingSite) => {
     .sort((a, b) => new Date(a.date) - new Date(b.date));
 };
 
-// Get district data (placeholder for now)
+// Get district data
 export const getDistrictData = (landingSite) => {
+  const stats = summaryStats.find(stat => stat._id === landingSite) || {
+    avgCpue: 0,
+    avgCatch: 0,
+    count: 0
+  };
+
   return {
     id: landingSite,
     label: landingSite.charAt(0).toUpperCase() + landingSite.slice(1).replace('_', ' '),
     bounds: [39.1977, -6.1659], // Default to Zanzibar center coordinates
+    stats
   };
 };
 

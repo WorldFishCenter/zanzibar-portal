@@ -60,7 +60,7 @@ const Catch = ({ theme, landingSite }) => {
   }
 
   // Filter out null CPUE values and get the latest valid CPUE
-  const validCPUEData = catchData.filter(item => item.cpue !== null);
+  const validCPUEData = catchData.filter(item => item.cpue !== null && typeof item.cpue === 'number');
   const latestCPUE = validCPUEData.length > 0 ? validCPUEData[validCPUEData.length - 1].cpue : 0;
 
   return (
@@ -76,7 +76,9 @@ const Catch = ({ theme, landingSite }) => {
             <div className="row g-3 align-items-center mb-3">
               <div className="col">
                 <div className="font-weight-medium">Latest CPUE</div>
-                <div className="text-muted">{latestCPUE.toFixed(2)} kg/fisher/hour</div>
+                <div className="text-muted">
+                  {typeof latestCPUE === 'number' ? `${latestCPUE.toFixed(2)} kg/fisher/hour` : 'No data'}
+                </div>
               </div>
               <div className="col-auto">
                 <div className="text-muted">
@@ -138,7 +140,7 @@ const Catch = ({ theme, landingSite }) => {
                   ...chartConfig.yaxis,
                   labels: {
                     show: true,
-                    formatter: (value) => value.toFixed(2),
+                    formatter: (value) => typeof value === 'number' ? value.toFixed(2) : '0.00',
                     style: {
                       colors: theme === 'dark' ? '#95a5a6' : '#64748b'
                     }
@@ -157,7 +159,7 @@ const Catch = ({ theme, landingSite }) => {
                     format: 'MMM yyyy'
                   },
                   y: {
-                    formatter: (value) => `${value.toFixed(2)} kg/fisher/hour`
+                    formatter: (value) => typeof value === 'number' ? `${value.toFixed(2)} kg/fisher/hour` : 'No data'
                   },
                   marker: {
                     show: true
@@ -177,7 +179,7 @@ const Catch = ({ theme, landingSite }) => {
                 name: 'CPUE',
                 data: validCPUEData.map(item => ({
                   x: new Date(item.date).getTime(),
-                  y: item.cpue
+                  y: typeof item.cpue === 'number' ? item.cpue : null
                 }))
               }]}
               type="line"
