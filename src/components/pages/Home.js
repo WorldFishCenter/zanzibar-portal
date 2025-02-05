@@ -2,6 +2,7 @@ import React from 'react';
 import { IconInfoCircle } from '@tabler/icons-react';
 import { useTooltip } from '../../hooks/useTooltip';
 import SmallChart from '../charts/SmallChart';
+import Map from '../charts/Map';
 import { SAMPLE_DISTRICT_DATA } from '../../constants/districts';
 
 const Home = ({ theme, district }) => {
@@ -63,9 +64,9 @@ const Home = ({ theme, district }) => {
           <div className="card-header">
             <h3 className="card-title">Geographic Distribution</h3>
           </div>
-          <div className="card-body">
-            <div style={{ height: '400px', background: '#f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              Map placeholder - Will be implemented with deck.gl
+          <div className="card-body p-0">
+            <div style={{ height: '400px', width: '100%' }}>
+              <Map theme={theme} />
             </div>
           </div>
         </div>

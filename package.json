@@ -3,14 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@deck.gl/aggregation-layers": "8.9.32",
+    "@deck.gl/core": "8.9.32",
+    "@deck.gl/geo-layers": "8.9.32",
+    "@deck.gl/layers": "8.9.32",
+    "@deck.gl/react": "8.9.32",
     "@tabler/core": "1.0.0-beta20",
-    "@tabler/icons-react": "^2.47.0",
-    "apexcharts": "3.41.1",
-    "react": "^18.2.0",
+    "@tabler/icons-react": "2.47.0",
+    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "ajv": "8.12.0",
+    "ajv-keywords": "5.1.0",
+    "apexcharts": "3.45.2",
+    "deck.gl": "8.9.32",
+    "mapbox-gl": "2.15.0",
+    "react": "18.2.0",
     "react-apexcharts": "1.4.1",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "18.2.0",
+    "react-map-gl": "7.1.7",
+    "react-router-dom": "6.22.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "2.1.4"
+  },
+  "resolutions": {
+    "ajv": "8.12.0",
+    "ajv-keywords": "5.1.0"
   },
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-scripts start",
