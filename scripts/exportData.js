@@ -20,7 +20,19 @@ if (!fs.existsSync(DATA_DIR)) {
 
 async function exportData() {
   console.log('Using MongoDB URI:', MONGODB_URI.replace(/\/\/([^:]+):([^@]+)@/, '//<username>:<password>@'));
-  const client = new MongoClient(MONGODB_URI);
+  const client = new MongoClient(MONGODB_URI, {
+    ssl: true,
+    tls: true,
+    tlsAllowInvalidCertificates: false,
+    tlsAllowInvalidHostnames: false,
+    retryWrites: true,
+    w: 'majority',
+    maxPoolSize: 1,
+    minPoolSize: 1,
+    connectTimeoutMS: 30000,
+    socketTimeoutMS: 30000,
+    serverSelectionTimeoutMS: 30000
+  });
 
   try {
     console.log('Connecting to MongoDB...');
