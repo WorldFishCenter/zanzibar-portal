@@ -31,10 +31,10 @@
     "ajv-keywords": "5.1.0"
   },
   "scripts": {
-    "start": "GENERATE_SOURCEMAP=false NODE_ENV=development react-scripts start",
+    "start": "NODE_OPTIONS='--openssl-legacy-provider' GENERATE_SOURCEMAP=false NODE_ENV=development react-scripts start",
     "start-api": "cd api && NODE_ENV=development node server.js",
     "dev": "concurrently \"npm run start\" \"npm run start-api\"",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,28 +1,7 @@
 const { MongoClient } = require('mongodb');
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
 require('dotenv').config({ path: path.join(__dirname, '..', '.env.development') });
-
-// Function to get public IP
-async function getPublicIP() {
-  return new Promise((resolve, reject) => {
-    https.get('https://api.ipify.org?format=json', (resp) => {
-      let data = '';
-      resp.on('data', (chunk) => { data += chunk; });
-      resp.on('end', () => {
-        try {
-          const ip = JSON.parse(data).ip;
-          resolve(ip);
-        } catch (e) {
-          reject(e);
-        }
-      });
-    }).on('error', (err) => {
-      reject(err);
-    });
-  });
-}
 
 // MongoDB configuration
 const MONGODB_URI = process.env.REACT_APP_MONGODB_URI;
@@ -40,26 +19,22 @@ if (!fs.existsSync(DATA_DIR)) {
 }
 
 async function exportData() {
-  try {
-    // Log the public IP being used
-    const publicIP = await getPublicIP();
-    console.log('Current public IP:', publicIP);
-    
-    console.log('Using MongoDB URI:', MONGODB_URI.replace(/\/\/([^:]+):([^@]+)@/, '//<username>:<password>@'));
-    const client = new MongoClient(MONGODB_URI, {
-      ssl: true,
-      tls: true,
-      tlsAllowInvalidCertificates: false,
-      tlsAllowInvalidHostnames: false,
-      retryWrites: true,
-      w: 'majority',
-      maxPoolSize: 1,
-      minPoolSize: 1,
-      connectTimeoutMS: 30000,
-      socketTimeoutMS: 30000,
-      serverSelectionTimeoutMS: 30000
-    });
+  console.log('Using MongoDB URI:', MONGODB_URI.replace(/\/\/([^:]+):([^@]+)@/, '//<username>:<password>@'));
+  const client = new MongoClient(MONGODB_URI, {
+    ssl: true,
+    tls: true,
+    tlsAllowInvalidCertificates: false,
+    tlsAllowInvalidHostnames: false,
+    retryWrites: true,
+    w: 'majority',
+    maxPoolSize: 1,
+    minPoolSize: 1,
+    connectTimeoutMS: 30000,
+    socketTimeoutMS: 30000,
+    serverSelectionTimeoutMS: 30000
+  });
 
+  try {
     console.log('Connecting to MongoDB...');
     await client.connect();
     const db = client.db(DB_NAME);
@@ -102,8 +77,7 @@ async function exportData() {
     );
     console.log('Exported summary statistics');
 
-    // Log success with IP for tracking
-    console.log(`Data export completed successfully from IP: ${publicIP}`);
+    console.log('Data export completed successfully!');
   } catch (error) {
     console.error('Error exporting data:', error);
     process.exit(1);
