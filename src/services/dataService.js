@@ -17,50 +17,67 @@ const API_CONFIG = {
   headers: {
     'Content-Type': 'application/json'
   },
-  timeout: 10000 // 10 seconds
+  timeout: 30000, // Increase to 30 seconds
+  retries: 3,     // Add retry attempts
+  retryDelay: 1000 // 1 second between retries
 };
 
 // Helper function to handle API timeouts
 const timeoutPromise = (ms) => {
   return new Promise((_, reject) => {
-    setTimeout(() => reject(new Error('Request timeout')), ms);
+    setTimeout(() => reject(new Error(`Request timed out after ${ms}ms`)), ms);
   });
 };
+
+// Helper function to delay between retries
+const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Helper function to make API calls
 const apiCall = async (endpoint, options = {}) => {
   const url = `${API_CONFIG.baseUrl}${endpoint}`;
-  const controller = new AbortController();
   const id = Math.random().toString(36).substring(7);
-
-  console.log(`[${id}] Requesting ${options.method || 'GET'} ${url}`);
   
-  try {
-    const response = await Promise.race([
-      fetch(url, {
-        ...options,
-        headers: {
-          ...API_CONFIG.headers,
-          ...options.headers
-        },
-        signal: controller.signal
-      }),
-      timeoutPromise(API_CONFIG.timeout)
-    ]);
+  console.log(`[${id}] Requesting ${options.method || 'GET'} ${url}`);
+  console.log(`[${id}] Environment:`, process.env.NODE_ENV);
+  console.log(`[${id}] Base URL:`, API_CONFIG.baseUrl);
 
-    if (!response.ok) {
-      const error = await response.json().catch(() => ({}));
-      throw new Error(error.message || `HTTP error! status: ${response.status}`);
+  for (let attempt = 1; attempt <= API_CONFIG.retries; attempt++) {
+    const controller = new AbortController();
+    
+    try {
+      console.log(`[${id}] Attempt ${attempt}/${API_CONFIG.retries}`);
+      
+      const response = await Promise.race([
+        fetch(url, {
+          ...options,
+          headers: {
+            ...API_CONFIG.headers,
+            ...options.headers
+          },
+          signal: controller.signal
+        }),
+        timeoutPromise(API_CONFIG.timeout)
+      ]);
+
+      if (!response.ok) {
+        const error = await response.json().catch(() => ({}));
+        throw new Error(error.message || `HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(`[${id}] Request successful`);
+      return data;
+    } catch (error) {
+      console.error(`[${id}] Attempt ${attempt} failed:`, error);
+      
+      if (attempt === API_CONFIG.retries) {
+        throw new Error(`Request failed after ${API_CONFIG.retries} attempts: ${error.message}`);
+      }
+      
+      await delay(API_CONFIG.retryDelay);
+    } finally {
+      controller.abort();
     }
-
-    const data = await response.json();
-    console.log(`[${id}] Request successful`);
-    return data;
-  } catch (error) {
-    console.error(`[${id}] Request failed:`, error);
-    throw error;
-  } finally {
-    controller.abort();
   }
 };
 
