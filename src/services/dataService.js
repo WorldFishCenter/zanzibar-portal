@@ -1,91 +1,189 @@
-// Get the API URL from environment variables or determine based on environment
-const getBaseApiUrl = () => {
-  // If REACT_APP_API_URL is set, use it
-  if (process.env.REACT_APP_API_URL) {
-    return process.env.REACT_APP_API_URL;
-  }
-  
-  // In production, use relative path
+// API configuration
+const getBaseUrl = () => {
+  // In production, use VERCEL_URL if available
   if (process.env.NODE_ENV === 'production') {
-    return '/api';
+    if (process.env.VERCEL_URL) {
+      return `https://${process.env.VERCEL_URL}/api`;
+    }
+    return '/api'; // Fallback to relative path
   }
   
-  // In development, default to localhost
-  return 'http://localhost:3001/api';
+  // In development, use local API
+  return process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
 };
 
-const API_URL = getBaseApiUrl();
-
-// Helper function to get the full API URL
-const getApiUrl = (endpoint) => {
-  const url = `${API_URL}${endpoint}`;
-  console.log('Environment:', process.env.NODE_ENV);
-  console.log('Base API URL:', API_URL);
-  console.log('Requesting API URL:', url);
-  return url;
+const API_CONFIG = {
+  baseUrl: getBaseUrl(),
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  timeout: 10000 // 10 seconds
 };
 
-// Complete list of landing sites
-const LANDING_SITES = [
-  'bwawani', 'chole', 'chwaka', 'fumba', 'jambiani', 'jasini',
-  'kigombe', 'kizimkazi', 'kukuu', 'mangapwani', 'matemwe', 'mazizini',
-  'mkinga', 'mkoani', 'mkokotoni', 'mkumbuu', 'moa', 'msuka',
-  'mtangani', 'mvumoni_furaha', 'ndumbani', 'nungwi', 'other_site', 'sahare',
-  'shumba_mjini', 'tanga', 'tongoni', 'wesha', 'wete'
-];
+// Helper function to handle API timeouts
+const timeoutPromise = (ms) => {
+  return new Promise((_, reject) => {
+    setTimeout(() => reject(new Error('Request timeout')), ms);
+  });
+};
 
-// Cache for API responses
-let allDataCache = null;
-let lastAllDataFetch = 0;
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
+// Helper function to make API calls
+const apiCall = async (endpoint, options = {}) => {
+  const url = `${API_CONFIG.baseUrl}${endpoint}`;
+  const controller = new AbortController();
+  const id = Math.random().toString(36).substring(7);
 
-// Retry configuration
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 1000; // 1 second
-
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
-const fetchWithRetry = async (url, options = {}, retries = MAX_RETRIES) => {
+  console.log(`[${id}] Requesting ${options.method || 'GET'} ${url}`);
+  
   try {
-    const response = await fetch(url, options);
+    const response = await Promise.race([
+      fetch(url, {
+        ...options,
+        headers: {
+          ...API_CONFIG.headers,
+          ...options.headers
+        },
+        signal: controller.signal
+      }),
+      timeoutPromise(API_CONFIG.timeout)
+    ]);
+
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.message || `HTTP error! status: ${response.status}`);
     }
-    return response;
+
+    const data = await response.json();
+    console.log(`[${id}] Request successful`);
+    return data;
   } catch (error) {
-    if (retries > 0) {
-      console.log(`Retrying request (${MAX_RETRIES - retries + 1}/${MAX_RETRIES})...`);
-      await sleep(RETRY_DELAY);
-      return fetchWithRetry(url, options, retries - 1);
-    }
+    console.error(`[${id}] Request failed:`, error);
     throw error;
+  } finally {
+    controller.abort();
   }
 };
 
-// Check server health with retry logic
+// Check server health
 const checkServerHealth = async () => {
-  for (let i = 0; i < MAX_RETRIES; i++) {
-    try {
-      console.log('Checking server health...', i + 1); // Debug logging
-      const response = await fetch(getApiUrl('/health'));
-      if (response.ok) {
-        console.log('Server health check passed'); // Debug logging
-        return true;
-      }
-      console.log('Server health check failed, retrying...'); // Debug logging
-      await sleep(RETRY_DELAY);
-    } catch (error) {
-      console.error('Server health check error:', error); // Debug logging
-      if (i < MAX_RETRIES - 1) {
-        await sleep(RETRY_DELAY);
-      }
-    }
+  try {
+    const result = await apiCall('/health');
+    return result.status === 'ok';
+  } catch (error) {
+    console.error('Health check failed:', error);
+    return false;
   }
-  return false;
 };
 
+// Cache configuration
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const cache = new Map();
+
+// Helper function to get/set cache
+const withCache = async (key, fetchFn) => {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+    return cached.data;
+  }
+
+  const data = await fetchFn();
+  cache.set(key, {
+    timestamp: Date.now(),
+    data
+  });
+
+  return data;
+};
+
+// Fetch catch data for landing sites
+export const getCatchData = async (selectedLandingSite) => {
+  try {
+    const isHealthy = await checkServerHealth();
+    if (!isHealthy) {
+      throw new Error('Service is currently unavailable. Please try again later.');
+    }
+
+    const data = await withCache(
+      `catch-${selectedLandingSite}`,
+      async () => {
+        const response = await apiCall('/cpue', {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (!Array.isArray(response)) {
+          throw new Error('Invalid response format');
+        }
+
+        return response;
+      }
+    );
+
+    // Process data based on selected landing site
+    if (selectedLandingSite === 'all') {
+      return processAllSitesData(data);
+    }
+
+    return processSingleSiteData(data, selectedLandingSite);
+  } catch (error) {
+    console.error('Error fetching catch data:', error);
+    throw new Error(`Failed to fetch catch data: ${error.message}`);
+  }
+};
+
+// Helper function to process data for all sites
+const processAllSitesData = (data) => {
+  const combinedData = new Map();
+  
+  data.forEach(record => {
+    if (!record.month_date) return;
+    
+    if (!combinedData.has(record.month_date)) {
+      combinedData.set(record.month_date, {
+        date: record.month_date,
+        cpue: 0,
+        catch: 0,
+        count: 0,
+        validCpueCount: 0
+      });
+    }
+    
+    const combined = combinedData.get(record.month_date);
+    if (record.cpue !== null) {
+      combined.cpue += record.cpue;
+      combined.validCpueCount++;
+    }
+    if (record.catch !== null) {
+      combined.catch += record.catch;
+    }
+    combined.count++;
+  });
+
+  return Array.from(combinedData.values())
+    .map(record => ({
+      date: record.date,
+      cpue: record.validCpueCount > 0 ? record.cpue / record.validCpueCount : null,
+      catch: record.count > 0 ? record.catch / record.count : null
+    }))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+};
+
+// Helper function to process data for a single site
+const processSingleSiteData = (data, landingSite) => {
+  return data
+    .filter(record => record.landing_site === landingSite)
+    .map(record => ({
+      date: record.month_date,
+      cpue: record.cpue,
+      catch: record.catch
+    }))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+};
+
+// Get district data (placeholder for now)
 export const getDistrictData = (landingSite) => {
-  // For backward compatibility, return a default object
   return {
     id: landingSite,
     label: landingSite.charAt(0).toUpperCase() + landingSite.slice(1).replace('_', ' '),
@@ -93,112 +191,7 @@ export const getDistrictData = (landingSite) => {
   };
 };
 
-// Fetch all data at once and cache it
-const fetchAllData = async () => {
-  if (!allDataCache || Date.now() - lastAllDataFetch > CACHE_DURATION) {
-    try {
-      const isHealthy = await checkServerHealth();
-      if (!isHealthy) {
-        console.error('Server health check failed after retries'); // Debug logging
-        throw new Error('Unable to connect to the server. Please try again later.');
-      }
-
-      console.log('Fetching data for landing sites:', LANDING_SITES); // Debug logging
-      const response = await fetchWithRetry(getApiUrl('/cpue?landingSites=' + JSON.stringify(LANDING_SITES)));
-      console.log('Response status:', response.status); // Debug logging
-
-      const rawData = await response.json();
-      console.log('Received data count:', Array.isArray(rawData) ? rawData.length : 'invalid data'); // Debug logging
-      
-      if (rawData.error) {
-        throw new Error(rawData.error);
-      }
-
-      if (!Array.isArray(rawData)) {
-        throw new Error('Invalid data format received from server. Please try again later.');
-      }
-
-      // Process and organize data by landing site
-      const processedData = new Map();
-      rawData.forEach(record => {
-        if (!record.month_date) return;
-        
-        const site = record.landing_site;
-        if (!processedData.has(site)) {
-          processedData.set(site, []);
-        }
-        
-        processedData.get(site).push({
-          date: record.month_date,
-          cpue: record.cpue !== undefined ? parseFloat(record.cpue) : null,
-          catch: record.catch !== undefined ? parseFloat(record.catch) : null
-        });
-      });
-
-      // Sort data for each landing site
-      processedData.forEach(data => {
-        data.sort((a, b) => new Date(a.date) - new Date(b.date));
-      });
-
-      allDataCache = processedData;
-      lastAllDataFetch = Date.now();
-      return processedData;
-    } catch (error) {
-      console.error('Error in fetchAllData:', error); // Debug logging
-      throw new Error(`Unable to fetch data: ${error.message}`);
-    }
-  }
-  return allDataCache;
-};
-
-export const getCatchData = async (selectedLandingSite) => {
-  try {
-    const allData = await fetchAllData();
-    
-    if (selectedLandingSite === 'all') {
-      // Combine data from all sites
-      const combinedData = new Map();
-      allData.forEach((siteData, site) => {
-        siteData.forEach(record => {
-          if (!combinedData.has(record.date)) {
-            combinedData.set(record.date, {
-              date: record.date,
-              cpue: 0,
-              catch: 0,
-              count: 0,
-              validCpueCount: 0
-            });
-          }
-          const combined = combinedData.get(record.date);
-          if (record.cpue !== null) {
-            combined.cpue += record.cpue;
-            combined.validCpueCount++;
-          }
-          if (record.catch !== null) {
-            combined.catch += record.catch;
-          }
-          combined.count++;
-        });
-      });
-
-      // Calculate averages
-      return Array.from(combinedData.values())
-        .map(record => ({
-          date: record.date,
-          cpue: record.validCpueCount > 0 ? record.cpue / record.validCpueCount : null,
-          catch: record.count > 0 ? record.catch / record.count : null
-        }))
-        .sort((a, b) => new Date(a.date) - new Date(b.date));
-    }
-
-    // Return data for specific landing site
-    return allData.get(selectedLandingSite) || [];
-  } catch (error) {
-    console.error('Error in getCatchData:', error);
-    throw new Error(`Failed to fetch catch data: ${error.message}`);
-  }
-};
-
-export const getRevenueData = async (landingSite) => {
+// Revenue data (placeholder)
+export const getRevenueData = async () => {
   throw new Error('Revenue data not yet implemented');
 }; 

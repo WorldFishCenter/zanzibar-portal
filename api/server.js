@@ -1,11 +1,42 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const cors = require('cors');
-const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '../.env.development') });
 
+// Initialize express app
 const app = express();
-const port = process.env.PORT || 3001;
+
+// MongoDB connection
+let cachedDb = null;
+const connectToDatabase = async () => {
+  if (cachedDb) {
+    return cachedDb;
+  }
+
+  try {
+    // Use REACT_APP_MONGODB_URI to match Vercel environment variable
+    const MONGODB_URI = process.env.REACT_APP_MONGODB_URI;
+    if (!MONGODB_URI) {
+      throw new Error('REACT_APP_MONGODB_URI is not defined');
+    }
+
+    console.log('Connecting to MongoDB...'); // Debug log
+
+    const client = await MongoClient.connect(MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      maxPoolSize: 10
+    });
+
+    const db = client.db('zanzibar-dev');
+    cachedDb = db;
+    
+    console.log('Successfully connected to MongoDB'); // Debug log
+    return db;
+  } catch (error) {
+    console.error('MongoDB connection error:', error);
+    throw new Error('Unable to connect to database');
+  }
+};
 
 // Valid landing sites list
 const VALID_LANDING_SITES = [
@@ -16,33 +47,29 @@ const VALID_LANDING_SITES = [
   'shumba_mjini', 'tanga', 'tongoni', 'wesha', 'wete'
 ];
 
-// MongoDB connection
-const MONGODB_URI = process.env.REACT_APP_MONGODB_URI;
-let client = null;
-
-const connectToDatabase = async () => {
-  try {
-    if (!client) {
-      console.log('Connecting to MongoDB...');
-      client = new MongoClient(MONGODB_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-      });
-      await client.connect();
-      console.log('Connected to MongoDB successfully');
+// CORS configuration
+const getCorsOrigins = () => {
+  if (process.env.NODE_ENV === 'production') {
+    const origins = [
+      'https://worldfishcenter.github.io'
+    ];
+    
+    // Add Vercel deployment URL if available
+    if (process.env.VERCEL_URL) {
+      origins.push(`https://${process.env.VERCEL_URL}`);
     }
-    return client.db('zanzibar-dev');
-  } catch (error) {
-    console.error('MongoDB connection error:', error);
-    throw error;
+    
+    // Allow all Vercel preview deployments
+    origins.push(/\.vercel\.app$/);
+    
+    return origins;
   }
+  
+  return 'http://localhost:3000'; // Development
 };
 
-// CORS configuration
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://zanzibar-portal.vercel.app', 'https://worldfishcenter.github.io'] 
-    : 'http://localhost:3000',
+  origin: getCorsOrigins(),
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
@@ -53,21 +80,15 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error('Error:', err);
-  const statusCode = err.statusCode || 500;
-  const message = err.message || 'Internal server error';
-  res.status(statusCode).json({ 
-    error: message,
-    details: process.env.NODE_ENV === 'development' ? err.stack : undefined
-  });
+// Request logging middleware
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
+  next();
 });
 
-// Health check endpoint with improved error handling
+// Health check endpoint
 app.get('/api/health', async (req, res) => {
   try {
-    // Test database connection
     const db = await connectToDatabase();
     const collections = await db.listCollections().toArray();
     
@@ -85,100 +106,79 @@ app.get('/api/health', async (req, res) => {
     res.status(503).json({ 
       status: 'error',
       timestamp: new Date().toISOString(),
-      environment: process.env.NODE_ENV,
-      error: 'Service temporarily unavailable',
-      details: process.env.NODE_ENV === 'development' ? error.message : undefined
+      error: 'Service temporarily unavailable'
     });
   }
 });
 
-// API Routes
+// CPUE data endpoint
 app.get('/api/cpue', async (req, res) => {
   try {
     const { landingSites } = req.query;
     
-    console.log('Query params:', { landingSites });
-    
-    // Parse landing sites from JSON string
+    // Validate input
     let sites;
     try {
       sites = JSON.parse(landingSites);
       if (!Array.isArray(sites)) {
-        throw new Error('Landing sites must be an array');
+        return res.status(400).json({ 
+          error: 'Invalid request',
+          message: 'Landing sites must be an array'
+        });
       }
     } catch (error) {
-      return res.status(400).json({ error: 'Invalid landing sites format', details: error.message });
+      return res.status(400).json({ 
+        error: 'Invalid request',
+        message: 'Invalid landing sites format'
+      });
     }
     
     // Validate landing sites
     const validSites = sites.filter(site => VALID_LANDING_SITES.includes(site));
-    
     if (validSites.length === 0) {
-      return res.status(400).json({ error: 'No valid landing sites provided' });
+      return res.status(400).json({ 
+        error: 'Invalid request',
+        message: 'No valid landing sites provided'
+      });
     }
 
-    // Connect to database
+    // Get database connection
     const db = await connectToDatabase();
     const collection = db.collection('monthly-cpue');
 
-    // Build the query
-    const query = {
-      landing_site: { $in: validSites }
-    };
-
-    console.log('MongoDB Query:', JSON.stringify(query, null, 2));
-
     // Execute query
-    const data = await collection.find(query).sort({ month_date: 1 }).toArray();
+    const data = await collection
+      .find({ landing_site: { $in: validSites } })
+      .sort({ month_date: 1 })
+      .toArray();
 
-    console.log(`Found ${data.length} records for landing sites:`, validSites);
-    
-    // Transform data to ensure consistent structure
+    // Transform and validate data
     const transformedData = data.map(record => ({
       _id: record._id,
       landing_site: record.landing_site,
       month_date: record.month_date,
-      cpue: record.cpue || null,
-      catch: record.catch || null
+      cpue: typeof record.cpue === 'number' ? record.cpue : null,
+      catch: typeof record.catch === 'number' ? record.catch : null
     }));
     
     res.json(transformedData);
   } catch (error) {
     console.error('API Error:', error);
     res.status(500).json({ 
-      error: 'Internal server error', 
-      details: error.message,
-      query: req.query 
+      error: 'Internal server error',
+      message: 'An unexpected error occurred'
     });
   }
 });
 
-// Start server
-const server = app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-  console.log(`MongoDB URI: ${MONGODB_URI}`);
-});
-
-// Handle server shutdown gracefully
-process.on('SIGTERM', () => {
-  console.log('SIGTERM signal received: closing HTTP server');
-  server.close(() => {
-    console.log('HTTP server closed');
-    if (client) {
-      client.close();
-      console.log('MongoDB connection closed');
-    }
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+  res.status(500).json({ 
+    error: 'Internal server error',
+    message: 'An unexpected error occurred'
   });
 });
 
-process.on('SIGINT', () => {
-  console.log('SIGINT signal received: closing HTTP server');
-  server.close(() => {
-    console.log('HTTP server closed');
-    if (client) {
-      client.close();
-      console.log('MongoDB connection closed');
-    }
-    process.exit(0);
-  });
-}); 
+// Export the Express API
+module.exports = app; 
