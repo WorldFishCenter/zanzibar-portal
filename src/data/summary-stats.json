@@ -42,16 +42,16 @@
     "count": 37
   },
   {
-    "_id": null,
-    "avgCpue": null,
-    "avgCatch": null,
-    "count": 1
-  },
-  {
     "_id": "mangapwani",
     "avgCpue": 2.567628429625,
     "avgCatch": null,
     "count": 37
+  },
+  {
+    "_id": null,
+    "avgCpue": null,
+    "avgCatch": null,
+    "count": 1
   },
   {
     "_id": "msuka",
@@ -168,14 +168,14 @@
     "count": 37
   },
   {
-    "_id": "mkinga",
-    "avgCpue": 5,
+    "_id": "ndumbani",
+    "avgCpue": 4.6167180615217385,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "ndumbani",
-    "avgCpue": 4.6167180615217385,
+    "_id": "mkinga",
+    "avgCpue": 5,
     "avgCatch": null,
     "count": 37
   }
