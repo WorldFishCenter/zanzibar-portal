@@ -3,17 +3,18 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-const Layout = ({ children, theme, toggleTheme, selectedDistrict, setSelectedDistrict }) => {
+const Layout = ({ children, theme, toggleTheme, selectedLandingSite, setSelectedLandingSite }) => {
   return (
     <div className="page">
       <div className="sticky-top">
         <Header 
           theme={theme}
           toggleTheme={toggleTheme}
-          selectedDistrict={selectedDistrict}
-          setSelectedDistrict={setSelectedDistrict}
         />
-        <Navigation />
+        <Navigation 
+          selectedLandingSite={selectedLandingSite}
+          setSelectedLandingSite={setSelectedLandingSite}
+        />
       </div>
 
       <div className="page-wrapper">

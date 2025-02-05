@@ -11,29 +11,29 @@ import './styles/charts.css';
 
 function App() {
   const [theme, toggleTheme] = useTheme();
-  const [selectedDistrict, setSelectedDistrict] = React.useState('all');
+  const [selectedLandingSite, setSelectedLandingSite] = React.useState('all');
 
   return (
     <Layout
       theme={theme}
       toggleTheme={toggleTheme}
-      selectedDistrict={selectedDistrict}
-      setSelectedDistrict={setSelectedDistrict}
+      selectedLandingSite={selectedLandingSite}
+      setSelectedLandingSite={setSelectedLandingSite}
     >
       <Routes>
         <Route path="/" element={
           <ErrorBoundary>
-            <Home theme={theme} district={selectedDistrict} />
+            <Home theme={theme} landingSite={selectedLandingSite} />
           </ErrorBoundary>
         } />
         <Route path="/catch" element={
           <ErrorBoundary>
-            <Catch theme={theme} district={selectedDistrict} />
+            <Catch theme={theme} landingSite={selectedLandingSite} />
           </ErrorBoundary>
         } />
         <Route path="/revenue" element={
           <ErrorBoundary>
-            <Revenue theme={theme} district={selectedDistrict} />
+            <Revenue theme={theme} landingSite={selectedLandingSite} />
           </ErrorBoundary>
         } />
         <Route path="/about" element={

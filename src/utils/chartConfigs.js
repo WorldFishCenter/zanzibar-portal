@@ -12,49 +12,84 @@ export const getChartConfig = (theme) => ({
     animations: {
       enabled: false
     },
-    background: 'transparent'
+    background: 'transparent',
+    foreColor: theme === 'dark' ? '#ffffff' : '#000000'
   },
   stroke: {
     curve: 'smooth',
-    width: 2
+    width: 2,
+    lineCap: 'round'
   },
   fill: {
-    opacity: 0.3,
-    gradient: {
-      enabled: true,
-      opacityFrom: 0.6,
-      opacityTo: 0.1
-    }
+    opacity: 0.1,
+    type: 'solid'
   },
   xaxis: {
     type: 'datetime',
     tooltip: {
       enabled: false
+    },
+    axisBorder: {
+      show: false
+    },
+    axisTicks: {
+      show: true,
+      color: theme === 'dark' ? '#2c3e50' : '#e9ecef'
+    },
+    labels: {
+      style: {
+        colors: theme === 'dark' ? '#95a5a6' : '#64748b'
+      }
     }
   },
   yaxis: {
     min: 0,
     labels: {
-      formatter: (value) => Math.round(value)
+      formatter: (value) => Math.round(value),
+      style: {
+        colors: theme === 'dark' ? '#95a5a6' : '#64748b'
+      }
+    },
+    axisBorder: {
+      show: false
+    },
+    axisTicks: {
+      show: true,
+      color: theme === 'dark' ? '#2c3e50' : '#e9ecef'
     }
   },
-  colors: [theme === 'dark' ? '#3498db' : '#206bc4'],
+  grid: {
+    show: true,
+    borderColor: theme === 'dark' ? '#2c3e50' : '#e9ecef',
+    strokeDashArray: 4,
+    padding: {
+      left: 2,
+      right: 2
+    }
+  },
+  colors: [theme === 'dark' ? '#206bc4' : '#206bc4'],
   tooltip: {
     enabled: true,
-    shared: false,
+    shared: true,
     intersect: false,
     theme: theme,
+    style: {
+      fontSize: '12px'
+    },
     y: {
       formatter: (value) => value
+    },
+    marker: {
+      show: true
     }
   },
   markers: {
     size: 3,
     strokeWidth: 1.5,
-    fillOpacity: 1,
-    strokeOpacity: 1,
+    strokeColors: theme === 'dark' ? '#206bc4' : '#206bc4',
+    fillColors: theme === 'dark' ? '#1a2234' : '#ffffff',
     hover: {
-      size: 4
+      size: 5
     }
   },
   responsive: [{

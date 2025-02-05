@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IconSun, IconMoon } from '@tabler/icons-react';
 
-const Header = ({ theme, toggleTheme, selectedDistrict, setSelectedDistrict }) => {
+const Header = ({ theme, toggleTheme }) => {
   return (
     <header className="navbar navbar-expand-md navbar-light d-print-none">
       <div className="container-xl">
@@ -14,22 +14,6 @@ const Header = ({ theme, toggleTheme, selectedDistrict, setSelectedDistrict }) =
             Peskas | Zanzibar
           </Link>
         </h1>
-        
-        {/* District Selector */}
-        <div className="navbar-nav flex-row order-md-first">
-          <div className="nav-item dropdown">
-            <select 
-              className="form-select" 
-              value={selectedDistrict}
-              onChange={(e) => setSelectedDistrict(e.target.value)}
-            >
-              <option value="all">All Districts</option>
-              <option value="north-unguja">North Unguja</option>
-              <option value="south-unguja">South Unguja</option>
-              <option value="pemba">Pemba</option>
-            </select>
-          </div>
-        </div>
 
         {/* Right side navbar items */}
         <div className="navbar-nav flex-row order-md-last">
