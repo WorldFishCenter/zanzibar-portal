@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   IconHome,
   IconScale, 
@@ -18,6 +18,8 @@ const LANDING_SITES = [
 ];
 
 const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
+  const location = useLocation();
+
   // Format landing site name for display
   const formatLandingSiteName = (site) => {
     return site === 'all' 
@@ -31,68 +33,71 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
         <div className="navbar">
           <div className="container-xl">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>
                 <Link to="/" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
-                    <IconHome size={24} />
+                    <IconHome size={24} stroke={1.5} />
                   </span>
                   <span className="nav-link-title">Home</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className={`nav-item ${location.pathname === '/catch' ? 'active' : ''}`}>
                 <Link to="/catch" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
-                    <IconScale size={24} />
+                    <IconScale size={24} stroke={1.5} />
                   </span>
                   <span className="nav-link-title">Catch</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className={`nav-item ${location.pathname === '/revenue' ? 'active' : ''}`}>
                 <Link to="/revenue" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
-                    <IconCurrencyDollar size={24} />
+                    <IconCurrencyDollar size={24} stroke={1.5} />
                   </span>
                   <span className="nav-link-title">Revenue</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
                 <Link to="/about" className="nav-link">
                   <span className="nav-link-icon d-md-none d-lg-inline-block">
-                    <IconInfoSquare size={24} />
+                    <IconInfoSquare size={24} stroke={1.5} />
                   </span>
                   <span className="nav-link-title">About</span>
                 </Link>
               </li>
             </ul>
-
-            {/* Landing Site Selector */}
             <div className="navbar-nav ms-auto">
               <div className="nav-item dropdown">
                 <button 
+                  type="button"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
-                  data-bs-auto-close="outside"
-                  style={{ minWidth: '200px', border: 'none', background: 'none', padding: '0.5rem 0.75rem' }}
+                  aria-expanded="false"
                 >
-                  <IconMap2 className="icon me-2" />
-                  <span>{formatLandingSiteName(selectedLandingSite)}</span>
+                  <IconMap2 className="icon me-2" stroke={1.5} />
+                  {formatLandingSiteName(selectedLandingSite)}
                 </button>
-                <div className="dropdown-menu" style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                <div className="dropdown-menu dropdown-menu-end">
                   <button 
+                    type="button"
                     className={`dropdown-item ${selectedLandingSite === 'all' ? 'active' : ''}`}
                     onClick={() => setSelectedLandingSite('all')}
                   >
                     All Landing Sites
                   </button>
-                  {LANDING_SITES.map(site => (
-                    <button 
-                      key={site}
-                      className={`dropdown-item ${selectedLandingSite === site ? 'active' : ''}`}
-                      onClick={() => setSelectedLandingSite(site)}
-                    >
-                      {formatLandingSiteName(site)}
-                    </button>
-                  ))}
+                  <div className="dropdown-divider"></div>
+                  <div className="dropdown-menu-scrollable" style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                    {LANDING_SITES.map(site => (
+                      <button 
+                        key={site}
+                        type="button"
+                        className={`dropdown-item ${selectedLandingSite === site ? 'active' : ''}`}
+                        onClick={() => setSelectedLandingSite(site)}
+                      >
+                        {formatLandingSiteName(site)}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

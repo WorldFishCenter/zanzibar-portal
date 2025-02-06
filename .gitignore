@@ -31,4 +31,7 @@ yarn-error.log*
 *.swo
 
 # Vercel
-.vercel 
+.vercel
+
+# Tabler demo reference
+/demo/ 
