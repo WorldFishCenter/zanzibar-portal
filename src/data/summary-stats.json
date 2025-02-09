@@ -1,49 +1,31 @@
 [
   {
-    "_id": "nungwi",
-    "avgCpue": 2.9916666665999996,
+    "_id": "msuka",
+    "avgCpue": 5.801036361647059,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "other_site",
-    "avgCpue": 2.52288236925,
+    "_id": "fumba",
+    "avgCpue": 1.955095968764706,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "kigombe",
-    "avgCpue": 2.4382345055999997,
+    "_id": "kizimkazi",
+    "avgCpue": 5.444736975851852,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "mkokotoni",
-    "avgCpue": 4.025625063566666,
+    "_id": "jambiani",
+    "avgCpue": 0.588235294,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "chole",
-    "avgCpue": 2.6999999999999997,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "ndumbani",
-    "avgCpue": 4.6167180615217385,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "mkinga",
-    "avgCpue": 5,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "tongoni",
-    "avgCpue": 3.572708446,
+    "_id": "shumba_mjini",
+    "avgCpue": 1.1538854167500001,
     "avgCatch": null,
     "count": 37
   },
@@ -66,98 +48,50 @@
     "count": 37
   },
   {
-    "_id": "fumba",
-    "avgCpue": 1.955095968764706,
+    "_id": "mkinga",
+    "avgCpue": 5,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "kizimkazi",
-    "avgCpue": 5.444736975851852,
+    "_id": "ndumbani",
+    "avgCpue": 4.6167180615217385,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "shumba_mjini",
-    "avgCpue": 1.1538854167500001,
+    "_id": "tongoni",
+    "avgCpue": 3.572708446,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "jambiani",
-    "avgCpue": 0.588235294,
+    "_id": "kigombe",
+    "avgCpue": 2.4382345055999997,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "msuka",
-    "avgCpue": 5.801036361647059,
+    "_id": "other_site",
+    "avgCpue": 2.52288236925,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "jasini",
-    "avgCpue": 0.9823884609545455,
+    "_id": "chole",
+    "avgCpue": 2.6999999999999997,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": null,
-    "avgCpue": null,
-    "avgCatch": null,
-    "count": 1
-  },
-  {
-    "_id": "mangapwani",
-    "avgCpue": 2.567628429625,
+    "_id": "mkokotoni",
+    "avgCpue": 4.025625063566666,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "wete",
-    "avgCpue": 12.5,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "chwaka",
-    "avgCpue": 0.75,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "mkoani",
-    "avgCpue": 6.4043266915517245,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "tanga",
-    "avgCpue": 0.625,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "kukuu",
-    "avgCpue": 4.6575,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "bwawani",
-    "avgCpue": 3.365275167666667,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "moa",
-    "avgCpue": 7.212884227454546,
-    "avgCatch": null,
-    "count": 37
-  },
-  {
-    "_id": "wesha",
-    "avgCpue": 6.9689989172999995,
+    "_id": "mkumbuu",
+    "avgCpue": 0.405405405,
     "avgCatch": null,
     "count": 37
   },
@@ -174,8 +108,74 @@
     "count": 37
   },
   {
-    "_id": "mkumbuu",
-    "avgCpue": 0.405405405,
+    "_id": "nungwi",
+    "avgCpue": 2.9916666665999996,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "moa",
+    "avgCpue": 7.212884227454546,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "wesha",
+    "avgCpue": 6.9689989172999995,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mkoani",
+    "avgCpue": 6.4043266915517245,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "chwaka",
+    "avgCpue": 0.75,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "wete",
+    "avgCpue": 12.5,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "bwawani",
+    "avgCpue": 3.365275167666667,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "kukuu",
+    "avgCpue": 4.6575,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "tanga",
+    "avgCpue": 0.625,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": null,
+    "avgCpue": null,
+    "avgCatch": null,
+    "count": 1
+  },
+  {
+    "_id": "jasini",
+    "avgCpue": 0.9823884609545455,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mangapwani",
+    "avgCpue": 2.567628429625,
     "avgCatch": null,
     "count": 37
   }
