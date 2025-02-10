@@ -1,13 +1,13 @@
 [
   {
-    "_id": "kizimkazi",
-    "avgCpue": 5.444736975851852,
+    "_id": "fumba",
+    "avgCpue": 1.955095968764706,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "fumba",
-    "avgCpue": 1.955095968764706,
+    "_id": "kizimkazi",
+    "avgCpue": 5.444736975851852,
     "avgCatch": null,
     "count": 37
   },
@@ -48,14 +48,14 @@
     "count": 37
   },
   {
-    "_id": "ndumbani",
-    "avgCpue": 4.6167180615217385,
+    "_id": "mkinga",
+    "avgCpue": 5,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "mkinga",
-    "avgCpue": 5,
+    "_id": "ndumbani",
+    "avgCpue": 4.6167180615217385,
     "avgCatch": null,
     "count": 37
   },
