@@ -15,20 +15,20 @@ const INITIAL_VIEW_STATE = {
   longitude: 39.19,  // Zanzibar City longitude
   latitude: -6.16,   // Zanzibar City latitude
   zoom: 9,          // Reduced zoom level for better overview
-  pitch: 0,
-  bearing: 0
+  pitch: 45,        // Add tilt to see 3D
+  bearing: 30       // Add rotation
 };
 
-// Viridis-like color scale
+// YlGnBu color scale
 const COLOR_RANGE = [
-  [68, 1, 84],    // Dark purple
-  [72, 35, 116],  // Purple
-  [64, 67, 135],  // Blue-purple
-  [52, 94, 141],  // Blue
-  [41, 121, 142], // Blue-green
-  [38, 150, 137], // Green
-  [59, 179, 113], // Light green
-  [144, 201, 44]  // Yellow-green
+  [255, 255, 217],  // Light yellow
+  [237, 248, 177],
+  [199, 233, 180],
+  [127, 205, 187],
+  [65, 182, 196],
+  [29, 145, 192],
+  [34, 94, 168],
+  [12, 44, 132]     // Dark blue
 ];
 
 // Time breaks (matching Legend.js)
@@ -43,7 +43,6 @@ const BREAKS = [
 
 const Map = ({ theme }) => {
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
-  const [mapLoaded, setMapLoaded] = useState(false);
   const [selectedRanges, setSelectedRanges] = useState(BREAKS);
 
   // Filter out metadata entries and transform data
@@ -85,18 +84,28 @@ const Map = ({ theme }) => {
       id: 'grid-layer',
       data: transformedData,
       pickable: true,
-      extruded: false,
+      extruded: true,
       cellSize: 1000,
       getPosition: d => d.position,
+      // Color settings
       getColorWeight: d => d.avgTimeHours,
       colorRange: COLOR_RANGE,
       colorScaleType: 'quantize',
       colorDomain: [0, 5],
       colorAggregation: 'MEAN',
-      opacity: 0.8,
-      // Keep only total visits aggregation
-      getElevationWeight: d => d.totalVisits,
-      elevationAggregation: 'SUM'
+      opacity: 0.3,
+      // Elevation settings
+      getElevationWeight: d => d.avgTimeHours,
+      elevationAggregation: 'MEAN',
+      elevationScale: 100,
+      elevationRange: [0, 200],
+      // Material settings
+      material: {
+        ambient: 0.64,
+        diffuse: 0.6,
+        shininess: 32,
+        specularColor: [51, 51, 51]
+      }
     })
   ], [transformedData]);
 
@@ -140,10 +149,6 @@ const Map = ({ theme }) => {
             "mapbox://styles/mapbox/light-v11"
           }
           mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-          onLoad={() => {
-            console.log('Map loaded successfully');
-            setMapLoaded(true);
-          }}
           onError={(e) => {
             console.error('Map loading error:', e);
           }}

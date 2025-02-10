@@ -11,7 +11,7 @@ const Header = ({ theme, toggleTheme }) => {
         </button>
         <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
           <Link to="/">
-            Peskas | Zanzibar
+            Peskas | Zanzibar 🇹🇿
           </Link>
         </h1>
 
