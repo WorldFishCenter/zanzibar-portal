@@ -77,6 +77,17 @@ async function exportData() {
     );
     console.log('Exported summary statistics');
 
+    // Export effort map data
+    console.log('Exporting effort map data...');
+    const effortMapCollection = db.collection('effort-map');
+    const effortMapData = await effortMapCollection.find({}).toArray();
+    
+    fs.writeFileSync(
+      path.join(DATA_DIR, 'effort-map.json'),
+      JSON.stringify(effortMapData, null, 2)
+    );
+    console.log(`Exported ${effortMapData.length} effort map records`);
+
     console.log('Data export completed successfully!');
   } catch (error) {
     console.error('Error exporting data:', error);

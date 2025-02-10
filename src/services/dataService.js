@@ -111,4 +111,18 @@ export const getDistrictData = (landingSite) => {
 // Revenue data (placeholder)
 export const getRevenueData = async () => {
   throw new Error('Revenue data not yet implemented');
+};
+
+// Get effort map data
+export const getEffortMapData = async () => {
+  try {
+    const response = await fetch('/api/effort-map');
+    if (!response.ok) {
+      throw new Error('Failed to fetch effort map data');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching effort map data:', error);
+    throw error;
+  }
 }; 

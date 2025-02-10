@@ -1,7 +1,6 @@
 import React from 'react';
 import { IconInfoCircle } from '@tabler/icons-react';
 import { useTooltip } from '../../hooks/useTooltip';
-import SmallChart from '../charts/SmallChart';
 import Map from '../charts/Map';
 import { SAMPLE_DISTRICT_DATA } from '../../constants/districts';
 
@@ -10,68 +9,6 @@ const Home = ({ theme, district }) => {
 
   return (
     <div className="row row-deck row-cards">
-      {/* Small cards row */}
-      <div className="col-12">
-        <div className="row g-3">
-          {/* Submissions card */}
-          <div className="col-sm-4">
-            <div className="card">
-              <div className="card-body">
-                <div className="d-flex align-items-center">
-                  <div className="subheader">Number of submissions</div>
-                </div>
-                <div className="h1 mb-3">2,847</div>
-                <div className="d-flex mb-2">
-                  <SmallChart theme={theme} baseValue={100} />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Vessels card */}
-          <div className="col-sm-4">
-            <div className="card">
-              <div className="card-body">
-                <div className="d-flex align-items-center">
-                  <div className="subheader">Vessels surveyed</div>
-                </div>
-                <div className="h1 mb-3">1,257</div>
-                <div className="d-flex mb-2">
-                  <SmallChart theme={theme} baseValue={50} />
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Catches card */}
-          <div className="col-sm-4">
-            <div className="card">
-              <div className="card-body">
-                <div className="d-flex align-items-center">
-                  <div className="subheader">Catches recorded</div>
-                </div>
-                <div className="h1 mb-3">3,521</div>
-                <div className="d-flex mb-2">
-                  <SmallChart theme={theme} baseValue={150} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Map row */}
-      <div className="col-12">
-        <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">Geographic Distribution</h3>
-          </div>
-          <div className="card-body p-0">
-            <div style={{ height: '400px', width: '100%' }}>
-              <Map theme={theme} />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* District summary table */}
       <div className="col-12">
         <div className="card">
@@ -123,6 +60,25 @@ const Home = ({ theme, district }) => {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Map row */}
+      <div className="col-12">
+        <div className="card">
+          <div className="card-header">
+            <h3 className="card-title">Fishing Effort Distribution</h3>
+          </div>
+          <div className="card-body p-0">
+            <div style={{ 
+              height: '800px', 
+              width: '100%',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              <Map theme={theme} />
             </div>
           </div>
         </div>

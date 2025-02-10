@@ -171,6 +171,25 @@ app.get('/api/cpue', async (req, res) => {
   }
 });
 
+// Effort map data endpoint
+app.get('/api/effort-map', async (req, res) => {
+  try {
+    const db = await connectToDatabase();
+    const collection = db.collection('effort-map');
+
+    // Execute query
+    const data = await collection.find({}).toArray();
+
+    res.json(data);
+  } catch (error) {
+    console.error('API Error:', error);
+    res.status(500).json({ 
+      error: 'Internal server error',
+      message: 'An unexpected error occurred'
+    });
+  }
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Unhandled error:', err);

@@ -1,87 +1,162 @@
 import React, { useState, useMemo } from 'react';
 import { DeckGL } from '@deck.gl/react';
 import { Map as MapGL } from 'react-map-gl';
-import { HexagonLayer } from '@deck.gl/aggregation-layers';
+import { GridLayer } from '@deck.gl/aggregation-layers';
+import mapboxgl from 'mapbox-gl';
+import effortMapData from '../../data/effort-map.json';
+import Legend from './Legend';
+// This is needed for react-map-gl to work with newer versions of mapbox-gl
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
-// Sample data - replace with real data later
-const SAMPLE_DATA = Array.from({ length: 1000 }, () => ({
-  position: [
-    39.1977 + (Math.random() - 0.5) * 2, // Longitude around Zanzibar
-    -6.1659 + (Math.random() - 0.5) * 2,  // Latitude around Zanzibar
-    Math.random() * 100 // Weight (catch size)
-  ],
-  catch: Math.random() * 100
-}));
-
-// Initial viewport centered on Zanzibar
+// Initial viewport centered on Zanzibar City
 const INITIAL_VIEW_STATE = {
-  longitude: 39.1977,
-  latitude: -6.1659,
-  zoom: 8,
-  pitch: 30,
+  longitude: 39.19,  // Zanzibar City longitude
+  latitude: -6.16,   // Zanzibar City latitude
+  zoom: 9,          // Reduced zoom level for better overview
+  pitch: 0,
   bearing: 0
 };
 
+// Viridis-like color scale
+const COLOR_RANGE = [
+  [68, 1, 84],    // Dark purple
+  [72, 35, 116],  // Purple
+  [64, 67, 135],  // Blue-purple
+  [52, 94, 141],  // Blue
+  [41, 121, 142], // Blue-green
+  [38, 150, 137], // Green
+  [59, 179, 113], // Light green
+  [144, 201, 44]  // Yellow-green
+];
+
+// Time breaks (matching Legend.js)
+const BREAKS = [
+  { min: 0, max: 0.5, label: '0-0.5h' },
+  { min: 0.5, max: 1, label: '0.5-1h' },
+  { min: 1, max: 2, label: '1-2h' },
+  { min: 2, max: 3, label: '2-3h' },
+  { min: 3, max: 5, label: '3-5h' },
+  { min: 5, max: Infinity, label: '>5h' }
+];
+
 const Map = ({ theme }) => {
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
+  const [mapLoaded, setMapLoaded] = useState(false);
+  const [selectedRanges, setSelectedRanges] = useState(BREAKS);
+
+  // Filter out metadata entries and transform data
+  const transformedData = useMemo(() => 
+    effortMapData
+      .filter(d => !d.type?.includes('metadata'))
+      .map(d => ({
+        position: [d.lng_grid_1km, d.lat_grid_1km],
+        avgTimeHours: d.avg_time_hours || 0,
+        totalVisits: parseInt(d.total_visits) || 0,
+        avgSpeed: parseFloat(d.avg_speed) || 0,
+        originalCells: parseInt(d.original_cells) || 0
+      }))
+      .filter(d => {
+        if (selectedRanges.length === 0) return true;
+        return selectedRanges.some(range => 
+          d.avgTimeHours >= range.min && d.avgTimeHours < range.max
+        );
+      })
+  , [selectedRanges]);
+
+  const handleRangeToggle = (range) => {
+    setSelectedRanges(current => {
+      const isSelected = current.some(r => r.min === range.min && r.max === range.max);
+      if (isSelected) {
+        // If it's the last selected range, keep it
+        if (current.length === 1) return current;
+        // Otherwise remove it
+        return current.filter(r => r.min !== range.min || r.max !== range.max);
+      } else {
+        // Add the range
+        return [...current, range];
+      }
+    });
+  };
 
   const layers = useMemo(() => [
-    new HexagonLayer({
-      id: 'hexagon-layer',
-      data: SAMPLE_DATA,
+    new GridLayer({
+      id: 'grid-layer',
+      data: transformedData,
       pickable: true,
-      extruded: true,
-      radius: 1000,
-      elevationScale: 100,
+      extruded: false,
+      cellSize: 1000,
       getPosition: d => d.position,
-      getElevationWeight: d => d.catch,
-      colorRange: theme === 'dark' ? [
-        [65, 182, 196],
-        [127, 205, 187],
-        [199, 233, 180],
-        [237, 248, 177],
-        [255, 255, 204]
-      ] : [
-        [44, 123, 182],
-        [171, 217, 233],
-        [255, 255, 191],
-        [253, 174, 97],
-        [215, 25, 28]
-      ]
+      getColorWeight: d => d.avgTimeHours,
+      colorRange: COLOR_RANGE,
+      colorScaleType: 'quantize',
+      colorDomain: [0, 5],
+      colorAggregation: 'MEAN',
+      opacity: 0.8,
+      // Keep only total visits aggregation
+      getElevationWeight: d => d.totalVisits,
+      elevationAggregation: 'SUM'
     })
-  ], [theme]);
+  ], [transformedData]);
+
+  if (!process.env.REACT_APP_MAPBOX_TOKEN) {
+    console.error('Mapbox token is missing. Please check your environment variables.');
+    return <div>Error: Mapbox token is missing</div>;
+  }
 
   return (
-    <DeckGL
-      initialViewState={viewState}
-      controller={true}
-      layers={layers}
-      onViewStateChange={({ viewState }) => setViewState(viewState)}
-      getTooltip={({object}) => object && {
-        html: `
-          <div style="padding: 8px">
-            <div>Catch in area: ${Math.round(object.points.reduce((sum, p) => sum + p.catch, 0))} kg</div>
-            <div>Number of records: ${object.points.length}</div>
-          </div>
-        `,
-        style: {
-          backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff',
-          color: theme === 'dark' ? '#ffffff' : '#000000',
-          fontSize: '12px',
-          borderRadius: '4px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
-        }
-      }}
-    >
-      <MapGL
-        mapStyle={theme === 'dark' ? 
-          "mapbox://styles/mapbox/dark-v11" : 
-          "mapbox://styles/mapbox/light-v11"
-        }
-        mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        reuseMaps
+    <>
+      <DeckGL
+        initialViewState={viewState}
+        controller={true}
+        layers={layers}
+        onViewStateChange={({ viewState }) => setViewState(viewState)}
+        getTooltip={({object}) => {
+          if (!object) return null;
+
+          return {
+            html: `
+              <div style="padding: 8px">
+                <div><strong>Time spent</strong></div>
+                <div>Average time: ${object.colorValue.toFixed(2)} hours</div>
+                <div><strong>Activity</strong></div>
+                <div>Total visits: ${object.elevationValue || 0}</div>
+              </div>
+            `,
+            style: {
+              backgroundColor: theme === 'dark' ? '#1f2937' : '#ffffff',
+              color: theme === 'dark' ? '#ffffff' : '#000000',
+              fontSize: '12px',
+              borderRadius: '4px',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
+            }
+          };
+        }}
+      >
+        <MapGL
+          mapStyle={theme === 'dark' ? 
+            "mapbox://styles/mapbox/dark-v11" : 
+            "mapbox://styles/mapbox/light-v11"
+          }
+          mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+          onLoad={() => {
+            console.log('Map loaded successfully');
+            setMapLoaded(true);
+          }}
+          onError={(e) => {
+            console.error('Map loading error:', e);
+          }}
+          reuseMaps
+        />
+      </DeckGL>
+      <Legend 
+        theme={theme}
+        colorRange={COLOR_RANGE}
+        selectedRanges={selectedRanges}
+        onRangeToggle={handleRangeToggle}
       />
-    </DeckGL>
+    </>
   );
 };
 
