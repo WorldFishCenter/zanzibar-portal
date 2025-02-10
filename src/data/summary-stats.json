@@ -66,20 +66,86 @@
     "count": 37
   },
   {
-    "_id": "wete",
-    "avgCpue": 12.5,
+    "_id": "mtangani",
+    "avgCpue": 6.970507889,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "mkoani",
-    "avgCpue": 6.4043266915517245,
+    "_id": "tongoni",
+    "avgCpue": 3.572708446,
     "avgCatch": null,
     "count": 37
   },
   {
-    "_id": "chwaka",
-    "avgCpue": 0.75,
+    "_id": "mkinga",
+    "avgCpue": 5,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "ndumbani",
+    "avgCpue": 4.6167180615217385,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mkokotoni",
+    "avgCpue": 4.025625063566666,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "chole",
+    "avgCpue": 2.6999999999999997,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "other_site",
+    "avgCpue": 2.52288236925,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "kigombe",
+    "avgCpue": 2.4382345055999997,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "nungwi",
+    "avgCpue": 2.9916666665999996,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mazizini",
+    "avgCpue": 11.2075684591875,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mkumbuu",
+    "avgCpue": 0.405405405,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "mvumoni_furaha",
+    "avgCpue": 5.292460317333333,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "wesha",
+    "avgCpue": 6.9689989172999995,
+    "avgCatch": null,
+    "count": 37
+  },
+  {
+    "_id": "moa",
+    "avgCpue": 7.212884227454546,
     "avgCatch": null,
     "count": 37
   },
