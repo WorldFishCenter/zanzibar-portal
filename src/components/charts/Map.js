@@ -16,7 +16,7 @@ const INITIAL_VIEW_STATE = {
   latitude: -6.16,   // Zanzibar City latitude
   zoom: 9,          // Reduced zoom level for better overview
   pitch: 45,        // Add tilt to see 3D
-  bearing: 10        // Align with true north
+  bearing: 10       // Slight rotation for better perspective
 };
 
 // YlGnBu color scale
