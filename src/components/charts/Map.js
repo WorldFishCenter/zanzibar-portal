@@ -146,6 +146,26 @@ const InfoPanel = memo(({ theme, data, colorRange, selectedRanges, onRangeToggle
         Fishing Effort Distribution
       </h3>
 
+      {/* Grid Info */}
+      <div style={{ 
+        marginBottom: '20px',
+        padding: '8px 12px',
+        backgroundColor: theme === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.05)',
+        borderRadius: '4px',
+        fontSize: '13px'
+      }}>
+        <div style={{ marginBottom: '4px' }}>
+          <strong>Grid Resolution:</strong> 1 × 1 km
+        </div>
+        <div style={{ 
+          color: theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)',
+          fontSize: '12px',
+          lineHeight: '1.4'
+        }}>
+          Each cell represents a 1 square kilometer area where fishing activity has been recorded
+        </div>
+      </div>
+
       {/* Color Scale Legend */}
       <div style={{ marginBottom: '20px' }}>
         <div style={{ 
