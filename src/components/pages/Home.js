@@ -68,9 +68,6 @@ const Home = ({ theme, district }) => {
       {/* Map row */}
       <div className="col-12">
         <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">Fishing Effort Distribution</h3>
-          </div>
           <div className="card-body p-0">
             <div style={{ 
               height: '800px', 
