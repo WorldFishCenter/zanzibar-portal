@@ -3,8 +3,7 @@ import {
   IconBuildingLighthouse, 
   IconScale, 
   IconCode, 
-  IconClock,
-  IconAlertTriangle 
+  IconClock
 } from '@tabler/icons-react';
 
 const About = () => {

@@ -2,6 +2,8 @@
 
 A modern dashboard for visualizing fisheries data from Zanzibar, built with React and Tabler UI components.
 
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)](https://zanzibar-portal.vercel.app/)
+
 ## Features
 
 - Interactive data visualization for catch and revenue metrics
@@ -69,6 +71,23 @@ The dashboard provides several visualization features:
 - Statistical indicators (median values, percentage changes)
 - Interactive filters and controls
 - Responsive data updates
+
+## Deployment
+
+The application is deployed on Vercel. For deployment:
+
+1. Set up environment variables:
+   - `NODE_OPTIONS='--openssl-legacy-provider'` - Required for build process
+   - `GENERATE_SOURCEMAP=false` - Optimizes build size
+
+2. Configure build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `build`
+   - Install Command: `npm install`
+
+3. Enable GitHub integration for automatic deployments
+
+The live version is available at: https://zanzibar-portal.vercel.app/
 
 ## License
 
