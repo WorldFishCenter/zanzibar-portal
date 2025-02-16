@@ -9,7 +9,13 @@ import {
 } from '@tabler/icons-react';
 import { LANDING_SITES } from '../../constants/landingSites';
 
-const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
+const CURRENCY_SYMBOLS = {
+  TZS: 'TZS',
+  USD: 'USD',
+  EUR: '€'
+};
+
+const Navigation = ({ selectedLandingSite, setSelectedLandingSite, currency, setCurrency }) => {
   const location = useLocation();
 
   // Format landing site name for display
@@ -21,6 +27,8 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
 
   // Check if current page needs landing site selector
   const shouldShowLandingSiteSelector = ['/catch', '/revenue'].includes(location.pathname);
+  // Check if current page is revenue page
+  const isRevenuePage = location.pathname === '/revenue';
 
   return (
     <header className="navbar-expand-md">
@@ -61,8 +69,24 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
                 </Link>
               </li>
             </ul>
-            {shouldShowLandingSiteSelector && (
-              <div className="navbar-nav ms-auto">
+            <div className="navbar-nav ms-auto d-flex align-items-center gap-2">
+              {isRevenuePage && (
+                <div className="nav-item">
+                  <div className="btn-group" role="group">
+                    {Object.keys(CURRENCY_SYMBOLS).map(curr => (
+                      <button 
+                        key={curr}
+                        type="button" 
+                        className={`btn ${currency === curr ? 'btn-secondary' : 'btn-outline-secondary'}`}
+                        onClick={() => setCurrency(curr)}
+                      >
+                        {curr}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {shouldShowLandingSiteSelector && (
                 <div className="nav-item dropdown">
                   <button 
                     type="button"
@@ -97,8 +121,8 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
                     </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>

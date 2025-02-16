@@ -12,6 +12,7 @@ import './styles/charts.css';
 function App() {
   const [theme, toggleTheme] = useTheme();
   const [selectedLandingSite, setSelectedLandingSite] = React.useState('all');
+  const [currency, setCurrency] = React.useState('TZS');
 
   return (
     <Layout
@@ -19,6 +20,8 @@ function App() {
       toggleTheme={toggleTheme}
       selectedLandingSite={selectedLandingSite}
       setSelectedLandingSite={setSelectedLandingSite}
+      currency={currency}
+      setCurrency={setCurrency}
     >
       <Routes>
         <Route path="/" element={
@@ -33,7 +36,7 @@ function App() {
         } />
         <Route path="/revenue" element={
           <ErrorBoundary>
-            <Revenue theme={theme} landingSite={selectedLandingSite} />
+            <Revenue theme={theme} landingSite={selectedLandingSite} currency={currency} />
           </ErrorBoundary>
         } />
         <Route path="/about" element={

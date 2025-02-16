@@ -3,7 +3,15 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-const Layout = ({ children, theme, toggleTheme, selectedLandingSite, setSelectedLandingSite }) => {
+const Layout = ({ 
+  children, 
+  theme, 
+  toggleTheme, 
+  selectedLandingSite, 
+  setSelectedLandingSite,
+  currency,
+  setCurrency
+}) => {
   return (
     <div className="page">
       <div className="sticky-top">
@@ -14,6 +22,8 @@ const Layout = ({ children, theme, toggleTheme, selectedLandingSite, setSelected
         <Navigation 
           selectedLandingSite={selectedLandingSite}
           setSelectedLandingSite={setSelectedLandingSite}
+          currency={currency}
+          setCurrency={setCurrency}
         />
       </div>
 

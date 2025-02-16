@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import Chart from 'react-apexcharts';
 import { getChartConfig } from '../../utils/chartConfigs';
 import { getRevenueData } from '../../services/dataService';
+import gearMetricsData from '../../data/gear-metrics.json';
+import TimeSeriesChart from '../charts/TimeSeriesChart';
+import SeasonalChart from '../charts/SeasonalChart';
+import GearMetricsHeatmap from '../charts/GearMetricsHeatmap';
 
 // Memoized constants
 const EXCHANGE_RATES = {
@@ -27,12 +30,11 @@ const calculateMedian = (values) => {
   return Number(sorted[middle].toFixed(2));
 };
 
-const Revenue = ({ theme, landingSite }) => {
+const Revenue = ({ theme, landingSite, currency }) => {
   const [loading, setLoading] = useState(true);
   const [revenueData, setRevenueData] = useState(null);
   const [error, setError] = useState(null);
   const [viewMode, setViewMode] = useState('monthly');
-  const [currency, setCurrency] = useState('TZS');
 
   // Memoized currency conversion
   const convertCurrency = useCallback((value) => {
@@ -41,13 +43,13 @@ const Revenue = ({ theme, landingSite }) => {
   }, [currency]);
 
   // Memoized currency formatting
-  const formatWithCurrency = useCallback((value) => {
+  const formatWithCurrency = useCallback((value, skipSymbol = false) => {
     if (value === null || value === undefined) return 'No data';
     const formattedValue = value.toLocaleString('en-US', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
     });
-    return `${CURRENCY_SYMBOLS[currency]} ${formattedValue}`;
+    return skipSymbol ? formattedValue : `${CURRENCY_SYMBOLS[currency]} ${formattedValue}`;
   }, [currency]);
 
   // Memoized data fetching
@@ -197,194 +199,159 @@ const Revenue = ({ theme, landingSite }) => {
     }
   }, [viewMode, revenueData, validData, convertCurrency, aggregateToYearly]);
 
-  // Memoized chart options
-  const mainChartOptions = useMemo(() => ({
-    ...chartConfig,
-    chart: {
-      ...chartConfig.chart,
-      height: 350,
-      sparkline: {
-        enabled: false
-      },
-      toolbar: {
-        show: false
-      },
-      animations: {
-        enabled: true,
-        easing: 'linear',
-        speed: 800,
-        dynamicAnimation: {
-          enabled: true,
-          speed: 350
-        }
-      }
-    },
-    dataLabels: {
-      enabled: viewMode === 'yearly',
-      style: {
-        fontSize: '12px',
-        fontWeight: 500
-      },
-      formatter: function(val) {
-        if (val === null || val === undefined) return '';
-        return formatWithCurrency(val);
-      }
-    },
-    stroke: {
-      curve: 'smooth',
-      width: viewMode === 'yearly' ? 0 : 2,
-      lineCap: 'round'
-    },
-    fill: {
-      opacity: viewMode === 'yearly' ? 1 : 0.2,
-      type: viewMode === 'yearly' ? 'solid' : 'gradient',
-      gradient: viewMode === 'yearly' ? undefined : {
-        shadeIntensity: 1,
-        opacityFrom: 0.7,
-        opacityTo: 0.3,
-        stops: [0, 90, 100]
-      }
-    },
-    plotOptions: {
-      bar: {
-        borderRadius: 8,
-        columnWidth: '60%',
-        colors: {
-          ranges: [{
-            from: 0,
-            to: Infinity,
-            color: '#2196f3'
-          }]
-        }
-      }
-    },
-    xaxis: {
-      type: viewMode === 'yearly' ? 'category' : 'datetime',
-      labels: {
-        style: {
-          fontSize: '12px'
-        },
-        format: viewMode === 'yearly' ? undefined : 'MMM yyyy'
-      },
-      axisBorder: {
-        show: false
-      },
-      axisTicks: {
-        show: false
-      }
-    },
-    yaxis: {
-      labels: {
-        style: {
-          fontSize: '12px'
-        },
-        formatter: function(val) {
-          if (val === null || val === undefined) return '';
-          return formatWithCurrency(val);
-        }
-      }
-    },
-    tooltip: {
-      theme: theme === 'dark' ? 'dark' : 'light',
-      x: {
-        format: viewMode === 'yearly' ? 'yyyy' : 'dd MMM yyyy'
-      },
-      y: {
-        formatter: function(val) {
-          return val == null ? 'No data' : formatWithCurrency(val);
-        }
-      }
-    },
-    grid: {
-      show: true,
-      borderColor: theme === 'dark' ? '#1e293b' : '#e2e8f0',
-      strokeDashArray: 4,
-      padding: {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 10
-      }
-    },
-    markers: {
-      size: viewMode === 'yearly' ? 0 : 4,
-      strokeWidth: 2,
-      strokeColors: theme === 'dark' ? '#3b82f6' : '#60a5fa',
-      hover: {
-        size: 6
-      }
+  // Memoized gear metrics data processing
+  const processedGearMetrics = useMemo(() => {
+    if (!Array.isArray(gearMetricsData) || gearMetricsData.length === 0) {
+      console.warn('No gear metrics data available');
+      return {
+        series: [],
+        gearTypes: []
+      };
     }
-  }), [chartConfig, theme, viewMode, formatWithCurrency]);
 
-  // Memoized radar chart options
-  const radarChartOptions = useMemo(() => ({
-    chart: {
-      type: 'radar',
-      height: 350,
-      toolbar: {
-        show: false
-      },
-      background: 'transparent'
-    },
-    xaxis: {
-      categories: seasonalData.map(d => d.x),
-      labels: {
-        style: {
-          colors: Array(12).fill(theme === 'dark' ? '#94a3b8' : '#475569'),
-          fontSize: '12px'
-        }
+    try {
+      // Filter for revenue metrics only and exclude metadata
+      const revenueData = gearMetricsData.filter(d => 
+        d.metric === 'median_rpue' &&
+        !d.type && 
+        typeof d.value === 'number' &&
+        d.landing_site &&
+        d.gear
+      );
+
+      if (revenueData.length === 0) {
+        console.warn('No revenue data found in gear metrics');
+        return {
+          series: [],
+          gearTypes: []
+        };
       }
-    },
-    yaxis: {
-      min: 0,
-      max: Math.ceil(Math.max(...seasonalData.map(d => d.y || 0))),
-      tickAmount: 5,
-      labels: {
-        formatter: function(val) {
-          return formatWithCurrency(val);
-        },
-        style: {
-          colors: [theme === 'dark' ? '#94a3b8' : '#475569']
-        }
-      }
-    },
-    grid: {
-      show: false
-    },
-    plotOptions: {
-      radar: {
-        size: undefined,
-        polygons: {
-          strokeColors: theme === 'dark' ? '#334155' : '#cbd5e1',
-          strokeWidth: 1,
-          connectorColors: theme === 'dark' ? '#334155' : '#cbd5e1'
-        }
-      }
-    },
-    markers: {
-      size: 4,
-      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
-      strokeColors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
-      strokeWidth: 2
-    },
-    fill: {
-      opacity: 0.2,
-      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa']
-    },
-    stroke: {
-      width: 2,
-      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
-      dashArray: 0
-    },
-    tooltip: {
-      y: {
-        formatter: function(val) {
-          return formatWithCurrency(val);
-        }
-      },
-      theme: theme === 'dark' ? 'dark' : 'light'
+
+      // Calculate total revenue for each gear type and landing site
+      const gearTotals = {};
+      const siteTotals = {};
+
+      revenueData.forEach(d => {
+        const convertedValue = convertCurrency(d.value || 0);
+        if (!gearTotals[d.gear]) gearTotals[d.gear] = 0;
+        if (!siteTotals[d.landing_site]) siteTotals[d.landing_site] = 0;
+        gearTotals[d.gear] += convertedValue;
+        siteTotals[d.landing_site] += convertedValue;
+      });
+
+      // Sort gear types by highest revenue first
+      const gearTypes = Object.keys(gearTotals).sort((a, b) => gearTotals[b] - gearTotals[a]);
+      // Sort landing sites by lowest revenue first (so highest revenue will be at the top)
+      const landingSites = Object.keys(siteTotals).sort((a, b) => siteTotals[a] - siteTotals[b]);
+
+      // Transform data into series format
+      const series = landingSites.map(site => ({
+        name: site.replace(/_/g, ' '),
+        data: gearTypes.map(gear => {
+          const match = revenueData.find(d => d.landing_site === site && d.gear === gear);
+          return match && match.value ? convertCurrency(match.value) : -1;
+        })
+      }));
+
+      console.log('Processed gear metrics:', {
+        landingSites,
+        gearTypes,
+        series,
+        rawData: revenueData,
+        gearTotals,
+        siteTotals
+      });
+
+      return {
+        series,
+        gearTypes: gearTypes.map(gear => gear.replace(/_/g, ' '))
+      };
+    } catch (error) {
+      console.error('Error processing gear metrics data:', error);
+      return {
+        series: [],
+        gearTypes: []
+      };
     }
-  }), [theme, seasonalData, formatWithCurrency]);
+  }, [convertCurrency]);
+
+  // Calculate color ranges
+  const colorRanges = useMemo(() => {
+    if (!processedGearMetrics.series.length) return [];
+    
+    const allValues = processedGearMetrics.series
+      .flatMap(s => s.data)
+      .filter(v => v > 0);
+    
+    if (allValues.length === 0) return [];
+
+    const min = Math.min(...allValues);
+    // Base threshold is 20 EUR
+    const baseThresholdEUR = 20;
+    // Convert to TZS first (since our values are stored in TZS)
+    const baseThresholdTZS = baseThresholdEUR / EXCHANGE_RATES.EUR;
+    // Then convert to current currency
+    const threshold = convertCurrency(baseThresholdTZS);
+    const max = Math.max(...allValues);
+    const step = (threshold - min) / 7;
+
+    return [
+      {
+        from: -1,
+        to: -1,
+        color: theme === 'dark' ? '#374151' : '#f3f4f6',
+        name: 'No Data'
+      },
+      {
+        from: min,
+        to: min + step,
+        color: '#ffffd990',
+        name: `< ${formatWithCurrency(min + step)}`
+      },
+      {
+        from: min + step,
+        to: min + 2 * step,
+        color: '#edf8b190',
+        name: `${formatWithCurrency(min + step)} - ${formatWithCurrency(min + 2 * step)}`
+      },
+      {
+        from: min + 2 * step,
+        to: min + 3 * step,
+        color: '#c7e9b490',
+        name: `${formatWithCurrency(min + 2 * step)} - ${formatWithCurrency(min + 3 * step)}`
+      },
+      {
+        from: min + 3 * step,
+        to: min + 4 * step,
+        color: '#7fcdbb90',
+        name: `${formatWithCurrency(min + 3 * step)} - ${formatWithCurrency(min + 4 * step)}`
+      },
+      {
+        from: min + 4 * step,
+        to: min + 5 * step,
+        color: '#41b6c490',
+        name: `${formatWithCurrency(min + 4 * step)} - ${formatWithCurrency(min + 5 * step)}`
+      },
+      {
+        from: min + 5 * step,
+        to: min + 6 * step,
+        color: '#1d91c090',
+        name: `${formatWithCurrency(min + 5 * step)} - ${formatWithCurrency(min + 6 * step)}`
+      },
+      {
+        from: min + 6 * step,
+        to: threshold,
+        color: '#225ea890',
+        name: `${formatWithCurrency(min + 6 * step)} - ${formatWithCurrency(threshold)}`
+      },
+      {
+        from: threshold,
+        to: max,
+        color: '#0c2c8490',
+        name: `> ${formatWithCurrency(threshold)}`
+      }
+    ];
+  }, [processedGearMetrics.series, theme, formatWithCurrency, convertCurrency]);
 
   if (loading) {
     return (
@@ -432,35 +399,21 @@ const Revenue = ({ theme, landingSite }) => {
         <div className="card">
           <div className="card-header d-flex align-items-center justify-content-between">
             <h3 className="card-title">Revenue per unit effort (median)</h3>
-            <div className="d-flex gap-2">
-              <div className="btn-group" role="group">
-                {Object.keys(CURRENCY_SYMBOLS).map(curr => (
-                  <button 
-                    key={curr}
-                    type="button" 
-                    className={`btn ${currency === curr ? 'btn-secondary' : 'btn-outline-secondary'}`}
-                    onClick={() => setCurrency(curr)}
-                  >
-                    {curr}
-                  </button>
-                ))}
-              </div>
-              <div className="btn-group" role="group">
-                <button 
-                  type="button" 
-                  className={`btn ${viewMode === 'monthly' ? 'btn-primary' : 'btn-outline-primary'}`}
-                  onClick={() => setViewMode('monthly')}
-                >
-                  Monthly
-                </button>
-                <button 
-                  type="button" 
-                  className={`btn ${viewMode === 'yearly' ? 'btn-primary' : 'btn-outline-primary'}`}
-                  onClick={() => setViewMode('yearly')}
-                >
-                  Yearly
-                </button>
-              </div>
+            <div className="btn-group" role="group">
+              <button 
+                type="button" 
+                className={`btn ${viewMode === 'monthly' ? 'btn-primary' : 'btn-outline-primary'}`}
+                onClick={() => setViewMode('monthly')}
+              >
+                Monthly
+              </button>
+              <button 
+                type="button" 
+                className={`btn ${viewMode === 'yearly' ? 'btn-primary' : 'btn-outline-primary'}`}
+                onClick={() => setViewMode('yearly')}
+              >
+                Yearly
+              </button>
             </div>
           </div>
           <div className="card-body">
@@ -493,30 +446,48 @@ const Revenue = ({ theme, landingSite }) => {
             </div>
             <div className="row">
               <div className="col-8">
-                <Chart 
-                  key={`${currency}-${viewMode}`}
-                  options={mainChartOptions}
-                  series={[{
-                    name: landingSite === 'all' ? 'All Landing Sites' : landingSite,
-                    data: displayData
-                  }]}
-                  type={viewMode === 'yearly' ? 'bar' : 'area'}
-                  height={350}
+                <TimeSeriesChart 
+                  theme={theme}
+                  chartConfig={chartConfig}
+                  data={displayData}
+                  viewMode={viewMode}
+                  title={landingSite === 'all' ? 'All Landing Sites' : landingSite}
+                  formatValue={formatWithCurrency}
+                  currency={currency}
                 />
               </div>
               <div className="col-4">
-                <Chart 
-                  key={currency}
-                  options={radarChartOptions}
-                  series={[{
-                    name: 'Monthly Pattern',
-                    data: seasonalData.map(d => d.y)
-                  }]}
-                  type="radar"
-                  height={350}
+                <SeasonalChart 
+                  theme={theme}
+                  data={seasonalData}
+                  formatValue={formatWithCurrency}
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Heatmap card */}
+      <div className="col-12 mt-3">
+        <div className="card">
+          <div className="card-header">
+            <h3 className="card-title">Revenue by Gear Type and Landing Site</h3>
+          </div>
+          <div className="card-body">
+            {processedGearMetrics.series.length > 0 ? (
+              <GearMetricsHeatmap 
+                theme={theme}
+                series={processedGearMetrics.series}
+                gearTypes={processedGearMetrics.gearTypes}
+                colorRanges={colorRanges}
+                formatValue={formatWithCurrency}
+              />
+            ) : (
+              <div className="d-flex align-items-center justify-content-center h-100 text-muted">
+                No gear metrics data available
+              </div>
+            )}
           </div>
         </div>
       </div>

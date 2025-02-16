@@ -2,15 +2,9 @@ import { useState, useEffect, useCallback } from 'react';
 
 export const useTheme = () => {
   const [theme, setTheme] = useState(() => {
-    // Get theme from localStorage or system preference
+    // Get theme from localStorage or default to light
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) return savedTheme;
-    
-    // Check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    return 'light';
+    return savedTheme || 'light';
   });
 
   useEffect(() => {
