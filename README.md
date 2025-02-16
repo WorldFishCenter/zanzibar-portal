@@ -1,14 +1,18 @@
-# Tabler Dashboard
+# WorldFish Dashboard
 
-A modern admin dashboard built with React and Tabler UI components.
+A modern dashboard for visualizing fisheries data from Zanzibar, built with React and Tabler UI components.
 
 ## Features
 
-- Modern and clean UI using Tabler components
-- Responsive design
-- React Router for navigation
-- Tabler Icons integration
-- Basic layout with navbar and sidebar
+- Interactive data visualization for catch and revenue metrics
+- Monthly and yearly view modes for time series data
+- Seasonal patterns visualization using radar charts
+- Multiple currency support (TZS, USD, EUR) for revenue data
+- Responsive design optimized for all screen sizes
+- Dark/Light theme support
+- Landing site selection and filtering
+- Real-time data updates and calculations
+- Median-based statistical analysis
 
 ## Getting Started
 
@@ -39,8 +43,15 @@ The application will open in your default browser at `http://localhost:3000`.
 ## Project Structure
 
 - `/src` - Source code
-  - `App.js` - Main application component
-  - `index.js` - Application entry point
+  - `/components` - React components
+    - `/pages` - Main page components (Catch.js, Revenue.js, etc.)
+    - `/charts` - Chart components
+    - `/layout` - Layout components
+  - `/services` - Data services and API calls
+  - `/utils` - Utility functions
+  - `/constants` - Configuration constants
+  - `/data` - Static data files
+  - `/styles` - CSS and style files
 - `/public` - Static files
 
 ## Available Scripts
@@ -50,13 +61,14 @@ The application will open in your default browser at `http://localhost:3000`.
 - `npm test` - Runs the test suite
 - `npm eject` - Ejects from create-react-app
 
-## Customization
+## Data Visualization
 
-You can customize the dashboard by:
-1. Modifying the components in `App.js`
-2. Adding new routes and components
-3. Customizing Tabler UI components and styles
-4. Adding more features and functionality as needed
+The dashboard provides several visualization features:
+- Time series charts for catch and revenue data
+- Radar charts for seasonal patterns
+- Statistical indicators (median values, percentage changes)
+- Interactive filters and controls
+- Responsive data updates
 
 ## License
 

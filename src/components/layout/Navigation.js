@@ -7,15 +7,7 @@ import {
   IconInfoSquare,
   IconMap2
 } from '@tabler/icons-react';
-
-// List of all landing sites
-const LANDING_SITES = [
-  'bwawani', 'chole', 'chwaka', 'fumba', 'jambiani', 'jasini',
-  'kigombe', 'kizimkazi', 'kukuu', 'mangapwani', 'matemwe', 'mazizini',
-  'mkinga', 'mkoani', 'mkokotoni', 'mkumbuu', 'moa', 'msuka',
-  'mtangani', 'mvumoni_furaha', 'ndumbani', 'nungwi', 'other_site', 'sahare',
-  'shumba_mjini', 'tanga', 'tongoni', 'wesha', 'wete'
-];
+import { LANDING_SITES } from '../../constants/landingSites';
 
 const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
   const location = useLocation();
@@ -26,6 +18,9 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
       ? 'All Landing Sites'
       : site.charAt(0).toUpperCase() + site.slice(1).replace('_', ' ');
   };
+
+  // Check if current page needs landing site selector
+  const shouldShowLandingSiteSelector = ['/catch', '/revenue'].includes(location.pathname);
 
   return (
     <header className="navbar-expand-md">
@@ -66,41 +61,44 @@ const Navigation = ({ selectedLandingSite, setSelectedLandingSite }) => {
                 </Link>
               </li>
             </ul>
-            <div className="navbar-nav ms-auto">
-              <div className="nav-item dropdown">
-                <button 
-                  type="button"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <IconMap2 className="icon me-2" stroke={1.5} />
-                  {formatLandingSiteName(selectedLandingSite)}
-                </button>
-                <div className="dropdown-menu dropdown-menu-end">
+            {shouldShowLandingSiteSelector && (
+              <div className="navbar-nav ms-auto">
+                <div className="nav-item dropdown">
                   <button 
                     type="button"
-                    className={`dropdown-item ${selectedLandingSite === 'all' ? 'active' : ''}`}
-                    onClick={() => setSelectedLandingSite('all')}
+                    className="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    All Landing Sites
+                    <IconMap2 className="icon me-2" stroke={1.5} />
+                    <span className="nav-link-title">{formatLandingSiteName(selectedLandingSite)}</span>
                   </button>
-                  <div className="dropdown-divider"></div>
-                  <div className="dropdown-menu-scrollable" style={{ maxHeight: '400px', overflowY: 'auto' }}>
-                    {LANDING_SITES.map(site => (
-                      <button 
-                        key={site}
-                        type="button"
-                        className={`dropdown-item ${selectedLandingSite === site ? 'active' : ''}`}
-                        onClick={() => setSelectedLandingSite(site)}
-                      >
-                        {formatLandingSiteName(site)}
-                      </button>
-                    ))}
+                  <div className="dropdown-menu dropdown-menu-end">
+                    <div className="dropdown-header">Select Landing Site</div>
+                    <button 
+                      type="button"
+                      className={`dropdown-item ${selectedLandingSite === 'all' ? 'active fw-bold' : ''}`}
+                      onClick={() => setSelectedLandingSite('all')}
+                    >
+                      All Landing Sites
+                    </button>
+                    <div className="dropdown-divider"></div>
+                    <div className="dropdown-menu-scrollable" style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                      {LANDING_SITES.map(site => (
+                        <button 
+                          key={site}
+                          type="button"
+                          className={`dropdown-item ${selectedLandingSite === site ? 'active fw-bold' : ''}`}
+                          onClick={() => setSelectedLandingSite(site)}
+                        >
+                          {formatLandingSiteName(site)}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

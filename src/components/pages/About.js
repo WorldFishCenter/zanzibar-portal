@@ -1,77 +1,111 @@
 import React from 'react';
+import { 
+  IconBuildingLighthouse, 
+  IconScale, 
+  IconCode, 
+  IconClock,
+  IconAlertTriangle 
+} from '@tabler/icons-react';
 
 const About = () => {
   return (
-    <div className="row row-deck row-cards">
-      <div className="col-12">
-        <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">About Peskas</h3>
+    <>
+      {/* About Section */}
+      <div className="card">
+        <div className="card-body">
+          <h2 className="mb-3">About Peskas</h2>
+          <p className="text-muted mb-4">
+            A data-driven platform for sustainable fisheries management in Zanzibar, developed through 
+            partnership between the Wildlife Conservation Society (WCS) and local fisheries institutions.
+          </p>
+
+          {/* Features */}
+          <div className="row g-3">
+            {[
+              {
+                icon: IconBuildingLighthouse,
+                title: 'Low Cost',
+                description: 'Accessible implementation',
+                color: 'primary'
+              },
+              {
+                icon: IconCode,
+                title: 'Open Source',
+                description: 'Transparent development',
+                color: 'green'
+              },
+              {
+                icon: IconScale,
+                title: 'Open Access',
+                description: 'Available to all stakeholders',
+                color: 'yellow'
+              },
+              {
+                icon: IconClock,
+                title: 'Near Real-Time',
+                description: 'Current data insights',
+                color: 'azure'
+              }
+            ].map(({ icon: Icon, title, description, color }, index) => (
+              <div key={index} className="col-sm-6 col-lg-3">
+                <div className="card card-sm">
+                  <div className="card-body">
+                    <div className="d-flex align-items-center">
+                      <span className={`avatar avatar-sm bg-${color}-lt`}>
+                        <Icon size={24} stroke={1.5} />
+                      </span>
+                      <div className="ms-3">
+                        <div className="font-weight-medium">{title}</div>
+                        <div className="text-muted">{description}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="card-body">
-            <div className="markdown">
-              <h4>Overview</h4>
-              <p>
-                Peskas is an open-source, digital platform designed to collect, analyse, and visualise data 
-                from small-scale fisheries, with the goal of improving fisheries management and supporting 
-                sustainable practices.
-              </p>
 
-              <h4>Key Features</h4>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Magnifying Glass">🔍</span> Data Collection:</strong> Intuitive tools for collecting key fishing data, 
-                  including digital catch surveys and vessel tracking.
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Gear">⚙️</span> Data Processing:</strong> Data is cleaned, standardized, and transformed into 
-                  tidy formats, using FishBase for weight and nutrient composition information.
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Chart">📊</span> Data Analysis:</strong> Identifies trends and patterns, estimating key fishery 
-                  indicators such as average catch per trip and revenue.
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Check Mark">✓</span> Data Validation:</strong> Rigorous scrutiny and refinement of information to 
-                  ensure accuracy and reliability.
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Chart Increasing">📈</span> Data Visualization:</strong> Interactive dashboards displaying data through 
-                  maps, charts, and customizable tables.
-                </li>
-              </ul>
-
-              <h4>Impact and Goals</h4>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Target">🎯</span> Improved Decision-Making:</strong> Enabling evidence-based decisions at all levels
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Wave">🌊</span> Sustainable Management:</strong> Supporting sustainable fishing practices
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="People">👥</span> Community Engagement:</strong> Incorporating community members as enumerators
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Magnifying Glass">🔍</span> Transparency:</strong> Making fisheries information accessible to all
-                </li>
-                <li className="mb-2">
-                  <strong><span role="img" aria-label="Flexed Biceps">💪</span> Empowerment:</strong> Providing data to inform fisher business decisions
-                </li>
-              </ul>
-
-              <h4>Technical Details</h4>
-              <p>
-                Built with modern web technologies and following open-source principles, Peskas ensures 
-                platform independence and streamlined deployment through Docker containerization. Data 
-                processing and visualization are powered by R's statistical computation capabilities.
-              </p>
+          {/* Technical Overview */}
+          <h3 className="mt-4 mb-3">Technical Overview</h3>
+          <div className="row g-3">
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Data Collection</h4>
+                  <p className="text-muted mb-0">
+                    Local enumerators collect catch data across landing sites, enhanced by vessel tracking 
+                    for comprehensive fishing activity monitoring.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Processing</h4>
+                  <p className="text-muted mb-0">
+                    Automated daily processing includes data cleaning, standardization, and enrichment 
+                    with FishBase information.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Methodology</h4>
+                  <p className="text-muted mb-0">
+                    Statistical modeling generates reliable estimates of key metrics such as landing values, 
+                    catches, and fishing effort using R-based analytics.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default About; 
+export default About;

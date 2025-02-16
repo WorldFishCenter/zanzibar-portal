@@ -1,25 +1,57 @@
 // Import static data
-import cpueData from '../data/cpue.json';
-import summaryStats from '../data/summary-stats.json';
+import monthlyMetrics from '../data/monthly-metrics.json';
+import gearMetrics from '../data/gear-metrics.json';
+import taxaProportions from '../data/taxa-proportions.json';
+import effortMapData from '../data/effort-map.json';
+import { LANDING_SITES } from '../constants/landingSites';
 
-// Cache configuration
+// Cache configuration with memory limits
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const MAX_CACHE_SIZE = 50; // Maximum number of items in cache
 const cache = new Map();
 
-// Helper function to get/set cache
+// Enhanced cache helper with memory management
 const withCache = (key, fetchFn) => {
-  const cached = cache.get(key);
-  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
-    return cached.data;
+  try {
+    const cached = cache.get(key);
+    if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+      return cached.data;
+    }
+
+    // Clear old cache entries if we hit the size limit
+    if (cache.size >= MAX_CACHE_SIZE) {
+      const oldestKey = Array.from(cache.entries())
+        .sort(([, a], [, b]) => a.timestamp - b.timestamp)[0][0];
+      cache.delete(oldestKey);
+    }
+
+    const data = fetchFn();
+    if (data !== undefined && data !== null) {
+      cache.set(key, {
+        timestamp: Date.now(),
+        data
+      });
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Cache error for key ${key}:`, error);
+    // Attempt to return stale cache data if available
+    const staleData = cache.get(key);
+    if (staleData) {
+      console.warn(`Returning stale data for key ${key}`);
+      return staleData.data;
+    }
+    throw error;
   }
+};
 
-  const data = fetchFn();
-  cache.set(key, {
-    timestamp: Date.now(),
-    data
-  });
-
-  return data;
+// Filter metrics data by type
+const filterMetricsByType = (data, metricType) => {
+  return data.filter(record => 
+    record.type !== 'metadata' && 
+    record.metric === metricType
+  );
 };
 
 // Fetch catch data for landing sites
@@ -28,11 +60,21 @@ export const getCatchData = async (selectedLandingSite) => {
     const data = withCache(
       `catch-${selectedLandingSite}`,
       () => {
-        // Filter and process data based on selected landing site
-        if (selectedLandingSite === 'all') {
-          return processAllSitesData(cpueData);
-        }
-        return processSingleSiteData(cpueData, selectedLandingSite);
+        // Get data for all individual sites
+        const allSitesData = LANDING_SITES.map(site => ({
+          site,
+          data: processSingleSiteData(monthlyMetrics, site, 'median_cpue')
+        }));
+
+        // Get aggregated data if 'all' is selected
+        const selectedData = selectedLandingSite === 'all' 
+          ? processAllSitesData(monthlyMetrics, 'median_cpue')
+          : allSitesData.find(d => d.site === selectedLandingSite)?.data || [];
+
+        return {
+          selectedData,
+          allSitesData
+        };
       }
     );
 
@@ -43,61 +85,124 @@ export const getCatchData = async (selectedLandingSite) => {
   }
 };
 
-// Helper function to process data for all sites
-const processAllSitesData = (data) => {
-  const combinedData = new Map();
-  
-  data.forEach(record => {
-    if (!record.month_date) return;
-    
-    if (!combinedData.has(record.month_date)) {
-      combinedData.set(record.month_date, {
-        date: record.month_date,
-        cpue: 0,
-        catch: 0,
-        count: 0,
-        validCpueCount: 0
-      });
-    }
-    
-    const combined = combinedData.get(record.month_date);
-    if (record.cpue !== null) {
-      combined.cpue += record.cpue;
-      combined.validCpueCount++;
-    }
-    if (record.catch !== null) {
-      combined.catch += record.catch;
-    }
-    combined.count++;
-  });
+// Fetch revenue data for landing sites
+export const getRevenueData = async (selectedLandingSite) => {
+  try {
+    const data = withCache(
+      `revenue-${selectedLandingSite}`,
+      () => {
+        // Get data for all individual sites
+        const allSitesData = LANDING_SITES.map(site => ({
+          site,
+          data: processSingleSiteData(monthlyMetrics, site, 'median_rpue')
+        }));
 
-  return Array.from(combinedData.values())
-    .map(record => ({
-      date: record.date,
-      cpue: record.validCpueCount > 0 ? record.cpue / record.validCpueCount : null,
-      catch: record.count > 0 ? record.catch / record.count : null
-    }))
-    .sort((a, b) => new Date(a.date) - new Date(b.date));
+        // Get aggregated data if 'all' is selected
+        const selectedData = selectedLandingSite === 'all' 
+          ? processAllSitesData(monthlyMetrics, 'median_rpue')
+          : allSitesData.find(d => d.site === selectedLandingSite)?.data || [];
+
+        return {
+          selectedData,
+          allSitesData
+        };
+      }
+    );
+
+    return data;
+  } catch (error) {
+    console.error('Error processing revenue data:', error);
+    throw new Error(`Failed to process revenue data: ${error.message}`);
+  }
 };
 
-// Helper function to process data for a single site
-const processSingleSiteData = (data, landingSite) => {
-  return data
-    .filter(record => record.landing_site === landingSite)
-    .map(record => ({
-      date: record.month_date,
-      cpue: record.cpue,
-      catch: record.catch
-    }))
-    .sort((a, b) => new Date(a.date) - new Date(b.date));
+// Enhanced error handling for all sites data processing
+const processAllSitesData = (data, metricType) => {
+  if (!data || !Array.isArray(data)) {
+    console.error('Invalid data provided to processAllSitesData');
+    return [];
+  }
+
+  try {
+    const filteredData = filterMetricsByType(data, metricType);
+    const combinedData = new Map();
+    
+    filteredData.forEach(record => {
+      if (!record.date) return;
+      
+      const timestamp = new Date(record.date).getTime();
+      if (isNaN(timestamp)) {
+        console.warn('Invalid date found:', record.date);
+        return;
+      }
+
+      if (!combinedData.has(timestamp)) {
+        combinedData.set(timestamp, {
+          x: timestamp,
+          total: 0,
+          count: 0
+        });
+      }
+      
+      const combined = combinedData.get(timestamp);
+      if (record.hasOwnProperty('value') && record.value !== null && 
+          record.value !== undefined && !isNaN(record.value) && record.n > 0) {
+        combined.total += Number(record.value);
+        combined.count++;
+      }
+    });
+
+    return Array.from(combinedData.values())
+      .map(record => ({
+        x: record.x,
+        y: record.count > 0 ? Number((record.total / record.count).toFixed(2)) : null
+      }))
+      .sort((a, b) => a.x - b.x);
+  } catch (error) {
+    console.error('Error processing all sites data:', error);
+    return [];
+  }
+};
+
+// Enhanced error handling for data processing
+const processSingleSiteData = (data, landingSite, metricType) => {
+  if (!data || !Array.isArray(data)) {
+    console.error('Invalid data provided to processSingleSiteData');
+    return [];
+  }
+
+  try {
+    return filterMetricsByType(data, metricType)
+      .filter(record => record.landing_site === landingSite)
+      .map(record => {
+        const timestamp = new Date(record.date).getTime();
+        if (isNaN(timestamp)) {
+          console.warn(`Invalid date found for landing site ${landingSite}:`, record.date);
+          return null;
+        }
+        return {
+          x: timestamp,
+          y: (!record.hasOwnProperty('value') || record.value === null || record.value === undefined || record.n === 0) 
+            ? null 
+            : Number(record.value)
+        };
+      })
+      .filter(record => record !== null)
+      .sort((a, b) => a.x - b.x);
+  } catch (error) {
+    console.error(`Error processing data for landing site ${landingSite}:`, error);
+    return [];
+  }
 };
 
 // Get district data
 export const getDistrictData = (landingSite) => {
-  const stats = summaryStats.find(stat => stat._id === landingSite) || {
-    avgCpue: 0,
-    avgCatch: 0,
-    count: 0
+  const metrics = filterMetricsByType(monthlyMetrics, 'median_cpue')
+    .filter(record => record.landing_site === landingSite);
+  
+  const stats = {
+    avgValue: metrics.reduce((sum, record) => sum + (record.value || 0), 0) / (metrics.length || 1),
+    count: metrics.length
   };
 
   return {
@@ -108,21 +213,17 @@ export const getDistrictData = (landingSite) => {
   };
 };
 
-// Revenue data (placeholder)
-export const getRevenueData = async () => {
-  throw new Error('Revenue data not yet implemented');
+// Get gear metrics data
+export const getGearMetrics = () => {
+  return gearMetrics;
+};
+
+// Get taxa proportions data
+export const getTaxaProportions = () => {
+  return taxaProportions;
 };
 
 // Get effort map data
-export const getEffortMapData = async () => {
-  try {
-    const response = await fetch('/api/effort-map');
-    if (!response.ok) {
-      throw new Error('Failed to fetch effort map data');
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching effort map data:', error);
-    throw error;
-  }
+export const getEffortMapData = () => {
+  return effortMapData;
 }; 

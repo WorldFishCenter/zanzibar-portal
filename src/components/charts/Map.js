@@ -270,7 +270,7 @@ const InfoPanel = memo(({ theme, data, colorRange, selectedRanges, onRangeToggle
 const Map = memo(({ theme }) => {
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
   const [selectedRanges, setSelectedRanges] = useState(TIME_BREAKS);
-  const [isSatellite, setIsSatellite] = useState(false);
+  const [isSatellite, setIsSatellite] = useState(true);
 
   // Memoize filtered data based on selected ranges
   const transformedData = useMemo(() => 

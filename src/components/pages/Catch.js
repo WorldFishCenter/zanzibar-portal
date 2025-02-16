@@ -1,39 +1,350 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import Chart from 'react-apexcharts';
 import { getChartConfig } from '../../utils/chartConfigs';
 import { getCatchData } from '../../services/dataService';
+
+// Memoized helper functions
+const calculateMedian = (values) => {
+  if (values.length === 0) return 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const middle = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) {
+    return Number(((sorted[middle - 1] + sorted[middle]) / 2).toFixed(2));
+  }
+  return Number(sorted[middle].toFixed(2));
+};
 
 const Catch = ({ theme, landingSite }) => {
   const [loading, setLoading] = useState(true);
   const [catchData, setCatchData] = useState(null);
   const [error, setError] = useState(null);
+  const [viewMode, setViewMode] = useState('monthly');
 
-  // Fetch data when landing site changes
+  // Memoize chart config to prevent unnecessary recalculations
+  const chartConfig = useMemo(() => getChartConfig(theme), [theme]);
+
+  // Memoized data fetching function
+  const fetchData = useCallback(async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      const data = await getCatchData(landingSite);
+      setCatchData(data);
+    } catch (err) {
+      setError(err.message);
+      console.error('Error fetching catch data:', err);
+    } finally {
+      setLoading(false);
+    }
+  }, [landingSite]);
+
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        const data = await getCatchData(landingSite);
-        setCatchData(data);
-      } catch (err) {
-        setError(err.message);
-        console.error('Error fetching catch data:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchData();
-  }, [landingSite]); // Re-fetch when landing site changes
+  }, [fetchData]);
 
-  const chartConfig = getChartConfig(theme);
+  // Memoized monthly medians calculation
+  const getMonthlyMedians = useCallback((data) => {
+    const monthlyData = new Array(12).fill().map(() => []);
+    
+    data.forEach(item => {
+      if (item.y !== null) {
+        const month = new Date(item.x).getMonth();
+        monthlyData[month].push(item.y);
+      }
+    });
+    
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+    return monthlyData.map((values, index) => ({
+      x: monthNames[index],
+      y: calculateMedian(values)
+    }));
+  }, []);
+
+  // Memoized yearly aggregation
+  const aggregateToYearly = useCallback((monthlyData) => {
+    const yearlyMap = new Map();
+    
+    monthlyData.forEach(item => {
+      const date = new Date(item.x);
+      const year = date.getFullYear();
+      
+      if (!yearlyMap.has(year)) {
+        yearlyMap.set(year, {
+          sum: 0,
+          count: 0
+        });
+      }
+      
+      if (item.y !== null) {
+        yearlyMap.get(year).sum += item.y;
+        yearlyMap.get(year).count += 1;
+      }
+    });
+
+    return Array.from(yearlyMap.entries())
+      .map(([year, data]) => ({
+        x: new Date(year, 0, 1).getTime(),
+        y: data.count > 0 ? Number((data.sum / data.count).toFixed(2)) : null
+      }))
+      .sort((a, b) => a.x - b.x);
+  }, []);
+
+  // Memoized seasonal data calculation
+  const seasonalData = useMemo(() => {
+    if (!catchData?.selectedData) return [];
+    return getMonthlyMedians(catchData.selectedData);
+  }, [catchData, getMonthlyMedians]);
+
+  // Memoized display data calculation
+  const displayData = useMemo(() => {
+    if (!catchData?.selectedData) return [];
+    return viewMode === 'yearly' 
+      ? aggregateToYearly(catchData.selectedData) 
+      : catchData.selectedData;
+  }, [catchData, viewMode, aggregateToYearly]);
+
+  // Memoized valid data filtering
+  const validData = useMemo(() => {
+    if (!catchData?.selectedData) return [];
+    return catchData.selectedData.filter(item => item.y !== null && typeof item.y === 'number');
+  }, [catchData]);
+
+  // Memoized latest value calculation
+  const latestValue = useMemo(() => {
+    if (viewMode === 'yearly') {
+      const yearlyData = aggregateToYearly(catchData?.selectedData || []);
+      return yearlyData.length > 0 ? yearlyData[yearlyData.length - 1].y : 0;
+    }
+    return validData.length > 0 ? validData[validData.length - 1].y : 0;
+  }, [viewMode, catchData, validData, aggregateToYearly]);
+
+  // Memoized percentage change calculation
+  const percentChange = useMemo(() => {
+    if (viewMode === 'yearly') {
+      const yearlyData = aggregateToYearly(catchData?.selectedData || []);
+      if (yearlyData.length < 2) return null;
+      
+      const latest = yearlyData[yearlyData.length - 1];
+      const previous = yearlyData[yearlyData.length - 2];
+      
+      return {
+        change: ((latest.y - previous.y) / previous.y * 100).toFixed(1),
+        currentPeriod: new Date(latest.x).getFullYear().toString(),
+        previousPeriod: new Date(previous.x).getFullYear().toString()
+      };
+    } else {
+      if (validData.length < 2) return null;
+      
+      const latest = validData[validData.length - 1];
+      const previous = validData[validData.length - 2];
+      
+      return {
+        change: ((latest.y - previous.y) / previous.y * 100).toFixed(1),
+        currentPeriod: new Date(latest.x).toLocaleString('default', { month: 'short', year: 'numeric' }),
+        previousPeriod: new Date(previous.x).toLocaleString('default', { month: 'short', year: 'numeric' })
+      };
+    }
+  }, [viewMode, catchData, validData, aggregateToYearly]);
+
+  // Memoized chart options
+  const mainChartOptions = useMemo(() => ({
+    ...chartConfig,
+    chart: {
+      ...chartConfig.chart,
+      height: 350,
+      sparkline: {
+        enabled: false
+      },
+      toolbar: {
+        show: false
+      },
+      animations: {
+        enabled: true,
+        easing: 'easeinout',
+        speed: 800,
+        dynamicAnimation: {
+          enabled: true,
+          speed: 350
+        }
+      }
+    },
+    dataLabels: {
+      enabled: viewMode === 'yearly',
+      style: {
+        fontSize: '12px',
+        fontWeight: 500
+      },
+      formatter: function(val) {
+        return val == null ? '' : val.toFixed(2);
+      }
+    },
+    stroke: {
+      curve: 'smooth',
+      width: viewMode === 'yearly' ? 0 : 2,
+      lineCap: 'round'
+    },
+    fill: {
+      opacity: viewMode === 'yearly' ? 1 : 0.2,
+      type: viewMode === 'yearly' ? 'solid' : 'gradient',
+      gradient: viewMode === 'yearly' ? undefined : {
+        shadeIntensity: 1,
+        opacityFrom: 0.7,
+        opacityTo: 0.3,
+        stops: [0, 90, 100]
+      }
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 8,
+        columnWidth: '60%',
+        colors: {
+          ranges: [{
+            from: 0,
+            to: Infinity,
+            color: '#2196f3'
+          }]
+        }
+      }
+    },
+    xaxis: {
+      type: 'datetime',
+      labels: {
+        style: {
+          fontSize: '12px'
+        },
+        format: viewMode === 'yearly' ? 'yyyy' : 'MMM yyyy'
+      },
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          fontSize: '12px'
+        },
+        formatter: function(val) {
+          if (val === null || val === undefined) return '';
+          return val.toFixed(2);
+        }
+      }
+    },
+    tooltip: {
+      theme: theme === 'dark' ? 'dark' : 'light',
+      x: {
+        format: viewMode === 'yearly' ? 'yyyy' : 'dd MMM yyyy'
+      },
+      y: {
+        formatter: function(val) {
+          return val == null ? 'No data' : `${val.toFixed(2)} kg/fisher/hour`;
+        }
+      }
+    },
+    grid: {
+      show: true,
+      borderColor: theme === 'dark' ? '#1e293b' : '#e2e8f0',
+      strokeDashArray: 4,
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 10
+      }
+    },
+    markers: {
+      size: viewMode === 'yearly' ? 0 : 4,
+      strokeWidth: 2,
+      strokeColors: theme === 'dark' ? '#3b82f6' : '#60a5fa',
+      hover: {
+        size: 6
+      }
+    }
+  }), [chartConfig, theme, viewMode]);
+
+  // Memoized radar chart options
+  const radarChartOptions = useMemo(() => ({
+    chart: {
+      type: 'radar',
+      height: 350,
+      toolbar: {
+        show: false
+      },
+      background: 'transparent'
+    },
+    xaxis: {
+      categories: seasonalData.map(d => d.x),
+      labels: {
+        style: {
+          colors: Array(12).fill(theme === 'dark' ? '#94a3b8' : '#475569'),
+          fontSize: '12px'
+        }
+      }
+    },
+    yaxis: {
+      min: 0,
+      max: Math.ceil(Math.max(...seasonalData.map(d => d.y || 0))),
+      tickAmount: 5,
+      labels: {
+        formatter: function(val) {
+          return val.toFixed(2);
+        },
+        style: {
+          colors: [theme === 'dark' ? '#94a3b8' : '#475569']
+        }
+      }
+    },
+    grid: {
+      show: false
+    },
+    plotOptions: {
+      radar: {
+        size: undefined,
+        polygons: {
+          strokeColors: theme === 'dark' ? '#334155' : '#cbd5e1',
+          strokeWidth: 1,
+          connectorColors: theme === 'dark' ? '#334155' : '#cbd5e1'
+        }
+      }
+    },
+    markers: {
+      size: 4,
+      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
+      strokeColors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
+      strokeWidth: 2
+    },
+    fill: {
+      opacity: 0.2,
+      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa']
+    },
+    stroke: {
+      width: 2,
+      colors: [theme === 'dark' ? '#3b82f6' : '#60a5fa'],
+      dashArray: 0
+    },
+    tooltip: {
+      y: {
+        formatter: function(val) {
+          return `${val.toFixed(2)} kg/fisher/hour`;
+        }
+      },
+      theme: theme === 'dark' ? 'dark' : 'light'
+    }
+  }), [theme, seasonalData]);
 
   if (loading) {
     return (
       <div className="card">
         <div className="card-body">
-          <div className="text-center">Loading data...</div>
+          <div className="d-flex align-items-center justify-content-center">
+            <div className="spinner-border text-primary me-2" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <span>Loading data...</span>
+          </div>
         </div>
       </div>
     );
@@ -41,285 +352,106 @@ const Catch = ({ theme, landingSite }) => {
 
   if (error) {
     return (
-      <div className="card">
+      <div className="card border-danger">
         <div className="card-body">
-          <div className="text-center text-danger">Error loading data: {error}</div>
+          <div className="d-flex align-items-center justify-content-center text-danger">
+            <i className="ti ti-alert-circle me-2"></i>
+            <span>Error loading data: {error}</span>
+          </div>
         </div>
       </div>
     );
   }
 
-  if (!catchData || catchData.length === 0) {
+  if (!catchData?.selectedData?.length) {
     return (
       <div className="card">
         <div className="card-body">
-          <div className="text-center">No data available for {landingSite === 'all' ? 'all landing sites' : landingSite}</div>
+          <div className="text-center text-muted">
+            No data available for {landingSite === 'all' ? 'all landing sites' : landingSite}
+          </div>
         </div>
       </div>
     );
   }
 
-  // Filter out null CPUE values and get the latest valid CPUE
-  const validCPUEData = catchData.filter(item => item.cpue !== null && typeof item.cpue === 'number');
-  const latestCPUE = validCPUEData.length > 0 ? validCPUEData[validCPUEData.length - 1].cpue : 0;
-
   return (
     <div className="row row-deck row-cards">
-      {/* CPUE Trend */}
       <div className="col-12">
         <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">CPUE Trend</h3>
-            <div className="card-subtitle">Catch Per Unit Effort (kg/fisher/hour)</div>
-          </div>
-          <div className="card-body">
-            <div className="row g-3 align-items-center mb-3">
-              <div className="col">
-                <div className="font-weight-medium">Latest CPUE</div>
-                <div className="text-muted">
-                  {typeof latestCPUE === 'number' ? `${latestCPUE.toFixed(2)} kg/fisher/hour` : 'No data'}
-                </div>
-              </div>
-              <div className="col-auto">
-                <div className="text-muted">
-                  Valid records: {validCPUEData.length} of {catchData.length}
-                </div>
-              </div>
-            </div>
-            <Chart 
-              options={{
-                ...chartConfig,
-                chart: {
-                  ...chartConfig.chart,
-                  height: 280,
-                  sparkline: {
-                    enabled: false
-                  },
-                  background: 'transparent',
-                  foreColor: theme === 'dark' ? '#ffffff' : '#000000'
-                },
-                grid: {
-                  show: true,
-                  borderColor: theme === 'dark' ? '#2c3e50' : '#e9ecef',
-                  strokeDashArray: 4,
-                  padding: {
-                    left: 10,
-                    right: 10,
-                    top: 10,
-                    bottom: 10
-                  }
-                },
-                stroke: {
-                  curve: 'smooth',
-                  width: 2,
-                  lineCap: 'round'
-                },
-                fill: {
-                  opacity: 0.1,
-                  type: 'solid'
-                },
-                xaxis: {
-                  ...chartConfig.xaxis,
-                  type: 'datetime',
-                  labels: {
-                    show: true,
-                    format: 'MMM yyyy',
-                    style: {
-                      colors: theme === 'dark' ? '#95a5a6' : '#64748b'
-                    }
-                  },
-                  axisBorder: {
-                    show: false
-                  },
-                  axisTicks: {
-                    show: true,
-                    color: theme === 'dark' ? '#2c3e50' : '#e9ecef'
-                  }
-                },
-                yaxis: {
-                  ...chartConfig.yaxis,
-                  labels: {
-                    show: true,
-                    formatter: (value) => typeof value === 'number' ? value.toFixed(2) : '0.00',
-                    style: {
-                      colors: theme === 'dark' ? '#95a5a6' : '#64748b'
-                    }
-                  },
-                  axisBorder: {
-                    show: false
-                  },
-                  axisTicks: {
-                    show: true,
-                    color: theme === 'dark' ? '#2c3e50' : '#e9ecef'
-                  }
-                },
-                tooltip: {
-                  theme: theme,
-                  x: {
-                    format: 'MMM yyyy'
-                  },
-                  y: {
-                    formatter: (value) => typeof value === 'number' ? `${value.toFixed(2)} kg/fisher/hour` : 'No data'
-                  },
-                  marker: {
-                    show: true
-                  }
-                },
-                markers: {
-                  size: 3,
-                  strokeWidth: 1.5,
-                  strokeColors: theme === 'dark' ? '#206bc4' : '#206bc4',
-                  fillColors: theme === 'dark' ? '#1a2234' : '#ffffff',
-                  hover: {
-                    size: 5
-                  }
-                }
-              }}
-              series={[{
-                name: 'CPUE',
-                data: validCPUEData.map(item => ({
-                  x: new Date(item.date).getTime(),
-                  y: typeof item.cpue === 'number' ? item.cpue : null
-                }))
-              }]}
-              type="line"
-              height={280}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Data Quality Card */}
-      <div className="col-12">
-        <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">Data Quality</h3>
-          </div>
-          <div className="card-body">
-            <div className="row align-items-center">
-              <div className="col-auto">
-                <span className={`badge bg-${validCPUEData.length / catchData.length > 0.8 ? 'success' : 'warning'}`}>
-                  {Math.round(validCPUEData.length / catchData.length * 100)}% Complete
-                </span>
-              </div>
-              <div className="col">
-                <div className="text-muted">
-                  {validCPUEData.length} valid CPUE records out of {catchData.length} total records
-                </div>
-              </div>
+          <div className="card-header d-flex align-items-center justify-content-between">
+            <h3 className="card-title">Catch per unit effort (median)</h3>
+            <div className="btn-group" role="group">
+              <button 
+                type="button" 
+                className={`btn ${viewMode === 'monthly' ? 'btn-primary' : 'btn-outline-primary'}`}
+                onClick={() => setViewMode('monthly')}
+              >
+                Monthly
+              </button>
+              <button 
+                type="button" 
+                className={`btn ${viewMode === 'yearly' ? 'btn-primary' : 'btn-outline-primary'}`}
+                onClick={() => setViewMode('yearly')}
+              >
+                Yearly
+              </button>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Species Distribution */}
-      <div className="col-md-6">
-        <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">Species Distribution</h3>
-          </div>
           <div className="card-body">
-            <Chart 
-              options={{
-                chart: {
-                  type: 'pie',
-                  height: 300,
-                  background: 'transparent',
-                  foreColor: theme === 'dark' ? '#ffffff' : '#000000'
-                },
-                labels: ['Tuna', 'Mackerel', 'Sardines', 'Octopus', 'Others'],
-                theme: {
-                  mode: theme,
-                  palette: 'palette1'
-                },
-                plotOptions: {
-                  pie: {
-                    donut: {
-                      size: '70%'
-                    }
-                  }
-                },
-                legend: {
-                  position: 'bottom',
-                  labels: {
-                    colors: theme === 'dark' ? '#95a5a6' : '#64748b'
-                  }
-                },
-                stroke: {
-                  colors: theme === 'dark' ? '#1a2234' : '#ffffff'
-                }
-              }}
-              series={[35, 25, 20, 15, 5]}
-              type="pie"
-              height={300}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Gear Types */}
-      <div className="col-md-6">
-        <div className="card">
-          <div className="card-header">
-            <h3 className="card-title">Gear Types</h3>
-          </div>
-          <div className="card-body">
-            <Chart 
-              options={{
-                chart: {
-                  type: 'bar',
-                  height: 300,
-                  toolbar: {
-                    show: false
-                  },
-                  background: 'transparent',
-                  foreColor: theme === 'dark' ? '#ffffff' : '#000000'
-                },
-                plotOptions: {
-                  bar: {
-                    horizontal: true,
-                    borderRadius: 2,
-                    barHeight: '60%'
-                  }
-                },
-                xaxis: {
-                  categories: ['Gillnet', 'Seine net', 'Fish trap', 'Hook & line', 'Other'],
-                  labels: {
-                    style: {
-                      colors: theme === 'dark' ? '#95a5a6' : '#64748b'
-                    }
-                  },
-                  axisBorder: {
-                    show: false
-                  },
-                  axisTicks: {
-                    show: true,
-                    color: theme === 'dark' ? '#2c3e50' : '#e9ecef'
-                  }
-                },
-                yaxis: {
-                  labels: {
-                    style: {
-                      colors: theme === 'dark' ? '#95a5a6' : '#64748b'
-                    }
-                  }
-                },
-                grid: {
-                  borderColor: theme === 'dark' ? '#2c3e50' : '#e9ecef',
-                  strokeDashArray: 4
-                },
-                theme: {
-                  mode: theme
-                },
-                colors: ['#206bc4']
-              }}
-              series={[{
-                name: 'Usage',
-                data: [65, 45, 35, 20, 10]
-              }]}
-              type="bar"
-              height={300}
-            />
+            <div className="d-flex align-items-center mb-4">
+              <div className="me-4">
+                <div className="text-muted mb-1">Latest CPUE</div>
+                <div className="d-flex align-items-baseline">
+                  <h1 className="h1 mb-0 me-2">
+                    {typeof latestValue === 'number' ? latestValue.toFixed(2) : 'No data'}
+                  </h1>
+                  <span className="text-muted fs-4">kg/fisher/hour</span>
+                </div>
+              </div>
+              {percentChange && (
+                <div>
+                  <div className="text-muted mb-1">
+                    Change from {percentChange.previousPeriod} to {percentChange.currentPeriod}
+                  </div>
+                  <div className={`d-inline-flex align-items-center px-2 py-1 rounded-2 ${
+                    parseFloat(percentChange.change) >= 0 
+                      ? 'bg-success-lt text-success' 
+                      : 'bg-danger-lt text-danger'
+                  }`}>
+                    <i className={`ti ti-trend-${parseFloat(percentChange.change) >= 0 ? 'up' : 'down'} me-1`}></i>
+                    <span className="fw-medium">
+                      {Math.abs(percentChange.change)}%
+                    </span>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="row">
+              <div className="col-8">
+                <Chart 
+                  key={`${viewMode}`}
+                  options={mainChartOptions}
+                  series={[{
+                    name: landingSite === 'all' ? 'All Landing Sites' : landingSite,
+                    data: displayData
+                  }]}
+                  type={viewMode === 'yearly' ? 'bar' : 'area'}
+                  height={350}
+                />
+              </div>
+              <div className="col-4">
+                <Chart 
+                  options={radarChartOptions}
+                  series={[{
+                    name: 'Monthly Pattern',
+                    data: seasonalData.map(d => d.y)
+                  }]}
+                  type="radar"
+                  height={350}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -327,4 +459,4 @@ const Catch = ({ theme, landingSite }) => {
   );
 };
 
-export default Catch; 
+export default React.memo(Catch);

@@ -1,16 +1,11 @@
 import React from 'react';
-import { IconInfoCircle } from '@tabler/icons-react';
-import { useTooltip } from '../../hooks/useTooltip';
 import Map from '../charts/Map';
-import { SAMPLE_DISTRICT_DATA } from '../../constants/districts';
 
 const Home = ({ theme, district }) => {
-  useTooltip();
-
   return (
     <div className="row row-deck row-cards">
       {/* District summary table */}
-      <div className="col-12">
+      {/* <div className="col-12">
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">Districts summary</h3>
@@ -63,7 +58,7 @@ const Home = ({ theme, district }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Map row */}
       <div className="col-12">

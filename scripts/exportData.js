@@ -39,43 +39,38 @@ async function exportData() {
     await client.connect();
     const db = client.db(DB_NAME);
 
-    // Export CPUE data
-    console.log('Exporting CPUE data...');
-    const cpueCollection = db.collection('monthly-cpue');
-    const cpueData = await cpueCollection.find({}).toArray();
+    // Export gear metrics data
+    console.log('Exporting gear metrics data...');
+    const gearMetricsCollection = db.collection('gear_metrics');
+    const gearMetricsData = await gearMetricsCollection.find({}).toArray();
     
     fs.writeFileSync(
-      path.join(DATA_DIR, 'cpue.json'),
-      JSON.stringify(cpueData, null, 2)
+      path.join(DATA_DIR, 'gear-metrics.json'),
+      JSON.stringify(gearMetricsData, null, 2)
     );
-    console.log(`Exported ${cpueData.length} CPUE records`);
+    console.log(`Exported ${gearMetricsData.length} gear metrics records`);
 
-    // Export landing sites data
-    const landingSites = [...new Set(cpueData.map(record => record.landing_site))].sort();
+    // Export monthly metrics data
+    console.log('Exporting monthly metrics data...');
+    const monthlyMetricsCollection = db.collection('monthly_metrics');
+    const monthlyMetricsData = await monthlyMetricsCollection.find({}).toArray();
+    
     fs.writeFileSync(
-      path.join(DATA_DIR, 'landing-sites.json'),
-      JSON.stringify(landingSites, null, 2)
+      path.join(DATA_DIR, 'monthly-metrics.json'),
+      JSON.stringify(monthlyMetricsData, null, 2)
     );
-    console.log(`Exported ${landingSites.length} landing sites`);
+    console.log(`Exported ${monthlyMetricsData.length} monthly metrics records`);
 
-    // Export summary statistics
-    console.log('Calculating summary statistics...');
-    const stats = await cpueCollection.aggregate([
-      {
-        $group: {
-          _id: '$landing_site',
-          avgCpue: { $avg: '$cpue' },
-          avgCatch: { $avg: '$catch' },
-          count: { $sum: 1 }
-        }
-      }
-    ]).toArray();
-
+    // Export taxa proportions data
+    console.log('Exporting taxa proportions data...');
+    const taxaProportionsCollection = db.collection('taxa_proportions');
+    const taxaProportionsData = await taxaProportionsCollection.find({}).toArray();
+    
     fs.writeFileSync(
-      path.join(DATA_DIR, 'summary-stats.json'),
-      JSON.stringify(stats, null, 2)
+      path.join(DATA_DIR, 'taxa-proportions.json'),
+      JSON.stringify(taxaProportionsData, null, 2)
     );
-    console.log('Exported summary statistics');
+    console.log(`Exported ${taxaProportionsData.length} taxa proportions records`);
 
     // Export effort map data
     console.log('Exporting effort map data...');

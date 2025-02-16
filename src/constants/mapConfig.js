@@ -22,7 +22,7 @@ export const COLOR_RANGE = [
 export const INITIAL_VIEW_STATE = {
   longitude: 39.19,  // Zanzibar City longitude
   latitude: -6.16,   // Zanzibar City latitude
-  zoom: 9,          // Reduced zoom level for better overview
+  zoom: 8,          // Reduced zoom level for better overview
   pitch: 45,        // Add tilt to see 3D
   bearing: 10       // Slight rotation for better perspective
 };
