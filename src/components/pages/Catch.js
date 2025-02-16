@@ -84,10 +84,10 @@ const Catch = ({ theme, landingSite }) => {
 
     return Array.from(yearlyMap.entries())
       .map(([year, data]) => ({
-        x: new Date(year, 0, 1).getTime(),
+        x: year.toString(),
         y: data.count > 0 ? Number((data.sum / data.count).toFixed(2)) : null
       }))
-      .sort((a, b) => a.x - b.x);
+      .sort((a, b) => parseInt(a.x) - parseInt(b.x));
   }, []);
 
   // Memoized seasonal data calculation
@@ -208,12 +208,12 @@ const Catch = ({ theme, landingSite }) => {
       }
     },
     xaxis: {
-      type: 'datetime',
+      type: viewMode === 'yearly' ? 'category' : 'datetime',
       labels: {
         style: {
           fontSize: '12px'
         },
-        format: viewMode === 'yearly' ? 'yyyy' : 'MMM yyyy'
+        format: viewMode === 'yearly' ? undefined : 'MMM yyyy'
       },
       axisBorder: {
         show: false
