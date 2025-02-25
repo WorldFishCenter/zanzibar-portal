@@ -1,6 +1,6 @@
 [
   {
-    "_id": "67b7d4a811e8b6924900ec11",
+    "_id": "67bc335b8b9b21481c003ca1",
     "type": [
       "metadata"
     ],
@@ -10,425 +10,425 @@
       "catch_prop"
     ],
     "timestamp": [
-      "2025-02-21T01:19:36.582Z"
+      "2025-02-24T08:52:43.329Z"
     ]
   },
   {
-    "_id": "67b7d4a811e8b6924900ec12",
+    "_id": "67bc335b8b9b21481c003ca2",
     "landing_site": "fumba",
     "family": "Acanthuridae",
     "catch_prop": 6.990863158
   },
   {
-    "_id": "67b7d4a811e8b6924900ec13",
+    "_id": "67bc335b8b9b21481c003ca3",
     "landing_site": "fumba",
     "family": "Gerreidae",
     "catch_prop": 5.069121155
   },
   {
-    "_id": "67b7d4a811e8b6924900ec14",
+    "_id": "67bc335b8b9b21481c003ca4",
     "landing_site": "fumba",
     "family": "Haemulidae",
     "catch_prop": 6.029610151
   },
   {
-    "_id": "67b7d4a811e8b6924900ec15",
+    "_id": "67bc335b8b9b21481c003ca5",
     "landing_site": "fumba",
     "family": "Mullidae",
     "catch_prop": 7.715909471
   },
   {
-    "_id": "67b7d4a811e8b6924900ec16",
+    "_id": "67bc335b8b9b21481c003ca6",
     "landing_site": "fumba",
     "family": "Others",
     "catch_prop": 19.349794008
   },
   {
-    "_id": "67b7d4a811e8b6924900ec17",
+    "_id": "67bc335b8b9b21481c003ca7",
     "landing_site": "fumba",
     "family": "Scaridae",
     "catch_prop": 16.134290554
   },
   {
-    "_id": "67b7d4a811e8b6924900ec18",
+    "_id": "67bc335b8b9b21481c003ca8",
     "landing_site": "fumba",
     "family": "Siganidae",
     "catch_prop": 38.710411504
   },
   {
-    "_id": "67b7d4a811e8b6924900ec19",
+    "_id": "67bc335b8b9b21481c003ca9",
     "landing_site": "jasini",
     "family": "Clupeidae",
     "catch_prop": 83.649538803
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1a",
+    "_id": "67bc335b8b9b21481c003caa",
     "landing_site": "jasini",
     "family": "Others",
     "catch_prop": 3.014357826
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1b",
+    "_id": "67bc335b8b9b21481c003cab",
     "landing_site": "jasini",
     "family": "Scombridae",
     "catch_prop": 13.336103371
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1c",
+    "_id": "67bc335b8b9b21481c003cac",
     "landing_site": "kigombe",
     "family": "Clupeidae",
-    "catch_prop": 83.120511301
+    "catch_prop": 83.136600967
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1d",
+    "_id": "67bc335b8b9b21481c003cad",
     "landing_site": "kigombe",
     "family": "Octopodidae",
-    "catch_prop": 7.688782936
+    "catch_prop": 7.669469044
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1e",
+    "_id": "67bc335b8b9b21481c003cae",
     "landing_site": "kigombe",
     "family": "Others",
-    "catch_prop": 9.190705764
+    "catch_prop": 9.193929989
   },
   {
-    "_id": "67b7d4a811e8b6924900ec1f",
+    "_id": "67bc335b8b9b21481c003caf",
     "landing_site": "kizimkazi",
     "family": "Carangidae",
     "catch_prop": 19.707177715
   },
   {
-    "_id": "67b7d4a811e8b6924900ec20",
+    "_id": "67bc335b8b9b21481c003cb0",
     "landing_site": "kizimkazi",
     "family": "Clupeidae",
     "catch_prop": 5.374492902
   },
   {
-    "_id": "67b7d4a811e8b6924900ec21",
+    "_id": "67bc335b8b9b21481c003cb1",
     "landing_site": "kizimkazi",
     "family": "Lutjanidae",
     "catch_prop": 7.304346322
   },
   {
-    "_id": "67b7d4a811e8b6924900ec22",
+    "_id": "67bc335b8b9b21481c003cb2",
     "landing_site": "kizimkazi",
     "family": "Myliobatidae",
     "catch_prop": 5.381547992
   },
   {
-    "_id": "67b7d4a811e8b6924900ec23",
+    "_id": "67bc335b8b9b21481c003cb3",
     "landing_site": "kizimkazi",
     "family": "Others",
     "catch_prop": 25.772735198
   },
   {
-    "_id": "67b7d4a811e8b6924900ec24",
+    "_id": "67bc335b8b9b21481c003cb4",
     "landing_site": "kizimkazi",
     "family": "Scombridae",
     "catch_prop": 13.124922454
   },
   {
-    "_id": "67b7d4a811e8b6924900ec25",
+    "_id": "67bc335b8b9b21481c003cb5",
     "landing_site": "kizimkazi",
     "family": "Sphyraenidae",
     "catch_prop": 23.334777416
   },
   {
-    "_id": "67b7d4a811e8b6924900ec26",
+    "_id": "67bc335b8b9b21481c003cb6",
     "landing_site": "mangapwani",
     "family": "Ariidae",
     "catch_prop": 6.938218507
   },
   {
-    "_id": "67b7d4a811e8b6924900ec27",
+    "_id": "67bc335b8b9b21481c003cb7",
     "landing_site": "mangapwani",
     "family": "Balistidae",
     "catch_prop": 10.234891348
   },
   {
-    "_id": "67b7d4a811e8b6924900ec28",
+    "_id": "67bc335b8b9b21481c003cb8",
     "landing_site": "mangapwani",
     "family": "Carangidae",
     "catch_prop": 39.065803023
   },
   {
-    "_id": "67b7d4a811e8b6924900ec29",
+    "_id": "67bc335b8b9b21481c003cb9",
     "landing_site": "mangapwani",
     "family": "Dasyatidae",
     "catch_prop": 12.813729284
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2a",
+    "_id": "67bc335b8b9b21481c003cba",
     "landing_site": "mangapwani",
     "family": "Others",
     "catch_prop": 17.721976199
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2b",
+    "_id": "67bc335b8b9b21481c003cbb",
     "landing_site": "mangapwani",
     "family": "Scombridae",
     "catch_prop": 7.788372221
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2c",
+    "_id": "67bc335b8b9b21481c003cbc",
     "landing_site": "mangapwani",
     "family": "Xiphiidae",
     "catch_prop": 5.437009419
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2d",
+    "_id": "67bc335b8b9b21481c003cbd",
     "landing_site": "mazizini",
     "family": "Lethrinidae",
     "catch_prop": 14.798296814
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2e",
+    "_id": "67bc335b8b9b21481c003cbe",
     "landing_site": "mazizini",
     "family": "Mullidae",
     "catch_prop": 5.486602757
   },
   {
-    "_id": "67b7d4a811e8b6924900ec2f",
+    "_id": "67bc335b8b9b21481c003cbf",
     "landing_site": "mazizini",
     "family": "Nemipteridae",
     "catch_prop": 7.079634298
   },
   {
-    "_id": "67b7d4a811e8b6924900ec30",
+    "_id": "67bc335b8b9b21481c003cc0",
     "landing_site": "mazizini",
     "family": "Others",
     "catch_prop": 29.003459429
   },
   {
-    "_id": "67b7d4a811e8b6924900ec31",
+    "_id": "67bc335b8b9b21481c003cc1",
     "landing_site": "mazizini",
     "family": "Scombridae",
     "catch_prop": 28.606976377
   },
   {
-    "_id": "67b7d4a811e8b6924900ec32",
+    "_id": "67bc335b8b9b21481c003cc2",
     "landing_site": "mazizini",
     "family": "Siganidae",
     "catch_prop": 15.025030324
   },
   {
-    "_id": "67b7d4a811e8b6924900ec33",
+    "_id": "67bc335b8b9b21481c003cc3",
     "landing_site": "mkoani",
     "family": "Caesionidae",
-    "catch_prop": 10.563699476
+    "catch_prop": 10.509370274
   },
   {
-    "_id": "67b7d4a811e8b6924900ec34",
+    "_id": "67bc335b8b9b21481c003cc4",
     "landing_site": "mkoani",
     "family": "Carangidae",
-    "catch_prop": 29.891005075
+    "catch_prop": 29.737275366
   },
   {
-    "_id": "67b7d4a811e8b6924900ec35",
+    "_id": "67bc335b8b9b21481c003cc5",
     "landing_site": "mkoani",
     "family": "Clupeidae",
-    "catch_prop": 6.688640392
+    "catch_prop": 6.737200037
   },
   {
-    "_id": "67b7d4a811e8b6924900ec36",
+    "_id": "67bc335b8b9b21481c003cc6",
     "landing_site": "mkoani",
     "family": "Hemiramphidae",
-    "catch_prop": 11.56293303
+    "catch_prop": 11.586424144
   },
   {
-    "_id": "67b7d4a811e8b6924900ec37",
+    "_id": "67bc335b8b9b21481c003cc7",
     "landing_site": "mkoani",
     "family": "Others",
-    "catch_prop": 20.606475238
+    "catch_prop": 20.680123104
   },
   {
-    "_id": "67b7d4a811e8b6924900ec38",
+    "_id": "67bc335b8b9b21481c003cc8",
     "landing_site": "mkoani",
     "family": "Scombridae",
-    "catch_prop": 20.687246787
+    "catch_prop": 20.749607074
   },
   {
-    "_id": "67b7d4a811e8b6924900ec39",
+    "_id": "67bc335b8b9b21481c003cc9",
     "landing_site": "mkokotoni",
     "family": "Dasyatidae",
     "catch_prop": 13.136513143
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3a",
+    "_id": "67bc335b8b9b21481c003cca",
     "landing_site": "mkokotoni",
     "family": "Hemiramphidae",
     "catch_prop": 7.276166339
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3b",
+    "_id": "67bc335b8b9b21481c003ccb",
     "landing_site": "mkokotoni",
     "family": "Lethrinidae",
     "catch_prop": 6.771614659
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3c",
+    "_id": "67bc335b8b9b21481c003ccc",
     "landing_site": "mkokotoni",
     "family": "Others",
     "catch_prop": 37.102950905
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3d",
+    "_id": "67bc335b8b9b21481c003ccd",
     "landing_site": "mkokotoni",
     "family": "Scombridae",
     "catch_prop": 35.712754955
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3e",
+    "_id": "67bc335b8b9b21481c003cce",
     "landing_site": "moa",
     "family": "Carangidae",
     "catch_prop": 16.711896735
   },
   {
-    "_id": "67b7d4a811e8b6924900ec3f",
+    "_id": "67bc335b8b9b21481c003ccf",
     "landing_site": "moa",
     "family": "Lethrinidae",
     "catch_prop": 6.786956959
   },
   {
-    "_id": "67b7d4a811e8b6924900ec40",
+    "_id": "67bc335b8b9b21481c003cd0",
     "landing_site": "moa",
     "family": "Myliobatidae",
     "catch_prop": 7.574920064
   },
   {
-    "_id": "67b7d4a811e8b6924900ec41",
+    "_id": "67bc335b8b9b21481c003cd1",
     "landing_site": "moa",
     "family": "Others",
     "catch_prop": 13.981243463
   },
   {
-    "_id": "67b7d4a811e8b6924900ec42",
+    "_id": "67bc335b8b9b21481c003cd2",
     "landing_site": "moa",
     "family": "Scombridae",
     "catch_prop": 54.94498278
   },
   {
-    "_id": "67b7d4a811e8b6924900ec43",
+    "_id": "67bc335b8b9b21481c003cd3",
     "landing_site": "msuka",
     "family": "Clupeidae",
     "catch_prop": 9.884837876
   },
   {
-    "_id": "67b7d4a811e8b6924900ec44",
+    "_id": "67bc335b8b9b21481c003cd4",
     "landing_site": "msuka",
     "family": "Hemiramphidae",
     "catch_prop": 15.406443144
   },
   {
-    "_id": "67b7d4a811e8b6924900ec45",
+    "_id": "67bc335b8b9b21481c003cd5",
     "landing_site": "msuka",
     "family": "Others",
     "catch_prop": 27.152607336
   },
   {
-    "_id": "67b7d4a811e8b6924900ec46",
+    "_id": "67bc335b8b9b21481c003cd6",
     "landing_site": "msuka",
     "family": "Scombridae",
     "catch_prop": 41.023203082
   },
   {
-    "_id": "67b7d4a811e8b6924900ec47",
+    "_id": "67bc335b8b9b21481c003cd7",
     "landing_site": "msuka",
     "family": "Siganidae",
     "catch_prop": 6.532908562
   },
   {
-    "_id": "67b7d4a811e8b6924900ec48",
+    "_id": "67bc335b8b9b21481c003cd8",
     "landing_site": "mvumoni_furaha",
     "family": "Caesionidae",
     "catch_prop": 6.909060768
   },
   {
-    "_id": "67b7d4a811e8b6924900ec49",
+    "_id": "67bc335b8b9b21481c003cd9",
     "landing_site": "mvumoni_furaha",
     "family": "Others",
     "catch_prop": 18.248063074
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4a",
+    "_id": "67bc335b8b9b21481c003cda",
     "landing_site": "mvumoni_furaha",
     "family": "Scombridae",
     "catch_prop": 41.297118868
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4b",
+    "_id": "67bc335b8b9b21481c003cdb",
     "landing_site": "mvumoni_furaha",
     "family": "Siganidae",
     "catch_prop": 8.937408883
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4c",
+    "_id": "67bc335b8b9b21481c003cdc",
     "landing_site": "mvumoni_furaha",
     "family": "Sphyraenidae",
     "catch_prop": 13.937579537
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4d",
+    "_id": "67bc335b8b9b21481c003cdd",
     "landing_site": "mvumoni_furaha",
     "family": "Xiphiidae",
     "catch_prop": 10.670768871
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4e",
+    "_id": "67bc335b8b9b21481c003cde",
     "landing_site": "ndumbani",
     "family": "Lethrinidae",
     "catch_prop": 33.509041427
   },
   {
-    "_id": "67b7d4a811e8b6924900ec4f",
+    "_id": "67bc335b8b9b21481c003cdf",
     "landing_site": "ndumbani",
     "family": "Octopodidae",
     "catch_prop": 7.628149588
   },
   {
-    "_id": "67b7d4a811e8b6924900ec50",
+    "_id": "67bc335b8b9b21481c003ce0",
     "landing_site": "ndumbani",
     "family": "Others",
     "catch_prop": 26.024920316
   },
   {
-    "_id": "67b7d4a811e8b6924900ec51",
+    "_id": "67bc335b8b9b21481c003ce1",
     "landing_site": "ndumbani",
     "family": "Scaridae",
     "catch_prop": 15.862602832
   },
   {
-    "_id": "67b7d4a811e8b6924900ec52",
+    "_id": "67bc335b8b9b21481c003ce2",
     "landing_site": "ndumbani",
     "family": "Serranidae",
     "catch_prop": 7.647810693
   },
   {
-    "_id": "67b7d4a811e8b6924900ec53",
+    "_id": "67bc335b8b9b21481c003ce3",
     "landing_site": "ndumbani",
     "family": "Siganidae",
     "catch_prop": 9.327475144
   },
   {
-    "_id": "67b7d4a811e8b6924900ec54",
+    "_id": "67bc335b8b9b21481c003ce4",
     "landing_site": "wesha",
     "family": "Clupeidae",
     "catch_prop": 15.669589055
   },
   {
-    "_id": "67b7d4a811e8b6924900ec55",
+    "_id": "67bc335b8b9b21481c003ce5",
     "landing_site": "wesha",
     "family": "Others",
     "catch_prop": 18.608061683
   },
   {
-    "_id": "67b7d4a811e8b6924900ec56",
+    "_id": "67bc335b8b9b21481c003ce6",
     "landing_site": "wesha",
     "family": "Scombridae",
     "catch_prop": 60.289429479
   },
   {
-    "_id": "67b7d4a811e8b6924900ec57",
+    "_id": "67bc335b8b9b21481c003ce7",
     "landing_site": "wesha",
     "family": "Sphyraenidae",
     "catch_prop": 5.432919784
