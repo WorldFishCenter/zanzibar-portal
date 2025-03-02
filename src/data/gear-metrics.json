@@ -1,6 +1,6 @@
 [
   {
-    "_id": "67bd1bb6ad505f7c650a6d8c",
+    "_id": "67c262fe25b499bca6009f4d",
     "type": [
       "metadata"
     ],
@@ -13,11 +13,11 @@
       "value"
     ],
     "timestamp": [
-      "2025-02-25T01:24:06.612Z"
+      "2025-03-01T01:29:34.381Z"
     ]
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d8d",
+    "_id": "67c262fe25b499bca6009f4e",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -26,7 +26,7 @@
     "value": 3.571428571
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d8e",
+    "_id": "67c262fe25b499bca6009f4f",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -35,7 +35,7 @@
     "value": 22321.428571429
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d8f",
+    "_id": "67c262fe25b499bca6009f50",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -44,7 +44,7 @@
     "value": 0.555555556
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d90",
+    "_id": "67c262fe25b499bca6009f51",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -53,7 +53,7 @@
     "value": 3518.518518519
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d91",
+    "_id": "67c262fe25b499bca6009f52",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -62,7 +62,7 @@
     "value": 4.392857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d92",
+    "_id": "67c262fe25b499bca6009f53",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -71,7 +71,7 @@
     "value": 24715.762620838
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d93",
+    "_id": "67c262fe25b499bca6009f54",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -80,7 +80,7 @@
     "value": 0.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d94",
+    "_id": "67c262fe25b499bca6009f55",
     "landing_site": "bwawani",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -89,7 +89,7 @@
     "value": 675
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d95",
+    "_id": "67c262fe25b499bca6009f56",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -98,7 +98,7 @@
     "value": 0.375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d96",
+    "_id": "67c262fe25b499bca6009f57",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -107,7 +107,7 @@
     "value": 1611.647727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d97",
+    "_id": "67c262fe25b499bca6009f58",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -116,7 +116,7 @@
     "value": 1.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d98",
+    "_id": "67c262fe25b499bca6009f59",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -125,7 +125,7 @@
     "value": 9482.323232323
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d99",
+    "_id": "67c262fe25b499bca6009f5a",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -134,7 +134,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9a",
+    "_id": "67c262fe25b499bca6009f5b",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -143,7 +143,7 @@
     "value": 17190.909090909
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9b",
+    "_id": "67c262fe25b499bca6009f5c",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -152,7 +152,7 @@
     "value": 0.857142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9c",
+    "_id": "67c262fe25b499bca6009f5d",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -161,7 +161,7 @@
     "value": 2714.285714286
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9d",
+    "_id": "67c262fe25b499bca6009f5e",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "traps",
@@ -170,7 +170,7 @@
     "value": 1.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9e",
+    "_id": "67c262fe25b499bca6009f5f",
     "landing_site": "bwawani",
     "habitat": "reef",
     "gear": "traps",
@@ -179,7 +179,7 @@
     "value": 6428.571428571
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6d9f",
+    "_id": "67c262fe25b499bca6009f60",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -188,7 +188,7 @@
     "value": 1.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da0",
+    "_id": "67c262fe25b499bca6009f61",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -197,7 +197,7 @@
     "value": 9333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da1",
+    "_id": "67c262fe25b499bca6009f62",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -206,7 +206,7 @@
     "value": 0.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da2",
+    "_id": "67c262fe25b499bca6009f63",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -215,7 +215,7 @@
     "value": 2666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da3",
+    "_id": "67c262fe25b499bca6009f64",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -224,7 +224,7 @@
     "value": 10
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da4",
+    "_id": "67c262fe25b499bca6009f65",
     "landing_site": "bwawani",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -233,7 +233,7 @@
     "value": 42857.142857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da5",
+    "_id": "67c262fe25b499bca6009f66",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -242,7 +242,7 @@
     "value": 3.125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da6",
+    "_id": "67c262fe25b499bca6009f67",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -251,7 +251,7 @@
     "value": 21875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da7",
+    "_id": "67c262fe25b499bca6009f68",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -260,7 +260,7 @@
     "value": 6.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da8",
+    "_id": "67c262fe25b499bca6009f69",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -269,7 +269,7 @@
     "value": 43750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6da9",
+    "_id": "67c262fe25b499bca6009f6a",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "traps",
@@ -278,7 +278,7 @@
     "value": 4.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6daa",
+    "_id": "67c262fe25b499bca6009f6b",
     "landing_site": "bwawani",
     "habitat": "seagrass",
     "gear": "traps",
@@ -287,7 +287,7 @@
     "value": 17893.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dab",
+    "_id": "67c262fe25b499bca6009f6c",
     "landing_site": "chole",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -296,7 +296,7 @@
     "value": 4.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dac",
+    "_id": "67c262fe25b499bca6009f6d",
     "landing_site": "chole",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -305,7 +305,7 @@
     "value": 30333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dad",
+    "_id": "67c262fe25b499bca6009f6e",
     "landing_site": "chole",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -314,7 +314,7 @@
     "value": 1.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dae",
+    "_id": "67c262fe25b499bca6009f6f",
     "landing_site": "chole",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -323,7 +323,7 @@
     "value": 4811.111111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6daf",
+    "_id": "67c262fe25b499bca6009f70",
     "landing_site": "chwaka",
     "habitat": "reef",
     "gear": "traps",
@@ -332,7 +332,7 @@
     "value": 0.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db0",
+    "_id": "67c262fe25b499bca6009f71",
     "landing_site": "chwaka",
     "habitat": "reef",
     "gear": "traps",
@@ -341,7 +341,7 @@
     "value": 3125.892857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db1",
+    "_id": "67c262fe25b499bca6009f72",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -350,7 +350,7 @@
     "value": 9.15
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db2",
+    "_id": "67c262fe25b499bca6009f73",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -359,7 +359,7 @@
     "value": 59418.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db3",
+    "_id": "67c262fe25b499bca6009f74",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -368,7 +368,7 @@
     "value": 4.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db4",
+    "_id": "67c262fe25b499bca6009f75",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -377,7 +377,7 @@
     "value": 19339.772727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db5",
+    "_id": "67c262fe25b499bca6009f76",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -386,7 +386,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db6",
+    "_id": "67c262fe25b499bca6009f77",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -395,7 +395,7 @@
     "value": 16354.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db7",
+    "_id": "67c262fe25b499bca6009f78",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -404,7 +404,7 @@
     "value": 26.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db8",
+    "_id": "67c262fe25b499bca6009f79",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -413,7 +413,7 @@
     "value": 198596.49122807
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6db9",
+    "_id": "67c262fe25b499bca6009f7a",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -422,7 +422,7 @@
     "value": 12.7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dba",
+    "_id": "67c262fe25b499bca6009f7b",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -431,7 +431,7 @@
     "value": 68886.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dbb",
+    "_id": "67c262fe25b499bca6009f7c",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -440,7 +440,7 @@
     "value": 1.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dbc",
+    "_id": "67c262fe25b499bca6009f7d",
     "landing_site": "fumba",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -449,7 +449,7 @@
     "value": 6075
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dbd",
+    "_id": "67c262fe25b499bca6009f7e",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -458,7 +458,7 @@
     "value": 7.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dbe",
+    "_id": "67c262fe25b499bca6009f7f",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -467,7 +467,7 @@
     "value": 55000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dbf",
+    "_id": "67c262fe25b499bca6009f80",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -476,7 +476,7 @@
     "value": 15.3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc0",
+    "_id": "67c262fe25b499bca6009f81",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -485,7 +485,7 @@
     "value": 78360.048701299
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc1",
+    "_id": "67c262fe25b499bca6009f82",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -494,7 +494,7 @@
     "value": 1.708333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc2",
+    "_id": "67c262fe25b499bca6009f83",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -503,7 +503,7 @@
     "value": 13666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc3",
+    "_id": "67c262fe25b499bca6009f84",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "traps",
@@ -512,7 +512,7 @@
     "value": 2.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc4",
+    "_id": "67c262fe25b499bca6009f85",
     "landing_site": "fumba",
     "habitat": "reef",
     "gear": "traps",
@@ -521,7 +521,7 @@
     "value": 9020.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc5",
+    "_id": "67c262fe25b499bca6009f86",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -530,7 +530,7 @@
     "value": 9.35
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc6",
+    "_id": "67c262fe25b499bca6009f87",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -539,7 +539,7 @@
     "value": 39787.386363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc7",
+    "_id": "67c262fe25b499bca6009f88",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -548,7 +548,7 @@
     "value": 20.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc8",
+    "_id": "67c262fe25b499bca6009f89",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -557,7 +557,7 @@
     "value": 87673.636363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dc9",
+    "_id": "67c262fe25b499bca6009f8a",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -566,7 +566,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dca",
+    "_id": "67c262fe25b499bca6009f8b",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -575,7 +575,7 @@
     "value": 17500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dcb",
+    "_id": "67c262fe25b499bca6009f8c",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
@@ -584,7 +584,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dcc",
+    "_id": "67c262fe25b499bca6009f8d",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
@@ -593,7 +593,7 @@
     "value": 27333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dcd",
+    "_id": "67c262fe25b499bca6009f8e",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -602,7 +602,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dce",
+    "_id": "67c262fe25b499bca6009f8f",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -611,25 +611,25 @@
     "value": 26666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dcf",
+    "_id": "67c262fe25b499bca6009f90",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "traps",
-    "n": 1332,
+    "n": 1336,
     "metric": "median_cpue",
     "value": 1.15
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd0",
+    "_id": "67c262fe25b499bca6009f91",
     "landing_site": "fumba",
     "habitat": "sand_mud_rock",
     "gear": "traps",
-    "n": 1332,
+    "n": 1336,
     "metric": "median_rpue",
     "value": 4657.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd1",
+    "_id": "67c262fe25b499bca6009f92",
     "landing_site": "fumba",
     "habitat": "seagrass",
     "gear": "ring_nets",
@@ -638,7 +638,7 @@
     "value": 3.875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd2",
+    "_id": "67c262fe25b499bca6009f93",
     "landing_site": "fumba",
     "habitat": "seagrass",
     "gear": "ring_nets",
@@ -647,7 +647,7 @@
     "value": 16653.693181818
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd3",
+    "_id": "67c262fe25b499bca6009f94",
     "landing_site": "fumba",
     "habitat": "seagrass",
     "gear": "traps",
@@ -656,7 +656,7 @@
     "value": 1.15
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd4",
+    "_id": "67c262fe25b499bca6009f95",
     "landing_site": "fumba",
     "habitat": "seagrass",
     "gear": "traps",
@@ -665,7 +665,7 @@
     "value": 4691.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd5",
+    "_id": "67c262fe25b499bca6009f96",
     "landing_site": "fumba",
     "gear": "ring_nets",
     "n": 1,
@@ -673,7 +673,7 @@
     "value": 19.125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd6",
+    "_id": "67c262fe25b499bca6009f97",
     "landing_site": "fumba",
     "gear": "ring_nets",
     "n": 1,
@@ -681,7 +681,7 @@
     "value": 125109.375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd7",
+    "_id": "67c262fe25b499bca6009f98",
     "landing_site": "fumba",
     "gear": "traps",
     "n": 3,
@@ -689,7 +689,7 @@
     "value": 1.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd8",
+    "_id": "67c262fe25b499bca6009f99",
     "landing_site": "fumba",
     "gear": "traps",
     "n": 3,
@@ -697,7 +697,7 @@
     "value": 5112.045454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dd9",
+    "_id": "67c262fe25b499bca6009f9a",
     "landing_site": "jambiani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -706,7 +706,7 @@
     "value": 14.705882353
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dda",
+    "_id": "67c262fe25b499bca6009f9b",
     "landing_site": "jambiani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -715,7 +715,7 @@
     "value": 29411.764705882
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ddb",
+    "_id": "67c262fe25b499bca6009f9c",
     "landing_site": "jasini",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -724,7 +724,7 @@
     "value": 25.454545455
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ddc",
+    "_id": "67c262fe25b499bca6009f9d",
     "landing_site": "jasini",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -733,7 +733,7 @@
     "value": 52379.679144385
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ddd",
+    "_id": "67c262fe25b499bca6009f9e",
     "landing_site": "jasini",
     "gear": "long_line_long",
     "n": 1,
@@ -741,7 +741,7 @@
     "value": 11.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dde",
+    "_id": "67c262fe25b499bca6009f9f",
     "landing_site": "jasini",
     "gear": "long_line_long",
     "n": 1,
@@ -749,7 +749,7 @@
     "value": 23333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ddf",
+    "_id": "67c262fe25b499bca6009fa0",
     "landing_site": "jasini",
     "gear": "ring_nets",
     "n": 388,
@@ -757,7 +757,7 @@
     "value": 29.848484848
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de0",
+    "_id": "67c262fe25b499bca6009fa1",
     "landing_site": "jasini",
     "gear": "ring_nets",
     "n": 388,
@@ -765,7 +765,7 @@
     "value": 62361.111111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de1",
+    "_id": "67c262fe25b499bca6009fa2",
     "landing_site": "kigombe",
     "gear": "gill_nets_3",
     "n": 50,
@@ -773,7 +773,7 @@
     "value": 2.283333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de2",
+    "_id": "67c262fe25b499bca6009fa3",
     "landing_site": "kigombe",
     "gear": "gill_nets_3",
     "n": 50,
@@ -781,23 +781,23 @@
     "value": 5714.285714286
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de3",
+    "_id": "67c262fe25b499bca6009fa4",
     "landing_site": "kigombe",
     "gear": "gill_nets_6",
-    "n": 375,
+    "n": 377,
     "metric": "median_cpue",
     "value": 1.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de4",
+    "_id": "67c262fe25b499bca6009fa5",
     "landing_site": "kigombe",
     "gear": "gill_nets_6",
-    "n": 375,
+    "n": 377,
     "metric": "median_rpue",
     "value": 9375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de5",
+    "_id": "67c262fe25b499bca6009fa6",
     "landing_site": "kigombe",
     "gear": "long_line_short",
     "n": 192,
@@ -805,7 +805,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de6",
+    "_id": "67c262fe25b499bca6009fa7",
     "landing_site": "kigombe",
     "gear": "long_line_short",
     "n": 192,
@@ -813,55 +813,55 @@
     "value": 14000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6de7",
+    "_id": "67c262fe25b499bca6009fa8",
     "landing_site": "kigombe",
     "gear": "pole_line",
-    "n": 28,
-    "metric": "median_cpue",
-    "value": 2.833333333
-  },
-  {
-    "_id": "67bd1bb6ad505f7c650a6de8",
-    "landing_site": "kigombe",
-    "gear": "pole_line",
-    "n": 28,
-    "metric": "median_rpue",
-    "value": 19875
-  },
-  {
-    "_id": "67bd1bb6ad505f7c650a6de9",
-    "landing_site": "kigombe",
-    "gear": "ring_nets",
-    "n": 326,
-    "metric": "median_cpue",
-    "value": 13.333333333
-  },
-  {
-    "_id": "67bd1bb6ad505f7c650a6dea",
-    "landing_site": "kigombe",
-    "gear": "ring_nets",
-    "n": 326,
-    "metric": "median_rpue",
-    "value": 26666.666666667
-  },
-  {
-    "_id": "67bd1bb6ad505f7c650a6deb",
-    "landing_site": "kigombe",
-    "gear": "spear_gun",
-    "n": 547,
+    "n": 29,
     "metric": "median_cpue",
     "value": 2.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dec",
+    "_id": "67c262fe25b499bca6009fa9",
+    "landing_site": "kigombe",
+    "gear": "pole_line",
+    "n": 29,
+    "metric": "median_rpue",
+    "value": 18750
+  },
+  {
+    "_id": "67c262fe25b499bca6009faa",
+    "landing_site": "kigombe",
+    "gear": "ring_nets",
+    "n": 330,
+    "metric": "median_cpue",
+    "value": 13.333333333
+  },
+  {
+    "_id": "67c262fe25b499bca6009fab",
+    "landing_site": "kigombe",
+    "gear": "ring_nets",
+    "n": 330,
+    "metric": "median_rpue",
+    "value": 26666.666666667
+  },
+  {
+    "_id": "67c262fe25b499bca6009fac",
     "landing_site": "kigombe",
     "gear": "spear_gun",
-    "n": 547,
+    "n": 550,
+    "metric": "median_cpue",
+    "value": 2.666666667
+  },
+  {
+    "_id": "67c262fe25b499bca6009fad",
+    "landing_site": "kigombe",
+    "gear": "spear_gun",
+    "n": 550,
     "metric": "median_rpue",
     "value": 20000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ded",
+    "_id": "67c262fe25b499bca6009fae",
     "landing_site": "kigombe",
     "gear": "traps",
     "n": 6,
@@ -869,7 +869,7 @@
     "value": 2.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dee",
+    "_id": "67c262fe25b499bca6009faf",
     "landing_site": "kigombe",
     "gear": "traps",
     "n": 6,
@@ -877,7 +877,7 @@
     "value": 11475
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6def",
+    "_id": "67c262fe25b499bca6009fb0",
     "landing_site": "kizimkazi",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -886,7 +886,7 @@
     "value": 0.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df0",
+    "_id": "67c262fe25b499bca6009fb1",
     "landing_site": "kizimkazi",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -895,7 +895,7 @@
     "value": 3166.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df1",
+    "_id": "67c262fe25b499bca6009fb2",
     "landing_site": "kizimkazi",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -904,7 +904,7 @@
     "value": 1.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df2",
+    "_id": "67c262fe25b499bca6009fb3",
     "landing_site": "kizimkazi",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -913,7 +913,7 @@
     "value": 10000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df3",
+    "_id": "67c262fe25b499bca6009fb4",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -922,7 +922,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df4",
+    "_id": "67c262fe25b499bca6009fb5",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -931,7 +931,7 @@
     "value": 42536.842105263
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df5",
+    "_id": "67c262fe25b499bca6009fb6",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -940,7 +940,7 @@
     "value": 88.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df6",
+    "_id": "67c262fe25b499bca6009fb7",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -949,7 +949,7 @@
     "value": 555614.583333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df7",
+    "_id": "67c262fe25b499bca6009fb8",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -958,7 +958,7 @@
     "value": 11.95
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df8",
+    "_id": "67c262fe25b499bca6009fb9",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -967,7 +967,7 @@
     "value": 86704.385964912
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6df9",
+    "_id": "67c262fe25b499bca6009fba",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -976,7 +976,7 @@
     "value": 52.352941176
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dfa",
+    "_id": "67c262fe25b499bca6009fbb",
     "landing_site": "kizimkazi",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -985,7 +985,7 @@
     "value": 104705.882352941
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dfb",
+    "_id": "67c262fe25b499bca6009fbc",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -994,7 +994,7 @@
     "value": 3.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dfc",
+    "_id": "67c262fe25b499bca6009fbd",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -1003,7 +1003,7 @@
     "value": 15876.609848485
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dfd",
+    "_id": "67c262fe25b499bca6009fbe",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1012,7 +1012,7 @@
     "value": 3.010416667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dfe",
+    "_id": "67c262fe25b499bca6009fbf",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1021,7 +1021,7 @@
     "value": 11937.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6dff",
+    "_id": "67c262fe25b499bca6009fc0",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -1030,7 +1030,7 @@
     "value": 3.675
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e00",
+    "_id": "67c262fe25b499bca6009fc1",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -1039,7 +1039,7 @@
     "value": 25944.736842105
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e01",
+    "_id": "67c262fe25b499bca6009fc2",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1048,7 +1048,7 @@
     "value": 4.875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e02",
+    "_id": "67c262fe25b499bca6009fc3",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1057,7 +1057,7 @@
     "value": 31803.362573099
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e03",
+    "_id": "67c262fe25b499bca6009fc4",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1066,7 +1066,7 @@
     "value": 3.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e04",
+    "_id": "67c262fe25b499bca6009fc5",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1075,7 +1075,7 @@
     "value": 22833.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e05",
+    "_id": "67c262fe25b499bca6009fc6",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1084,7 +1084,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e06",
+    "_id": "67c262fe25b499bca6009fc7",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1093,7 +1093,7 @@
     "value": 19339.772727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e07",
+    "_id": "67c262fe25b499bca6009fc8",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -1102,7 +1102,7 @@
     "value": 7.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e08",
+    "_id": "67c262fe25b499bca6009fc9",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -1111,7 +1111,7 @@
     "value": 30178.571428571
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e09",
+    "_id": "67c262fe25b499bca6009fca",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -1120,7 +1120,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0a",
+    "_id": "67c262fe25b499bca6009fcb",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -1129,7 +1129,7 @@
     "value": 17190.909090909
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0b",
+    "_id": "67c262fe25b499bca6009fcc",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "traps",
@@ -1138,7 +1138,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0c",
+    "_id": "67c262fe25b499bca6009fcd",
     "landing_site": "kizimkazi",
     "habitat": "reef",
     "gear": "traps",
@@ -1147,7 +1147,7 @@
     "value": 14262.121212121
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0d",
+    "_id": "67c262fe25b499bca6009fce",
     "landing_site": "kizimkazi",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -1156,7 +1156,7 @@
     "value": 2.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0e",
+    "_id": "67c262fe25b499bca6009fcf",
     "landing_site": "kizimkazi",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -1165,7 +1165,7 @@
     "value": 12819.527511962
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e0f",
+    "_id": "67c262fe25b499bca6009fd0",
     "landing_site": "kizimkazi",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -1174,7 +1174,7 @@
     "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e10",
+    "_id": "67c262fe25b499bca6009fd1",
     "landing_site": "kizimkazi",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -1183,7 +1183,7 @@
     "value": 89368.421052632
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e11",
+    "_id": "67c262fe25b499bca6009fd2",
     "landing_site": "kizimkazi",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -1192,7 +1192,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e12",
+    "_id": "67c262fe25b499bca6009fd3",
     "landing_site": "kizimkazi",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -1201,7 +1201,7 @@
     "value": 12666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e13",
+    "_id": "67c262fe25b499bca6009fd4",
     "landing_site": "kizimkazi",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -1210,7 +1210,7 @@
     "value": 1
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e14",
+    "_id": "67c262fe25b499bca6009fd5",
     "landing_site": "kizimkazi",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -1219,7 +1219,7 @@
     "value": 6333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e15",
+    "_id": "67c262fe25b499bca6009fd6",
     "landing_site": "kojani",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -1228,7 +1228,7 @@
     "value": 8.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e16",
+    "_id": "67c262fe25b499bca6009fd7",
     "landing_site": "kojani",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -1237,7 +1237,7 @@
     "value": 58527.777777778
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e17",
+    "_id": "67c262fe25b499bca6009fd8",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "beach_seines",
@@ -1246,7 +1246,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e18",
+    "_id": "67c262fe25b499bca6009fd9",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "beach_seines",
@@ -1255,7 +1255,7 @@
     "value": 4000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e19",
+    "_id": "67c262fe25b499bca6009fda",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -1264,7 +1264,7 @@
     "value": 3.081818182
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1a",
+    "_id": "67c262fe25b499bca6009fdb",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -1273,7 +1273,7 @@
     "value": 10475
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1b",
+    "_id": "67c262fe25b499bca6009fdc",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -1282,7 +1282,7 @@
     "value": 7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1c",
+    "_id": "67c262fe25b499bca6009fdd",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -1291,7 +1291,7 @@
     "value": 52131.578947368
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1d",
+    "_id": "67c262fe25b499bca6009fde",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1300,7 +1300,7 @@
     "value": 2.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1e",
+    "_id": "67c262fe25b499bca6009fdf",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1309,7 +1309,7 @@
     "value": 19859.649122807
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e1f",
+    "_id": "67c262fe25b499bca6009fe0",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -1318,7 +1318,7 @@
     "value": 0.928571429
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e20",
+    "_id": "67c262fe25b499bca6009fe1",
     "landing_site": "kojani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -1327,7 +1327,7 @@
     "value": 1857.142857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e21",
+    "_id": "67c262fe25b499bca6009fe2",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -1336,7 +1336,7 @@
     "value": 3.274074074
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e22",
+    "_id": "67c262fe25b499bca6009fe3",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -1345,7 +1345,7 @@
     "value": 14440
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e23",
+    "_id": "67c262fe25b499bca6009fe4",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1354,7 +1354,7 @@
     "value": 4.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e24",
+    "_id": "67c262fe25b499bca6009fe5",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1363,7 +1363,7 @@
     "value": 25249.147727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e25",
+    "_id": "67c262fe25b499bca6009fe6",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -1372,7 +1372,7 @@
     "value": 6.149305556
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e26",
+    "_id": "67c262fe25b499bca6009fe7",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -1381,7 +1381,7 @@
     "value": 26753.385416667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e27",
+    "_id": "67c262fe25b499bca6009fe8",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1390,7 +1390,7 @@
     "value": 0.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e28",
+    "_id": "67c262fe25b499bca6009fe9",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1399,7 +1399,7 @@
     "value": 1818.181818182
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e29",
+    "_id": "67c262fe25b499bca6009fea",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1408,7 +1408,7 @@
     "value": 2.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2a",
+    "_id": "67c262fe25b499bca6009feb",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1417,7 +1417,7 @@
     "value": 15500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2b",
+    "_id": "67c262fe25b499bca6009fec",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -1426,7 +1426,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2c",
+    "_id": "67c262fe25b499bca6009fed",
     "landing_site": "kojani",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -1435,7 +1435,7 @@
     "value": 16000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2d",
+    "_id": "67c262fe25b499bca6009fee",
     "landing_site": "kojani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -1444,7 +1444,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2e",
+    "_id": "67c262fe25b499bca6009fef",
     "landing_site": "kojani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -1453,7 +1453,7 @@
     "value": 16000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e2f",
+    "_id": "67c262fe25b499bca6009ff0",
     "landing_site": "kojani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -1462,7 +1462,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e30",
+    "_id": "67c262fe25b499bca6009ff1",
     "landing_site": "kojani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -1471,7 +1471,7 @@
     "value": 28000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e31",
+    "_id": "67c262fe25b499bca6009ff2",
     "landing_site": "kojani",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -1480,7 +1480,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e32",
+    "_id": "67c262fe25b499bca6009ff3",
     "landing_site": "kojani",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -1489,7 +1489,7 @@
     "value": 8400
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e33",
+    "_id": "67c262fe25b499bca6009ff4",
     "landing_site": "kojani",
     "habitat": "seagrass",
     "gear": "gill_nets_6",
@@ -1498,7 +1498,7 @@
     "value": 7.971428571
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e34",
+    "_id": "67c262fe25b499bca6009ff5",
     "landing_site": "kojani",
     "habitat": "seagrass",
     "gear": "gill_nets_6",
@@ -1507,7 +1507,7 @@
     "value": 15355.639097744
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e35",
+    "_id": "67c262fe25b499bca6009ff6",
     "landing_site": "kojani",
     "gear": "beach_seines",
     "n": 1,
@@ -1515,7 +1515,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e36",
+    "_id": "67c262fe25b499bca6009ff7",
     "landing_site": "kojani",
     "gear": "beach_seines",
     "n": 1,
@@ -1523,7 +1523,25 @@
     "value": 6000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e37",
+    "_id": "67c262fe25b499bca6009ff8",
+    "landing_site": "kukuu",
+    "habitat": "reef",
+    "gear": "long_line_long",
+    "n": 1,
+    "metric": "median_cpue",
+    "value": 80
+  },
+  {
+    "_id": "67c262fe25b499bca6009ff9",
+    "landing_site": "kukuu",
+    "habitat": "reef",
+    "gear": "long_line_long",
+    "n": 1,
+    "metric": "median_rpue",
+    "value": 560000
+  },
+  {
+    "_id": "67c262fe25b499bca6009ffa",
     "landing_site": "kukuu",
     "gear": "gill_nets_3",
     "n": 1,
@@ -1531,7 +1549,7 @@
     "value": 8.315
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e38",
+    "_id": "67c262fe25b499bca6009ffb",
     "landing_site": "kukuu",
     "gear": "gill_nets_3",
     "n": 1,
@@ -1539,7 +1557,7 @@
     "value": 61924.868421053
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e39",
+    "_id": "67c262fe25b499bca6009ffc",
     "landing_site": "mangapwani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -1548,7 +1566,7 @@
     "value": 1.7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3a",
+    "_id": "67c262fe25b499bca6009ffd",
     "landing_site": "mangapwani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -1557,7 +1575,7 @@
     "value": 7521.022727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3b",
+    "_id": "67c262fe25b499bca6009ffe",
     "landing_site": "mangapwani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1566,7 +1584,7 @@
     "value": 1.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3c",
+    "_id": "67c262fe25b499bca6009fff",
     "landing_site": "mangapwani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1575,7 +1593,7 @@
     "value": 7521.022727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3d",
+    "_id": "67c262fe25b499bca600a000",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1584,7 +1602,7 @@
     "value": 2.580645161
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3e",
+    "_id": "67c262fe25b499bca600a001",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1593,7 +1611,7 @@
     "value": 7373.271889401
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e3f",
+    "_id": "67c262fe25b499bca600a002",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1602,7 +1620,7 @@
     "value": 1.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e40",
+    "_id": "67c262fe25b499bca600a003",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1611,7 +1629,7 @@
     "value": 6733.106060606
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e41",
+    "_id": "67c262fe25b499bca600a004",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1620,7 +1638,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e42",
+    "_id": "67c262fe25b499bca600a005",
     "landing_site": "mangapwani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -1629,7 +1647,7 @@
     "value": 11629.532467532
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e43",
+    "_id": "67c262fe25b499bca600a006",
     "landing_site": "mangapwani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -1638,7 +1656,7 @@
     "value": 1.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e44",
+    "_id": "67c262fe25b499bca600a007",
     "landing_site": "mangapwani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -1647,7 +1665,7 @@
     "value": 6446.590909091
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e45",
+    "_id": "67c262fe25b499bca600a008",
     "landing_site": "mangapwani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -1656,7 +1674,7 @@
     "value": 1.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e46",
+    "_id": "67c262fe25b499bca600a009",
     "landing_site": "mangapwani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -1665,7 +1683,7 @@
     "value": 6446.590909091
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e47",
+    "_id": "67c262fe25b499bca600a00a",
     "landing_site": "matemwe",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1674,7 +1692,7 @@
     "value": 28
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e48",
+    "_id": "67c262fe25b499bca600a00b",
     "landing_site": "matemwe",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -1683,7 +1701,7 @@
     "value": 208526.315789474
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e49",
+    "_id": "67c262fe25b499bca600a00c",
     "landing_site": "matemwe",
     "habitat": "reef",
     "gear": "traps",
@@ -1692,7 +1710,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4a",
+    "_id": "67c262fe25b499bca600a00d",
     "landing_site": "matemwe",
     "habitat": "reef",
     "gear": "traps",
@@ -1701,7 +1719,7 @@
     "value": 32400
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4b",
+    "_id": "67c262fe25b499bca600a00e",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "long_line_long",
@@ -1710,7 +1728,7 @@
     "value": 1.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4c",
+    "_id": "67c262fe25b499bca600a00f",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "long_line_long",
@@ -1719,7 +1737,7 @@
     "value": 8444.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4d",
+    "_id": "67c262fe25b499bca600a010",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "long_line_short",
@@ -1727,7 +1745,7 @@
     "metric": "median_cpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4e",
+    "_id": "67c262fe25b499bca600a011",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "long_line_short",
@@ -1735,7 +1753,7 @@
     "metric": "median_rpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e4f",
+    "_id": "67c262fe25b499bca600a012",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -1744,7 +1762,7 @@
     "value": 6.041666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e50",
+    "_id": "67c262fe25b499bca600a013",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -1753,61 +1771,61 @@
     "value": 39262.626262626
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e51",
+    "_id": "67c262fe25b499bca600a014",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "traps",
-    "n": 4,
+    "n": 5,
     "metric": "median_cpue",
-    "value": 11.625
+    "value": 9.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e52",
+    "_id": "67c262fe25b499bca600a015",
     "landing_site": "mazizini",
     "habitat": "mangroves",
     "gear": "traps",
-    "n": 4,
+    "n": 5,
     "metric": "median_rpue",
-    "value": 44039.299242424
+    "value": 37378.598484848
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e53",
+    "_id": "67c262fe25b499bca600a016",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "long_line_long",
-    "n": 14,
+    "n": 15,
     "metric": "median_cpue",
-    "value": 14.75
+    "value": 11.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e54",
+    "_id": "67c262fe25b499bca600a017",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "long_line_long",
-    "n": 14,
+    "n": 15,
     "metric": "median_rpue",
-    "value": 105822.368421053
+    "value": 85644.736842105
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e55",
+    "_id": "67c262fe25b499bca600a018",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "long_line_short",
-    "n": 21,
+    "n": 22,
     "metric": "median_cpue",
-    "value": 14
+    "value": 14.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e56",
+    "_id": "67c262fe25b499bca600a019",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "long_line_short",
-    "n": 21,
+    "n": 22,
     "metric": "median_rpue",
-    "value": 96815.789473684
+    "value": 100539.473684211
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e57",
+    "_id": "67c262fe25b499bca600a01a",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -1816,7 +1834,7 @@
     "value": 6.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e58",
+    "_id": "67c262fe25b499bca600a01b",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -1825,7 +1843,7 @@
     "value": 26860.795454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e59",
+    "_id": "67c262fe25b499bca600a01c",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -1834,7 +1852,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5a",
+    "_id": "67c262fe25b499bca600a01d",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -1843,7 +1861,7 @@
     "value": 28000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5b",
+    "_id": "67c262fe25b499bca600a01e",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -1852,7 +1870,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5c",
+    "_id": "67c262fe25b499bca600a01f",
     "landing_site": "mazizini",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -1861,7 +1879,7 @@
     "value": 39743.939393939
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5d",
+    "_id": "67c262fe25b499bca600a020",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -1870,7 +1888,7 @@
     "value": 0.047619048
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5e",
+    "_id": "67c262fe25b499bca600a021",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -1879,7 +1897,7 @@
     "value": 297.619047619
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e5f",
+    "_id": "67c262fe25b499bca600a022",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1887,7 +1905,7 @@
     "metric": "median_cpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e60",
+    "_id": "67c262fe25b499bca600a023",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -1895,7 +1913,7 @@
     "metric": "median_rpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e61",
+    "_id": "67c262fe25b499bca600a024",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1904,7 +1922,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e62",
+    "_id": "67c262fe25b499bca600a025",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -1913,25 +1931,25 @@
     "value": 25007.142857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e63",
+    "_id": "67c262fe25b499bca600a026",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "long_line_short",
-    "n": 20,
+    "n": 21,
     "metric": "median_cpue",
     "value": 5.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e64",
+    "_id": "67c262fe25b499bca600a027",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "long_line_short",
-    "n": 20,
+    "n": 21,
     "metric": "median_rpue",
-    "value": 23310.714285714
+    "value": 25021.428571429
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e65",
+    "_id": "67c262fe25b499bca600a028",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1940,7 +1958,7 @@
     "value": 9.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e66",
+    "_id": "67c262fe25b499bca600a029",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "pole_line",
@@ -1949,7 +1967,7 @@
     "value": 49703.03030303
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e67",
+    "_id": "67c262fe25b499bca600a02a",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -1958,7 +1976,7 @@
     "value": 4.388888889
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e68",
+    "_id": "67c262fe25b499bca600a02b",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -1967,25 +1985,25 @@
     "value": 23973.214285714
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e69",
+    "_id": "67c262fe25b499bca600a02c",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "traps",
-    "n": 219,
+    "n": 221,
     "metric": "median_cpue",
-    "value": 8.888888889
+    "value": 8.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6a",
+    "_id": "67c262fe25b499bca600a02d",
     "landing_site": "mazizini",
     "habitat": "reef",
     "gear": "traps",
-    "n": 219,
+    "n": 221,
     "metric": "median_rpue",
     "value": 43625
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6b",
+    "_id": "67c262fe25b499bca600a02e",
     "landing_site": "mazizini",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -1994,7 +2012,7 @@
     "value": 2.2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6c",
+    "_id": "67c262fe25b499bca600a02f",
     "landing_site": "mazizini",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -2003,7 +2021,7 @@
     "value": 17600
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6d",
+    "_id": "67c262fe25b499bca600a030",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -2012,7 +2030,7 @@
     "value": 9
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6e",
+    "_id": "67c262fe25b499bca600a031",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -2021,7 +2039,7 @@
     "value": 58666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e6f",
+    "_id": "67c262fe25b499bca600a032",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -2030,7 +2048,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e70",
+    "_id": "67c262fe25b499bca600a033",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -2039,7 +2057,7 @@
     "value": 44684.210526316
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e71",
+    "_id": "67c262fe25b499bca600a034",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "traps",
@@ -2048,7 +2066,7 @@
     "value": 5.607142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e72",
+    "_id": "67c262fe25b499bca600a035",
     "landing_site": "mazizini",
     "habitat": "seagrass",
     "gear": "traps",
@@ -2057,7 +2075,7 @@
     "value": 19522.619047619
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e73",
+    "_id": "67c262fe25b499bca600a036",
     "landing_site": "mazizini",
     "gear": "spear_gun",
     "n": 1,
@@ -2065,7 +2083,7 @@
     "value": 1.3125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e74",
+    "_id": "67c262fe25b499bca600a037",
     "landing_site": "mazizini",
     "gear": "spear_gun",
     "n": 1,
@@ -2073,7 +2091,7 @@
     "value": 5640.767045455
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e75",
+    "_id": "67c262fe25b499bca600a038",
     "landing_site": "mazizini",
     "gear": "traps",
     "n": 1,
@@ -2081,7 +2099,7 @@
     "value": 6.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e76",
+    "_id": "67c262fe25b499bca600a039",
     "landing_site": "mazizini",
     "gear": "traps",
     "n": 1,
@@ -2089,7 +2107,7 @@
     "value": 45111.111111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e77",
+    "_id": "67c262fe25b499bca600a03a",
     "landing_site": "mkoani",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -2098,7 +2116,7 @@
     "value": 7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e78",
+    "_id": "67c262fe25b499bca600a03b",
     "landing_site": "mkoani",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -2107,7 +2125,7 @@
     "value": 50166.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e79",
+    "_id": "67c262fe25b499bca600a03c",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -2116,7 +2134,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7a",
+    "_id": "67c262fe25b499bca600a03d",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -2125,7 +2143,7 @@
     "value": 6000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7b",
+    "_id": "67c262fe25b499bca600a03e",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -2134,7 +2152,7 @@
     "value": 3.555555556
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7c",
+    "_id": "67c262fe25b499bca600a03f",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -2143,7 +2161,7 @@
     "value": 10698.611111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7d",
+    "_id": "67c262fe25b499bca600a040",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -2152,7 +2170,7 @@
     "value": 5.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7e",
+    "_id": "67c262fe25b499bca600a041",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -2161,7 +2179,7 @@
     "value": 38500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e7f",
+    "_id": "67c262fe25b499bca600a042",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -2170,7 +2188,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e80",
+    "_id": "67c262fe25b499bca600a043",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -2179,7 +2197,7 @@
     "value": 59578.947368421
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e81",
+    "_id": "67c262fe25b499bca600a044",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -2188,7 +2206,7 @@
     "value": 9.1875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e82",
+    "_id": "67c262fe25b499bca600a045",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -2197,7 +2215,7 @@
     "value": 18375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e83",
+    "_id": "67c262fe25b499bca600a046",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -2206,7 +2224,7 @@
     "value": 2.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e84",
+    "_id": "67c262fe25b499bca600a047",
     "landing_site": "mkoani",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -2215,7 +2233,7 @@
     "value": 4666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e85",
+    "_id": "67c262fe25b499bca600a048",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -2224,7 +2242,7 @@
     "value": 1.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e86",
+    "_id": "67c262fe25b499bca600a049",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -2233,7 +2251,7 @@
     "value": 11666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e87",
+    "_id": "67c262fe25b499bca600a04a",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -2242,7 +2260,7 @@
     "value": 2.311111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e88",
+    "_id": "67c262fe25b499bca600a04b",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -2251,7 +2269,7 @@
     "value": 14622.222222222
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e89",
+    "_id": "67c262fe25b499bca600a04c",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -2260,7 +2278,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8a",
+    "_id": "67c262fe25b499bca600a04d",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -2269,7 +2287,7 @@
     "value": 12500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8b",
+    "_id": "67c262fe25b499bca600a04e",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -2278,7 +2296,7 @@
     "value": 2.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8c",
+    "_id": "67c262fe25b499bca600a04f",
     "landing_site": "mkoani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -2287,7 +2305,7 @@
     "value": 19250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8d",
+    "_id": "67c262fe25b499bca600a050",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -2296,7 +2314,7 @@
     "value": 6.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8e",
+    "_id": "67c262fe25b499bca600a051",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -2305,7 +2323,7 @@
     "value": 13950
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e8f",
+    "_id": "67c262fe25b499bca600a052",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -2314,7 +2332,7 @@
     "value": 4.375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e90",
+    "_id": "67c262fe25b499bca600a053",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -2323,7 +2341,7 @@
     "value": 27343.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e91",
+    "_id": "67c262fe25b499bca600a054",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -2332,7 +2350,7 @@
     "value": 6.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e92",
+    "_id": "67c262fe25b499bca600a055",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -2341,7 +2359,7 @@
     "value": 32857.142857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e93",
+    "_id": "67c262fe25b499bca600a056",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -2350,7 +2368,7 @@
     "value": 3.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e94",
+    "_id": "67c262fe25b499bca600a057",
     "landing_site": "mkoani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -2359,7 +2377,7 @@
     "value": 19791.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e95",
+    "_id": "67c262fe25b499bca600a058",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -2368,7 +2386,7 @@
     "value": 5.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e96",
+    "_id": "67c262fe25b499bca600a059",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -2377,7 +2395,7 @@
     "value": 18003.787878788
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e97",
+    "_id": "67c262fe25b499bca600a05a",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -2386,7 +2404,7 @@
     "value": 5.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e98",
+    "_id": "67c262fe25b499bca600a05b",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -2395,7 +2413,7 @@
     "value": 35416.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e99",
+    "_id": "67c262fe25b499bca600a05c",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -2403,7 +2421,7 @@
     "metric": "median_cpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9a",
+    "_id": "67c262fe25b499bca600a05d",
     "landing_site": "mkoani",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -2411,7 +2429,7 @@
     "metric": "median_rpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9b",
+    "_id": "67c262fe25b499bca600a05e",
     "landing_site": "mkoani",
     "gear": "gill_nets_3",
     "n": 106,
@@ -2419,7 +2437,7 @@
     "value": 5.416666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9c",
+    "_id": "67c262fe25b499bca600a05f",
     "landing_site": "mkoani",
     "gear": "gill_nets_3",
     "n": 106,
@@ -2427,39 +2445,39 @@
     "value": 14935.897435897
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9d",
+    "_id": "67c262fe25b499bca600a060",
     "landing_site": "mkoani",
     "gear": "gill_nets_6",
-    "n": 196,
+    "n": 197,
     "metric": "median_cpue",
-    "value": 3.555555556
+    "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9e",
+    "_id": "67c262fe25b499bca600a061",
     "landing_site": "mkoani",
     "gear": "gill_nets_6",
-    "n": 196,
+    "n": 197,
     "metric": "median_rpue",
-    "value": 13262.867703657
+    "value": 13226.863226863
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6e9f",
+    "_id": "67c262fe25b499bca600a062",
     "landing_site": "mkoani",
     "gear": "long_line_long",
-    "n": 187,
+    "n": 189,
     "metric": "median_cpue",
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea0",
+    "_id": "67c262fe25b499bca600a063",
     "landing_site": "mkoani",
     "gear": "long_line_long",
-    "n": 187,
+    "n": 189,
     "metric": "median_rpue",
-    "value": 51565.909090909
+    "value": 51428.571428571
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea1",
+    "_id": "67c262fe25b499bca600a064",
     "landing_site": "mkoani",
     "gear": "long_line_short",
     "n": 59,
@@ -2467,7 +2485,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea2",
+    "_id": "67c262fe25b499bca600a065",
     "landing_site": "mkoani",
     "gear": "long_line_short",
     "n": 59,
@@ -2475,7 +2493,7 @@
     "value": 33600
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea3",
+    "_id": "67c262fe25b499bca600a066",
     "landing_site": "mkoani",
     "gear": "pole_line",
     "n": 5,
@@ -2483,7 +2501,7 @@
     "value": 5.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea4",
+    "_id": "67c262fe25b499bca600a067",
     "landing_site": "mkoani",
     "gear": "pole_line",
     "n": 5,
@@ -2491,7 +2509,7 @@
     "value": 35000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea5",
+    "_id": "67c262fe25b499bca600a068",
     "landing_site": "mkoani",
     "gear": "ring_nets",
     "n": 1,
@@ -2499,7 +2517,7 @@
     "value": 11
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea6",
+    "_id": "67c262fe25b499bca600a069",
     "landing_site": "mkoani",
     "gear": "ring_nets",
     "n": 1,
@@ -2507,7 +2525,7 @@
     "value": 47275
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea7",
+    "_id": "67c262fe25b499bca600a06a",
     "landing_site": "mkoani",
     "gear": "spear_gun",
     "n": 2,
@@ -2515,7 +2533,7 @@
     "value": 11.055555556
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea8",
+    "_id": "67c262fe25b499bca600a06b",
     "landing_site": "mkoani",
     "gear": "spear_gun",
     "n": 2,
@@ -2523,23 +2541,23 @@
     "value": 73444.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ea9",
+    "_id": "67c262fe25b499bca600a06c",
     "landing_site": "mkoani",
     "gear": "traps",
-    "n": 327,
+    "n": 332,
     "metric": "median_cpue",
-    "value": 4.5
+    "value": 4.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eaa",
+    "_id": "67c262fe25b499bca600a06d",
     "landing_site": "mkoani",
     "gear": "traps",
-    "n": 327,
+    "n": 332,
     "metric": "median_rpue",
-    "value": 19696.96969697
+    "value": 19973.484848485
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eab",
+    "_id": "67c262fe25b499bca600a06e",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "beach_seines",
@@ -2548,7 +2566,7 @@
     "value": 2.133333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eac",
+    "_id": "67c262fe25b499bca600a06f",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "beach_seines",
@@ -2557,7 +2575,7 @@
     "value": 14933.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ead",
+    "_id": "67c262fe25b499bca600a070",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "gill_nets_3",
@@ -2566,7 +2584,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eae",
+    "_id": "67c262fe25b499bca600a071",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "gill_nets_3",
@@ -2575,7 +2593,7 @@
     "value": 15000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eaf",
+    "_id": "67c262fe25b499bca600a072",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "gill_nets_6",
@@ -2584,7 +2602,7 @@
     "value": 3.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb0",
+    "_id": "67c262fe25b499bca600a073",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "gill_nets_6",
@@ -2593,7 +2611,7 @@
     "value": 6666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb1",
+    "_id": "67c262fe25b499bca600a074",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -2602,7 +2620,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb2",
+    "_id": "67c262fe25b499bca600a075",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -2611,7 +2629,7 @@
     "value": 21488.636363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb3",
+    "_id": "67c262fe25b499bca600a076",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "ring_nets",
@@ -2620,7 +2638,7 @@
     "value": 2.174603175
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb4",
+    "_id": "67c262fe25b499bca600a077",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "ring_nets",
@@ -2629,7 +2647,7 @@
     "value": 11747.871572872
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb5",
+    "_id": "67c262fe25b499bca600a078",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -2638,7 +2656,7 @@
     "value": 2.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb6",
+    "_id": "67c262fe25b499bca600a079",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -2647,7 +2665,7 @@
     "value": 16687.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb7",
+    "_id": "67c262fe25b499bca600a07a",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "traps",
@@ -2656,7 +2674,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb8",
+    "_id": "67c262fe25b499bca600a07b",
     "landing_site": "mkokotoni",
     "habitat": "mangroves",
     "gear": "traps",
@@ -2665,7 +2683,7 @@
     "value": 56000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eb9",
+    "_id": "67c262fe25b499bca600a07c",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -2674,7 +2692,7 @@
     "value": 5.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eba",
+    "_id": "67c262fe25b499bca600a07d",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -2683,7 +2701,7 @@
     "value": 12000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ebb",
+    "_id": "67c262fe25b499bca600a07e",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -2692,7 +2710,7 @@
     "value": 9.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ebc",
+    "_id": "67c262fe25b499bca600a07f",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -2701,7 +2719,7 @@
     "value": 43750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ebd",
+    "_id": "67c262fe25b499bca600a080",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -2710,7 +2728,7 @@
     "value": 7.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ebe",
+    "_id": "67c262fe25b499bca600a081",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -2719,7 +2737,7 @@
     "value": 38024.242424242
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ebf",
+    "_id": "67c262fe25b499bca600a082",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -2728,7 +2746,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec0",
+    "_id": "67c262fe25b499bca600a083",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -2737,25 +2755,25 @@
     "value": 12500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec1",
+    "_id": "67c262fe25b499bca600a084",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "pole_line",
-    "n": 152,
+    "n": 153,
     "metric": "median_cpue",
     "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec2",
+    "_id": "67c262fe25b499bca600a085",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "pole_line",
-    "n": 152,
+    "n": 153,
     "metric": "median_rpue",
-    "value": 89368.421052632
+    "value": 88127.192982456
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec3",
+    "_id": "67c262fe25b499bca600a086",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -2764,7 +2782,7 @@
     "value": 2.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec4",
+    "_id": "67c262fe25b499bca600a087",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -2773,7 +2791,7 @@
     "value": 9375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec5",
+    "_id": "67c262fe25b499bca600a088",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -2782,7 +2800,7 @@
     "value": 8.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec6",
+    "_id": "67c262fe25b499bca600a089",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -2791,7 +2809,7 @@
     "value": 54687.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec7",
+    "_id": "67c262fe25b499bca600a08a",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -2800,7 +2818,7 @@
     "value": 32
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec8",
+    "_id": "67c262fe25b499bca600a08b",
     "landing_site": "mkokotoni",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -2809,7 +2827,7 @@
     "value": 238315.789473684
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ec9",
+    "_id": "67c262fe25b499bca600a08c",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -2818,7 +2836,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eca",
+    "_id": "67c262fe25b499bca600a08d",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -2827,7 +2845,7 @@
     "value": 9111.111111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ecb",
+    "_id": "67c262fe25b499bca600a08e",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -2836,7 +2854,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ecc",
+    "_id": "67c262fe25b499bca600a08f",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -2845,7 +2863,7 @@
     "value": 29166.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ecd",
+    "_id": "67c262fe25b499bca600a090",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -2854,7 +2872,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ece",
+    "_id": "67c262fe25b499bca600a091",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -2863,7 +2881,7 @@
     "value": 17970.454545455
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ecf",
+    "_id": "67c262fe25b499bca600a092",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -2872,7 +2890,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed0",
+    "_id": "67c262fe25b499bca600a093",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -2881,7 +2899,7 @@
     "value": 17190.909090909
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed1",
+    "_id": "67c262fe25b499bca600a094",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -2890,7 +2908,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed2",
+    "_id": "67c262fe25b499bca600a095",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -2899,7 +2917,7 @@
     "value": 21488.636363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed3",
+    "_id": "67c262fe25b499bca600a096",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "pole_line",
@@ -2908,7 +2926,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed4",
+    "_id": "67c262fe25b499bca600a097",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "pole_line",
@@ -2917,7 +2935,7 @@
     "value": 32000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed5",
+    "_id": "67c262fe25b499bca600a098",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -2926,7 +2944,7 @@
     "value": 3.675
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed6",
+    "_id": "67c262fe25b499bca600a099",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -2935,7 +2953,7 @@
     "value": 12141.818181818
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed7",
+    "_id": "67c262fe25b499bca600a09a",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -2944,7 +2962,7 @@
     "value": 2.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed8",
+    "_id": "67c262fe25b499bca600a09b",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -2953,25 +2971,25 @@
     "value": 18666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ed9",
+    "_id": "67c262fe25b499bca600a09c",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "traps",
-    "n": 272,
+    "n": 273,
     "metric": "median_cpue",
     "value": 5.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eda",
+    "_id": "67c262fe25b499bca600a09d",
     "landing_site": "mkokotoni",
     "habitat": "reef",
     "gear": "traps",
-    "n": 272,
+    "n": 273,
     "metric": "median_rpue",
     "value": 24300
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6edb",
+    "_id": "67c262fe25b499bca600a09e",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -2980,7 +2998,7 @@
     "value": 1.92
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6edc",
+    "_id": "67c262fe25b499bca600a09f",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -2989,7 +3007,7 @@
     "value": 12727.272727273
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6edd",
+    "_id": "67c262fe25b499bca600a0a0",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -2998,7 +3016,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ede",
+    "_id": "67c262fe25b499bca600a0a1",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_3",
@@ -3007,7 +3025,7 @@
     "value": 34375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6edf",
+    "_id": "67c262fe25b499bca600a0a2",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -3016,7 +3034,7 @@
     "value": 4.708333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee0",
+    "_id": "67c262fe25b499bca600a0a3",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "gill_nets_6",
@@ -3025,7 +3043,7 @@
     "value": 25000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee1",
+    "_id": "67c262fe25b499bca600a0a4",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -3034,7 +3052,7 @@
     "value": 5.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee2",
+    "_id": "67c262fe25b499bca600a0a5",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -3043,7 +3061,7 @@
     "value": 31825.757575758
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee3",
+    "_id": "67c262fe25b499bca600a0a6",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -3052,7 +3070,7 @@
     "value": 7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee4",
+    "_id": "67c262fe25b499bca600a0a7",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -3061,7 +3079,7 @@
     "value": 40112.121212121
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee5",
+    "_id": "67c262fe25b499bca600a0a8",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -3070,7 +3088,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee6",
+    "_id": "67c262fe25b499bca600a0a9",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -3079,25 +3097,25 @@
     "value": 31666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee7",
+    "_id": "67c262fe25b499bca600a0aa",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
-    "n": 135,
+    "n": 136,
     "metric": "median_cpue",
     "value": 3.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee8",
+    "_id": "67c262fe25b499bca600a0ab",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
-    "n": 135,
+    "n": 136,
     "metric": "median_rpue",
-    "value": 10800
+    "value": 10854.545454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ee9",
+    "_id": "67c262fe25b499bca600a0ac",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -3106,7 +3124,7 @@
     "value": 3.266666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eea",
+    "_id": "67c262fe25b499bca600a0ad",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -3115,25 +3133,25 @@
     "value": 24000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eeb",
+    "_id": "67c262fe25b499bca600a0ae",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "traps",
-    "n": 104,
+    "n": 106,
     "metric": "median_cpue",
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eec",
+    "_id": "67c262fe25b499bca600a0af",
     "landing_site": "mkokotoni",
     "habitat": "sand_mud_rock",
     "gear": "traps",
-    "n": 104,
+    "n": 106,
     "metric": "median_rpue",
     "value": 25333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eed",
+    "_id": "67c262fe25b499bca600a0b0",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -3142,7 +3160,7 @@
     "value": 1.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eee",
+    "_id": "67c262fe25b499bca600a0b1",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -3151,7 +3169,7 @@
     "value": 5694.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eef",
+    "_id": "67c262fe25b499bca600a0b2",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "gill_nets_6",
@@ -3160,7 +3178,7 @@
     "value": 1.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef0",
+    "_id": "67c262fe25b499bca600a0b3",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "gill_nets_6",
@@ -3169,25 +3187,25 @@
     "value": 12541.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef1",
+    "_id": "67c262fe25b499bca600a0b4",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "pole_line",
-    "n": 31,
+    "n": 32,
     "metric": "median_cpue",
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef2",
+    "_id": "67c262fe25b499bca600a0b5",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "pole_line",
-    "n": 31,
+    "n": 32,
     "metric": "median_rpue",
-    "value": 31666.666666667
+    "value": 28500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef3",
+    "_id": "67c262fe25b499bca600a0b6",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "ring_nets",
@@ -3196,7 +3214,7 @@
     "value": 2.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef4",
+    "_id": "67c262fe25b499bca600a0b7",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "ring_nets",
@@ -3205,7 +3223,7 @@
     "value": 9818.181818182
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef5",
+    "_id": "67c262fe25b499bca600a0b8",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -3214,7 +3232,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef6",
+    "_id": "67c262fe25b499bca600a0b9",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -3223,7 +3241,7 @@
     "value": 31833.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef7",
+    "_id": "67c262fe25b499bca600a0ba",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "traps",
@@ -3232,7 +3250,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef8",
+    "_id": "67c262fe25b499bca600a0bb",
     "landing_site": "mkokotoni",
     "habitat": "seagrass",
     "gear": "traps",
@@ -3241,7 +3259,7 @@
     "value": 20250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ef9",
+    "_id": "67c262fe25b499bca600a0bc",
     "landing_site": "mkokotoni",
     "gear": "gill_nets_3",
     "n": 1,
@@ -3249,7 +3267,7 @@
     "value": 7.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6efa",
+    "_id": "67c262fe25b499bca600a0bd",
     "landing_site": "mkokotoni",
     "gear": "gill_nets_3",
     "n": 1,
@@ -3257,7 +3275,7 @@
     "value": 15000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6efb",
+    "_id": "67c262fe25b499bca600a0be",
     "landing_site": "mkokotoni",
     "gear": "pole_line",
     "n": 1,
@@ -3265,7 +3283,7 @@
     "value": 66.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6efc",
+    "_id": "67c262fe25b499bca600a0bf",
     "landing_site": "mkokotoni",
     "gear": "pole_line",
     "n": 1,
@@ -3273,7 +3291,7 @@
     "value": 496491.228070175
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6efd",
+    "_id": "67c262fe25b499bca600a0c0",
     "landing_site": "mkokotoni",
     "gear": "ring_nets",
     "n": 2,
@@ -3281,7 +3299,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6efe",
+    "_id": "67c262fe25b499bca600a0c1",
     "landing_site": "mkokotoni",
     "gear": "ring_nets",
     "n": 2,
@@ -3289,7 +3307,7 @@
     "value": 42000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6eff",
+    "_id": "67c262fe25b499bca600a0c2",
     "landing_site": "mkumbuu",
     "gear": "gill_nets_6",
     "n": 1,
@@ -3297,7 +3315,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f00",
+    "_id": "67c262fe25b499bca600a0c3",
     "landing_site": "mkumbuu",
     "gear": "gill_nets_6",
     "n": 1,
@@ -3305,7 +3323,7 @@
     "value": 21488.636363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f01",
+    "_id": "67c262fe25b499bca600a0c4",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -3314,7 +3332,7 @@
     "value": 5.714285714
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f02",
+    "_id": "67c262fe25b499bca600a0c5",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -3323,7 +3341,7 @@
     "value": 35714.285714286
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f03",
+    "_id": "67c262fe25b499bca600a0c6",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -3332,7 +3350,7 @@
     "value": 4.142857143
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f04",
+    "_id": "67c262fe25b499bca600a0c7",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -3341,7 +3359,7 @@
     "value": 24609.375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f05",
+    "_id": "67c262fe25b499bca600a0c8",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -3350,7 +3368,7 @@
     "value": 11.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f06",
+    "_id": "67c262fe25b499bca600a0c9",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -3359,7 +3377,7 @@
     "value": 75994.830827068
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f07",
+    "_id": "67c262fe25b499bca600a0ca",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -3368,7 +3386,7 @@
     "value": 5.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f08",
+    "_id": "67c262fe25b499bca600a0cb",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -3377,7 +3395,7 @@
     "value": 34291.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f09",
+    "_id": "67c262fe25b499bca600a0cc",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -3386,7 +3404,7 @@
     "value": 0.38125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0a",
+    "_id": "67c262fe25b499bca600a0cd",
     "landing_site": "moa",
     "habitat": "open_ocean",
     "gear": "traps",
@@ -3395,7 +3413,7 @@
     "value": 1651.603535354
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0b",
+    "_id": "67c262fe25b499bca600a0ce",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -3404,7 +3422,7 @@
     "value": 2.208333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0c",
+    "_id": "67c262fe25b499bca600a0cf",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -3413,7 +3431,7 @@
     "value": 8468.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0d",
+    "_id": "67c262fe25b499bca600a0d0",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -3422,7 +3440,7 @@
     "value": 3.875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0e",
+    "_id": "67c262fe25b499bca600a0d1",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -3431,7 +3449,7 @@
     "value": 9687.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f0f",
+    "_id": "67c262fe25b499bca600a0d2",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -3440,7 +3458,7 @@
     "value": 2.3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f10",
+    "_id": "67c262fe25b499bca600a0d3",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -3449,7 +3467,7 @@
     "value": 11285.714285714
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f11",
+    "_id": "67c262fe25b499bca600a0d4",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -3458,7 +3476,7 @@
     "value": 1.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f12",
+    "_id": "67c262fe25b499bca600a0d5",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -3467,7 +3485,7 @@
     "value": 7000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f13",
+    "_id": "67c262fe25b499bca600a0d6",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "traps",
@@ -3476,7 +3494,7 @@
     "value": 1.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f14",
+    "_id": "67c262fe25b499bca600a0d7",
     "landing_site": "moa",
     "habitat": "reef",
     "gear": "traps",
@@ -3485,7 +3503,7 @@
     "value": 4875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f15",
+    "_id": "67c262fe25b499bca600a0d8",
     "landing_site": "moa",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -3494,7 +3512,7 @@
     "value": 8.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f16",
+    "_id": "67c262fe25b499bca600a0d9",
     "landing_site": "moa",
     "habitat": "sand_mud_rock",
     "gear": "long_line_long",
@@ -3503,7 +3521,7 @@
     "value": 59377.192982456
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f17",
+    "_id": "67c262fe25b499bca600a0da",
     "landing_site": "moa",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -3512,7 +3530,7 @@
     "value": 3.625
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f18",
+    "_id": "67c262fe25b499bca600a0db",
     "landing_site": "moa",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -3521,7 +3539,7 @@
     "value": 25375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f19",
+    "_id": "67c262fe25b499bca600a0dc",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -3530,7 +3548,7 @@
     "value": 1.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1a",
+    "_id": "67c262fe25b499bca600a0dd",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -3539,7 +3557,7 @@
     "value": 10600
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1b",
+    "_id": "67c262fe25b499bca600a0de",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -3548,7 +3566,7 @@
     "value": 0.083333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1c",
+    "_id": "67c262fe25b499bca600a0df",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "long_line_short",
@@ -3557,7 +3575,7 @@
     "value": 666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1d",
+    "_id": "67c262fe25b499bca600a0e0",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "traps",
@@ -3566,7 +3584,7 @@
     "value": 29
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1e",
+    "_id": "67c262fe25b499bca600a0e1",
     "landing_site": "moa",
     "habitat": "seagrass",
     "gear": "traps",
@@ -3575,7 +3593,7 @@
     "value": 117450
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f1f",
+    "_id": "67c262fe25b499bca600a0e2",
     "landing_site": "moa",
     "gear": "beach_seines",
     "n": 1,
@@ -3583,7 +3601,7 @@
     "value": 7.714285714
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f20",
+    "_id": "67c262fe25b499bca600a0e3",
     "landing_site": "moa",
     "gear": "beach_seines",
     "n": 1,
@@ -3591,7 +3609,7 @@
     "value": 31242.857142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f21",
+    "_id": "67c262fe25b499bca600a0e4",
     "landing_site": "moa",
     "gear": "gill_nets_3",
     "n": 193,
@@ -3599,7 +3617,7 @@
     "value": 7
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f22",
+    "_id": "67c262fe25b499bca600a0e5",
     "landing_site": "moa",
     "gear": "gill_nets_3",
     "n": 193,
@@ -3607,7 +3625,7 @@
     "value": 39062.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f23",
+    "_id": "67c262fe25b499bca600a0e6",
     "landing_site": "moa",
     "gear": "gill_nets_6",
     "n": 22,
@@ -3615,7 +3633,7 @@
     "value": 8.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f24",
+    "_id": "67c262fe25b499bca600a0e7",
     "landing_site": "moa",
     "gear": "gill_nets_6",
     "n": 22,
@@ -3623,7 +3641,7 @@
     "value": 45750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f25",
+    "_id": "67c262fe25b499bca600a0e8",
     "landing_site": "moa",
     "gear": "long_line_long",
     "n": 249,
@@ -3631,7 +3649,7 @@
     "value": 5.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f26",
+    "_id": "67c262fe25b499bca600a0e9",
     "landing_site": "moa",
     "gear": "long_line_long",
     "n": 249,
@@ -3639,7 +3657,7 @@
     "value": 31516.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f27",
+    "_id": "67c262fe25b499bca600a0ea",
     "landing_site": "moa",
     "gear": "long_line_short",
     "n": 1960,
@@ -3647,7 +3665,7 @@
     "value": 4.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f28",
+    "_id": "67c262fe25b499bca600a0eb",
     "landing_site": "moa",
     "gear": "long_line_short",
     "n": 1960,
@@ -3655,23 +3673,23 @@
     "value": 27516.447368421
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f29",
+    "_id": "67c262fe25b499bca600a0ec",
     "landing_site": "moa",
     "gear": "pole_line",
-    "n": 151,
+    "n": 160,
     "metric": "median_cpue",
-    "value": 2.666666667
+    "value": 2.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2a",
+    "_id": "67c262fe25b499bca600a0ed",
     "landing_site": "moa",
     "gear": "pole_line",
-    "n": 151,
+    "n": 160,
     "metric": "median_rpue",
     "value": 18666.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2b",
+    "_id": "67c262fe25b499bca600a0ee",
     "landing_site": "moa",
     "gear": "ring_nets",
     "n": 6,
@@ -3679,7 +3697,7 @@
     "value": 6.269230769
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2c",
+    "_id": "67c262fe25b499bca600a0ef",
     "landing_site": "moa",
     "gear": "ring_nets",
     "n": 6,
@@ -3687,7 +3705,7 @@
     "value": 17374.342105263
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2d",
+    "_id": "67c262fe25b499bca600a0f0",
     "landing_site": "moa",
     "gear": "traps",
     "n": 305,
@@ -3695,7 +3713,7 @@
     "value": 4.2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2e",
+    "_id": "67c262fe25b499bca600a0f1",
     "landing_site": "moa",
     "gear": "traps",
     "n": 305,
@@ -3703,7 +3721,7 @@
     "value": 16888.888888889
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f2f",
+    "_id": "67c262fe25b499bca600a0f2",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -3712,7 +3730,7 @@
     "value": 26.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f30",
+    "_id": "67c262fe25b499bca600a0f3",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -3721,7 +3739,7 @@
     "value": 196610.526315789
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f31",
+    "_id": "67c262fe25b499bca600a0f4",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -3730,7 +3748,7 @@
     "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f32",
+    "_id": "67c262fe25b499bca600a0f5",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -3739,7 +3757,7 @@
     "value": 84000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f33",
+    "_id": "67c262fe25b499bca600a0f6",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -3748,7 +3766,7 @@
     "value": 28.375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f34",
+    "_id": "67c262fe25b499bca600a0f7",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -3757,7 +3775,7 @@
     "value": 211319.078947368
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f35",
+    "_id": "67c262fe25b499bca600a0f8",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -3766,7 +3784,7 @@
     "value": 27.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f36",
+    "_id": "67c262fe25b499bca600a0f9",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -3775,7 +3793,7 @@
     "value": 203713.157894737
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f37",
+    "_id": "67c262fe25b499bca600a0fa",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -3784,7 +3802,7 @@
     "value": 20.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f38",
+    "_id": "67c262fe25b499bca600a0fb",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -3793,7 +3811,7 @@
     "value": 150188.596491228
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f39",
+    "_id": "67c262fe25b499bca600a0fc",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -3802,7 +3820,7 @@
     "value": 11.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3a",
+    "_id": "67c262fe25b499bca600a0fd",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -3811,7 +3829,7 @@
     "value": 37050
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3b",
+    "_id": "67c262fe25b499bca600a0fe",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -3820,7 +3838,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3c",
+    "_id": "67c262fe25b499bca600a0ff",
     "landing_site": "msuka",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -3829,7 +3847,7 @@
     "value": 18750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3d",
+    "_id": "67c262fe25b499bca600a100",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -3838,7 +3856,7 @@
     "value": 5.3875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3e",
+    "_id": "67c262fe25b499bca600a101",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -3847,7 +3865,7 @@
     "value": 25076.704545455
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f3f",
+    "_id": "67c262fe25b499bca600a102",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -3856,7 +3874,7 @@
     "value": 2.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f40",
+    "_id": "67c262fe25b499bca600a103",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -3865,7 +3883,7 @@
     "value": 11142.857142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f41",
+    "_id": "67c262fe25b499bca600a104",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -3874,7 +3892,7 @@
     "value": 4.416666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f42",
+    "_id": "67c262fe25b499bca600a105",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -3883,7 +3901,7 @@
     "value": 24318.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f43",
+    "_id": "67c262fe25b499bca600a106",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -3892,7 +3910,7 @@
     "value": 4.9375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f44",
+    "_id": "67c262fe25b499bca600a107",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -3901,7 +3919,7 @@
     "value": 19996.875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f45",
+    "_id": "67c262fe25b499bca600a108",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -3910,7 +3928,7 @@
     "value": 8.125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f46",
+    "_id": "67c262fe25b499bca600a109",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -3919,7 +3937,7 @@
     "value": 33750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f47",
+    "_id": "67c262fe25b499bca600a10a",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "traps",
@@ -3928,7 +3946,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f48",
+    "_id": "67c262fe25b499bca600a10b",
     "landing_site": "msuka",
     "habitat": "reef",
     "gear": "traps",
@@ -3937,7 +3955,7 @@
     "value": 19045.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f49",
+    "_id": "67c262fe25b499bca600a10c",
     "landing_site": "msuka",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -3946,7 +3964,7 @@
     "value": 9
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4a",
+    "_id": "67c262fe25b499bca600a10d",
     "landing_site": "msuka",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -3955,7 +3973,7 @@
     "value": 63500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4b",
+    "_id": "67c262fe25b499bca600a10e",
     "landing_site": "msuka",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -3964,7 +3982,7 @@
     "value": 19
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4c",
+    "_id": "67c262fe25b499bca600a10f",
     "landing_site": "msuka",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -3973,7 +3991,7 @@
     "value": 89812.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4d",
+    "_id": "67c262fe25b499bca600a110",
     "landing_site": "msuka",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -3982,7 +4000,7 @@
     "value": 4.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4e",
+    "_id": "67c262fe25b499bca600a111",
     "landing_site": "msuka",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -3991,7 +4009,7 @@
     "value": 32250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f4f",
+    "_id": "67c262fe25b499bca600a112",
     "landing_site": "msuka",
     "gear": "beach_seines",
     "n": 19,
@@ -3999,7 +4017,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f50",
+    "_id": "67c262fe25b499bca600a113",
     "landing_site": "msuka",
     "gear": "beach_seines",
     "n": 19,
@@ -4007,7 +4025,7 @@
     "value": 25083.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f51",
+    "_id": "67c262fe25b499bca600a114",
     "landing_site": "msuka",
     "gear": "gill_nets_3",
     "n": 30,
@@ -4015,7 +4033,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f52",
+    "_id": "67c262fe25b499bca600a115",
     "landing_site": "msuka",
     "gear": "gill_nets_3",
     "n": 30,
@@ -4023,7 +4041,7 @@
     "value": 21290.789473684
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f53",
+    "_id": "67c262fe25b499bca600a116",
     "landing_site": "msuka",
     "gear": "gill_nets_6",
     "n": 11,
@@ -4031,7 +4049,7 @@
     "value": 15.2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f54",
+    "_id": "67c262fe25b499bca600a117",
     "landing_site": "msuka",
     "gear": "gill_nets_6",
     "n": 11,
@@ -4039,7 +4057,7 @@
     "value": 100000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f55",
+    "_id": "67c262fe25b499bca600a118",
     "landing_site": "msuka",
     "gear": "long_line_long",
     "n": 305,
@@ -4047,7 +4065,7 @@
     "value": 8.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f56",
+    "_id": "67c262fe25b499bca600a119",
     "landing_site": "msuka",
     "gear": "long_line_long",
     "n": 305,
@@ -4055,23 +4073,23 @@
     "value": 50498.295454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f57",
+    "_id": "67c262fe25b499bca600a11a",
     "landing_site": "msuka",
     "gear": "long_line_short",
-    "n": 201,
+    "n": 204,
     "metric": "median_cpue",
     "value": 8.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f58",
+    "_id": "67c262fe25b499bca600a11b",
     "landing_site": "msuka",
     "gear": "long_line_short",
-    "n": 201,
+    "n": 204,
     "metric": "median_rpue",
     "value": 34381.818181818
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f59",
+    "_id": "67c262fe25b499bca600a11c",
     "landing_site": "msuka",
     "gear": "pole_line",
     "n": 16,
@@ -4079,7 +4097,7 @@
     "value": 4.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5a",
+    "_id": "67c262fe25b499bca600a11d",
     "landing_site": "msuka",
     "gear": "pole_line",
     "n": 16,
@@ -4087,55 +4105,55 @@
     "value": 33562.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5b",
+    "_id": "67c262fe25b499bca600a11e",
     "landing_site": "msuka",
     "gear": "ring_nets",
-    "n": 513,
+    "n": 515,
     "metric": "median_cpue",
-    "value": 6.5
+    "value": 6.511363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5c",
+    "_id": "67c262fe25b499bca600a11f",
     "landing_site": "msuka",
     "gear": "ring_nets",
-    "n": 513,
+    "n": 515,
     "metric": "median_rpue",
     "value": 19690.170940171
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5d",
+    "_id": "67c262fe25b499bca600a120",
     "landing_site": "msuka",
     "gear": "spear_gun",
-    "n": 570,
+    "n": 572,
     "metric": "median_cpue",
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5e",
+    "_id": "67c262fe25b499bca600a121",
     "landing_site": "msuka",
     "gear": "spear_gun",
-    "n": 570,
+    "n": 572,
     "metric": "median_rpue",
     "value": 28350
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f5f",
+    "_id": "67c262fe25b499bca600a122",
     "landing_site": "msuka",
     "gear": "traps",
-    "n": 142,
+    "n": 146,
     "metric": "median_cpue",
     "value": 6.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f60",
+    "_id": "67c262fe25b499bca600a123",
     "landing_site": "msuka",
     "gear": "traps",
-    "n": 142,
+    "n": 146,
     "metric": "median_rpue",
-    "value": 28187.5
+    "value": 28095.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f61",
+    "_id": "67c262fe25b499bca600a124",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -4144,7 +4162,7 @@
     "value": 5.578125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f62",
+    "_id": "67c262fe25b499bca600a125",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -4153,7 +4171,7 @@
     "value": 15937.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f63",
+    "_id": "67c262fe25b499bca600a126",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -4162,7 +4180,7 @@
     "value": 244.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f64",
+    "_id": "67c262fe25b499bca600a127",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -4171,25 +4189,25 @@
     "value": 1819821.6374269
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f65",
+    "_id": "67c262fe25b499bca600a128",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
-    "n": 328,
+    "n": 348,
     "metric": "median_cpue",
     "value": 24
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f66",
+    "_id": "67c262fe25b499bca600a129",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "long_line_long",
-    "n": 328,
+    "n": 348,
     "metric": "median_rpue",
     "value": 178736.842105263
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f67",
+    "_id": "67c262fe25b499bca600a12a",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -4198,7 +4216,7 @@
     "value": 7.055555556
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f68",
+    "_id": "67c262fe25b499bca600a12b",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -4207,7 +4225,7 @@
     "value": 40099.210858586
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f69",
+    "_id": "67c262fe25b499bca600a12c",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -4216,7 +4234,7 @@
     "value": 5.4375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6a",
+    "_id": "67c262fe25b499bca600a12d",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "ring_nets",
@@ -4225,7 +4243,7 @@
     "value": 34437.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6b",
+    "_id": "67c262fe25b499bca600a12e",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -4234,7 +4252,7 @@
     "value": 5.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6c",
+    "_id": "67c262fe25b499bca600a12f",
     "landing_site": "mtangani",
     "habitat": "open_ocean",
     "gear": "spear_gun",
@@ -4243,7 +4261,7 @@
     "value": 30933.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6d",
+    "_id": "67c262fe25b499bca600a130",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -4252,7 +4270,7 @@
     "value": 25.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6e",
+    "_id": "67c262fe25b499bca600a131",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -4261,7 +4279,7 @@
     "value": 38400
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f6f",
+    "_id": "67c262fe25b499bca600a132",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -4270,7 +4288,7 @@
     "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f70",
+    "_id": "67c262fe25b499bca600a133",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -4279,7 +4297,7 @@
     "value": 88500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f71",
+    "_id": "67c262fe25b499bca600a134",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -4288,7 +4306,7 @@
     "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f72",
+    "_id": "67c262fe25b499bca600a135",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -4297,7 +4315,7 @@
     "value": 48600
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f73",
+    "_id": "67c262fe25b499bca600a136",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -4306,7 +4324,7 @@
     "value": 6.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f74",
+    "_id": "67c262fe25b499bca600a137",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -4315,7 +4333,7 @@
     "value": 52000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f75",
+    "_id": "67c262fe25b499bca600a138",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -4324,7 +4342,7 @@
     "value": 3.266666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f76",
+    "_id": "67c262fe25b499bca600a139",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -4333,7 +4351,7 @@
     "value": 7677.777777778
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f77",
+    "_id": "67c262fe25b499bca600a13a",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -4342,7 +4360,7 @@
     "value": 5.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f78",
+    "_id": "67c262fe25b499bca600a13b",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -4351,25 +4369,25 @@
     "value": 41333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f79",
+    "_id": "67c262fe25b499bca600a13c",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "traps",
-    "n": 2,
+    "n": 4,
     "metric": "median_cpue",
-    "value": 14.25
+    "value": 12
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7a",
+    "_id": "67c262fe25b499bca600a13d",
     "landing_site": "mtangani",
     "habitat": "reef",
     "gear": "traps",
-    "n": 2,
+    "n": 4,
     "metric": "median_rpue",
-    "value": 38479.166666667
+    "value": 31979.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7b",
+    "_id": "67c262fe25b499bca600a13e",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -4378,7 +4396,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7c",
+    "_id": "67c262fe25b499bca600a13f",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -4387,7 +4405,7 @@
     "value": 24500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7d",
+    "_id": "67c262fe25b499bca600a140",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -4396,7 +4414,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7e",
+    "_id": "67c262fe25b499bca600a141",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -4405,7 +4423,7 @@
     "value": 32000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f7f",
+    "_id": "67c262fe25b499bca600a142",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4414,7 +4432,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f80",
+    "_id": "67c262fe25b499bca600a143",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4423,7 +4441,7 @@
     "value": 12000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f81",
+    "_id": "67c262fe25b499bca600a144",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -4432,7 +4450,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f82",
+    "_id": "67c262fe25b499bca600a145",
     "landing_site": "mtangani",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -4441,61 +4459,79 @@
     "value": 15833.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f83",
+    "_id": "67c262fe25b499bca600a146",
     "landing_site": "mvumoni_furaha",
     "habitat": "open_ocean",
     "gear": "pole_line",
-    "n": 1,
+    "n": 5,
     "metric": "median_cpue",
     "value": 33
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f84",
+    "_id": "67c262fe25b499bca600a147",
     "landing_site": "mvumoni_furaha",
     "habitat": "open_ocean",
     "gear": "pole_line",
-    "n": 1,
+    "n": 5,
     "metric": "median_rpue",
     "value": 231000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f85",
+    "_id": "67c262fe25b499bca600a148",
     "landing_site": "mvumoni_furaha",
     "habitat": "reef",
     "gear": "beach_seines",
-    "n": 57,
+    "n": 58,
     "metric": "median_cpue",
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f86",
+    "_id": "67c262fe25b499bca600a149",
     "landing_site": "mvumoni_furaha",
     "habitat": "reef",
     "gear": "beach_seines",
-    "n": 57,
+    "n": 58,
     "metric": "median_rpue",
-    "value": 17083.333333333
+    "value": 16541.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f87",
+    "_id": "67c262fe25b499bca600a14a",
+    "landing_site": "mvumoni_furaha",
+    "habitat": "reef",
+    "gear": "pole_line",
+    "n": 1,
+    "metric": "median_cpue",
+    "value": 1.666666667
+  },
+  {
+    "_id": "67c262fe25b499bca600a14b",
+    "landing_site": "mvumoni_furaha",
+    "habitat": "reef",
+    "gear": "pole_line",
+    "n": 1,
+    "metric": "median_rpue",
+    "value": 6750
+  },
+  {
+    "_id": "67c262fe25b499bca600a14c",
     "landing_site": "mvumoni_furaha",
     "habitat": "reef",
     "gear": "traps",
-    "n": 52,
+    "n": 55,
     "metric": "median_cpue",
     "value": 8.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f88",
+    "_id": "67c262fe25b499bca600a14d",
     "landing_site": "mvumoni_furaha",
     "habitat": "reef",
     "gear": "traps",
-    "n": 52,
+    "n": 55,
     "metric": "median_rpue",
-    "value": 32242.045454545
+    "value": 32109.090909091
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f89",
+    "_id": "67c262fe25b499bca600a14e",
     "landing_site": "mvumoni_furaha",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -4504,7 +4540,7 @@
     "value": 2.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8a",
+    "_id": "67c262fe25b499bca600a14f",
     "landing_site": "mvumoni_furaha",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -4513,7 +4549,7 @@
     "value": 13416.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8b",
+    "_id": "67c262fe25b499bca600a150",
     "landing_site": "mvumoni_furaha",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4522,7 +4558,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8c",
+    "_id": "67c262fe25b499bca600a151",
     "landing_site": "mvumoni_furaha",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4531,7 +4567,7 @@
     "value": 20000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8d",
+    "_id": "67c262fe25b499bca600a152",
     "landing_site": "ndumbani",
     "habitat": "mangroves",
     "gear": "beach_seines",
@@ -4540,7 +4576,7 @@
     "value": 1.3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8e",
+    "_id": "67c262fe25b499bca600a153",
     "landing_site": "ndumbani",
     "habitat": "mangroves",
     "gear": "beach_seines",
@@ -4549,7 +4585,7 @@
     "value": 5587.045454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f8f",
+    "_id": "67c262fe25b499bca600a154",
     "landing_site": "ndumbani",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -4558,7 +4594,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f90",
+    "_id": "67c262fe25b499bca600a155",
     "landing_site": "ndumbani",
     "habitat": "mangroves",
     "gear": "pole_line",
@@ -4567,7 +4603,7 @@
     "value": 29940.476190476
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f91",
+    "_id": "67c262fe25b499bca600a156",
     "landing_site": "ndumbani",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -4576,7 +4612,7 @@
     "value": 2.45
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f92",
+    "_id": "67c262fe25b499bca600a157",
     "landing_site": "ndumbani",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -4585,7 +4621,7 @@
     "value": 10500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f93",
+    "_id": "67c262fe25b499bca600a158",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -4594,7 +4630,7 @@
     "value": 4.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f94",
+    "_id": "67c262fe25b499bca600a159",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -4603,7 +4639,7 @@
     "value": 33250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f95",
+    "_id": "67c262fe25b499bca600a15a",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -4612,7 +4648,7 @@
     "value": 3.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f96",
+    "_id": "67c262fe25b499bca600a15b",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "pole_line",
@@ -4621,7 +4657,7 @@
     "value": 18300
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f97",
+    "_id": "67c262fe25b499bca600a15c",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -4630,7 +4666,7 @@
     "value": 0.925
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f98",
+    "_id": "67c262fe25b499bca600a15d",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -4639,7 +4675,7 @@
     "value": 6562.40530303
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f99",
+    "_id": "67c262fe25b499bca600a15e",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "traps",
@@ -4648,7 +4684,7 @@
     "value": 3.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9a",
+    "_id": "67c262fe25b499bca600a15f",
     "landing_site": "ndumbani",
     "habitat": "reef",
     "gear": "traps",
@@ -4657,7 +4693,7 @@
     "value": 15901.590909091
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9b",
+    "_id": "67c262fe25b499bca600a160",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -4666,7 +4702,7 @@
     "value": 7.125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9c",
+    "_id": "67c262fe25b499bca600a161",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "beach_seines",
@@ -4675,7 +4711,7 @@
     "value": 49395.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9d",
+    "_id": "67c262fe25b499bca600a162",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -4684,7 +4720,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9e",
+    "_id": "67c262fe25b499bca600a163",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -4693,7 +4729,7 @@
     "value": 11545.454545455
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6f9f",
+    "_id": "67c262fe25b499bca600a164",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
@@ -4702,7 +4738,7 @@
     "value": 6.05
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa0",
+    "_id": "67c262fe25b499bca600a165",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "ring_nets",
@@ -4711,7 +4747,7 @@
     "value": 42350
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa1",
+    "_id": "67c262fe25b499bca600a166",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4720,7 +4756,7 @@
     "value": 2.733333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa2",
+    "_id": "67c262fe25b499bca600a167",
     "landing_site": "ndumbani",
     "habitat": "sand_mud_rock",
     "gear": "spear_gun",
@@ -4729,7 +4765,7 @@
     "value": 21866.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa3",
+    "_id": "67c262fe25b499bca600a168",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -4738,7 +4774,7 @@
     "value": 3.05
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa4",
+    "_id": "67c262fe25b499bca600a169",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -4747,7 +4783,7 @@
     "value": 19369.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa5",
+    "_id": "67c262fe25b499bca600a16a",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -4756,7 +4792,7 @@
     "value": 2.3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa6",
+    "_id": "67c262fe25b499bca600a16b",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -4765,7 +4801,7 @@
     "value": 11818.181818182
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa7",
+    "_id": "67c262fe25b499bca600a16c",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -4774,7 +4810,7 @@
     "value": 2.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa8",
+    "_id": "67c262fe25b499bca600a16d",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "spear_gun",
@@ -4783,7 +4819,7 @@
     "value": 15516.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fa9",
+    "_id": "67c262fe25b499bca600a16e",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "traps",
@@ -4792,7 +4828,7 @@
     "value": 3.6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6faa",
+    "_id": "67c262fe25b499bca600a16f",
     "landing_site": "ndumbani",
     "habitat": "seagrass",
     "gear": "traps",
@@ -4801,7 +4837,7 @@
     "value": 16237.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fab",
+    "_id": "67c262fe25b499bca600a170",
     "landing_site": "ndumbani",
     "gear": "gill_nets_3",
     "n": 27,
@@ -4809,7 +4845,7 @@
     "value": 4.566666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fac",
+    "_id": "67c262fe25b499bca600a171",
     "landing_site": "ndumbani",
     "gear": "gill_nets_3",
     "n": 27,
@@ -4817,7 +4853,7 @@
     "value": 30387.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fad",
+    "_id": "67c262fe25b499bca600a172",
     "landing_site": "ndumbani",
     "gear": "long_line_short",
     "n": 1,
@@ -4825,7 +4861,7 @@
     "value": 6.4225
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fae",
+    "_id": "67c262fe25b499bca600a173",
     "landing_site": "ndumbani",
     "gear": "long_line_short",
     "n": 1,
@@ -4833,7 +4869,7 @@
     "value": 47830.723684211
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6faf",
+    "_id": "67c262fe25b499bca600a174",
     "landing_site": "ndumbani",
     "gear": "pole_line",
     "n": 20,
@@ -4841,7 +4877,7 @@
     "value": 4.975
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb0",
+    "_id": "67c262fe25b499bca600a175",
     "landing_site": "ndumbani",
     "gear": "pole_line",
     "n": 20,
@@ -4849,7 +4885,7 @@
     "value": 33950
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb1",
+    "_id": "67c262fe25b499bca600a176",
     "landing_site": "ndumbani",
     "gear": "ring_nets",
     "n": 1,
@@ -4857,7 +4893,7 @@
     "value": 2.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb2",
+    "_id": "67c262fe25b499bca600a177",
     "landing_site": "ndumbani",
     "gear": "ring_nets",
     "n": 1,
@@ -4865,7 +4901,7 @@
     "value": 21100.877192982
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb3",
+    "_id": "67c262fe25b499bca600a178",
     "landing_site": "ndumbani",
     "gear": "spear_gun",
     "n": 8,
@@ -4873,7 +4909,7 @@
     "value": 2.65
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb4",
+    "_id": "67c262fe25b499bca600a179",
     "landing_site": "ndumbani",
     "gear": "spear_gun",
     "n": 8,
@@ -4881,7 +4917,7 @@
     "value": 16783.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb5",
+    "_id": "67c262fe25b499bca600a17a",
     "landing_site": "ndumbani",
     "gear": "traps",
     "n": 667,
@@ -4889,7 +4925,7 @@
     "value": 4.465
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb6",
+    "_id": "67c262fe25b499bca600a17b",
     "landing_site": "ndumbani",
     "gear": "traps",
     "n": 667,
@@ -4897,7 +4933,7 @@
     "value": 19750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb7",
+    "_id": "67c262fe25b499bca600a17c",
     "landing_site": "nungwi",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -4906,7 +4942,7 @@
     "value": 1.05
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb8",
+    "_id": "67c262fe25b499bca600a17d",
     "landing_site": "nungwi",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -4915,7 +4951,7 @@
     "value": 6868.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fb9",
+    "_id": "67c262fe25b499bca600a17e",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -4924,7 +4960,7 @@
     "value": 0.92
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fba",
+    "_id": "67c262fe25b499bca600a17f",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -4933,7 +4969,7 @@
     "value": 4211.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fbb",
+    "_id": "67c262fe25b499bca600a180",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -4942,7 +4978,7 @@
     "value": 6
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fbc",
+    "_id": "67c262fe25b499bca600a181",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -4951,7 +4987,7 @@
     "value": 34636.363636364
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fbd",
+    "_id": "67c262fe25b499bca600a182",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "traps",
@@ -4960,7 +4996,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fbe",
+    "_id": "67c262fe25b499bca600a183",
     "landing_site": "nungwi",
     "habitat": "reef",
     "gear": "traps",
@@ -4969,7 +5005,7 @@
     "value": 20250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fbf",
+    "_id": "67c262fe25b499bca600a184",
     "landing_site": "nungwi",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -4978,7 +5014,7 @@
     "value": 1.15
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc0",
+    "_id": "67c262fe25b499bca600a185",
     "landing_site": "nungwi",
     "habitat": "sand_mud_rock",
     "gear": "traps",
@@ -4987,7 +5023,7 @@
     "value": 4149.583333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc1",
+    "_id": "67c262fe25b499bca600a186",
     "landing_site": "other_site",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -4996,7 +5032,7 @@
     "value": 4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc2",
+    "_id": "67c262fe25b499bca600a187",
     "landing_site": "other_site",
     "habitat": "mangroves",
     "gear": "spear_gun",
@@ -5005,7 +5041,7 @@
     "value": 8000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc3",
+    "_id": "67c262fe25b499bca600a188",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -5013,7 +5049,7 @@
     "metric": "median_cpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc4",
+    "_id": "67c262fe25b499bca600a189",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -5021,7 +5057,7 @@
     "metric": "median_rpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc5",
+    "_id": "67c262fe25b499bca600a18a",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -5030,7 +5066,7 @@
     "value": 8.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc6",
+    "_id": "67c262fe25b499bca600a18b",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -5039,7 +5075,7 @@
     "value": 52500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc7",
+    "_id": "67c262fe25b499bca600a18c",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -5048,7 +5084,7 @@
     "value": 13.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc8",
+    "_id": "67c262fe25b499bca600a18d",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -5057,7 +5093,7 @@
     "value": 57303.03030303
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fc9",
+    "_id": "67c262fe25b499bca600a18e",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5066,7 +5102,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fca",
+    "_id": "67c262fe25b499bca600a18f",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5075,7 +5111,7 @@
     "value": 14000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fcb",
+    "_id": "67c262fe25b499bca600a190",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -5084,7 +5120,7 @@
     "value": 29.166666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fcc",
+    "_id": "67c262fe25b499bca600a191",
     "landing_site": "other_site",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -5093,7 +5129,7 @@
     "value": 217214.912280702
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fcd",
+    "_id": "67c262fe25b499bca600a192",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5102,7 +5138,7 @@
     "value": 2.727272727
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fce",
+    "_id": "67c262fe25b499bca600a193",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5111,7 +5147,7 @@
     "value": 18222.222222222
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fcf",
+    "_id": "67c262fe25b499bca600a194",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -5120,7 +5156,7 @@
     "value": 19.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd0",
+    "_id": "67c262fe25b499bca600a195",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -5129,7 +5165,7 @@
     "value": 135333.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd1",
+    "_id": "67c262fe25b499bca600a196",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -5138,7 +5174,7 @@
     "value": 2.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd2",
+    "_id": "67c262fe25b499bca600a197",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -5147,7 +5183,7 @@
     "value": 15819.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd3",
+    "_id": "67c262fe25b499bca600a198",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5156,7 +5192,7 @@
     "value": 1.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd4",
+    "_id": "67c262fe25b499bca600a199",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5165,7 +5201,7 @@
     "value": 13319.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd5",
+    "_id": "67c262fe25b499bca600a19a",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "pole_line",
@@ -5174,7 +5210,7 @@
     "value": 3.2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd6",
+    "_id": "67c262fe25b499bca600a19b",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "pole_line",
@@ -5183,7 +5219,7 @@
     "value": 22400
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd7",
+    "_id": "67c262fe25b499bca600a19c",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -5192,7 +5228,7 @@
     "value": 0.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd8",
+    "_id": "67c262fe25b499bca600a19d",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "ring_nets",
@@ -5201,7 +5237,7 @@
     "value": 3223.295454545
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fd9",
+    "_id": "67c262fe25b499bca600a19e",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -5210,7 +5246,7 @@
     "value": 3.416666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fda",
+    "_id": "67c262fe25b499bca600a19f",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -5219,7 +5255,7 @@
     "value": 19392.857142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fdb",
+    "_id": "67c262fe25b499bca600a1a0",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "traps",
@@ -5228,7 +5264,7 @@
     "value": 2
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fdc",
+    "_id": "67c262fe25b499bca600a1a1",
     "landing_site": "other_site",
     "habitat": "reef",
     "gear": "traps",
@@ -5237,7 +5273,7 @@
     "value": 11823.232323232
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fdd",
+    "_id": "67c262fe25b499bca600a1a2",
     "landing_site": "other_site",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -5246,7 +5282,7 @@
     "value": 0.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fde",
+    "_id": "67c262fe25b499bca600a1a3",
     "landing_site": "other_site",
     "habitat": "sand_mud_rock",
     "gear": "long_line_short",
@@ -5255,7 +5291,7 @@
     "value": 4000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fdf",
+    "_id": "67c262fe25b499bca600a1a4",
     "landing_site": "other_site",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -5264,7 +5300,7 @@
     "value": 2.98245614
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe0",
+    "_id": "67c262fe25b499bca600a1a5",
     "landing_site": "other_site",
     "habitat": "sand_mud_rock",
     "gear": "pole_line",
@@ -5273,7 +5309,7 @@
     "value": 23859.649122807
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe1",
+    "_id": "67c262fe25b499bca600a1a6",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -5282,7 +5318,7 @@
     "value": 0.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe2",
+    "_id": "67c262fe25b499bca600a1a7",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "long_line_long",
@@ -5291,7 +5327,7 @@
     "value": 3166.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe3",
+    "_id": "67c262fe25b499bca600a1a8",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -5300,7 +5336,7 @@
     "value": 1.125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe4",
+    "_id": "67c262fe25b499bca600a1a9",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "pole_line",
@@ -5309,7 +5345,7 @@
     "value": 5412.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe5",
+    "_id": "67c262fe25b499bca600a1aa",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "traps",
@@ -5318,7 +5354,7 @@
     "value": 1
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe6",
+    "_id": "67c262fe25b499bca600a1ab",
     "landing_site": "other_site",
     "habitat": "seagrass",
     "gear": "traps",
@@ -5327,71 +5363,71 @@
     "value": 4050
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe7",
+    "_id": "67c262fe25b499bca600a1ac",
     "landing_site": "sahare",
     "gear": "beach_seines",
-    "n": 4,
+    "n": 5,
     "metric": "median_cpue",
-    "value": 3.393939394
+    "value": 1.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe8",
+    "_id": "67c262fe25b499bca600a1ad",
     "landing_site": "sahare",
     "gear": "beach_seines",
-    "n": 4,
+    "n": 5,
     "metric": "median_rpue",
-    "value": 23757.575757576
+    "value": 9500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fe9",
+    "_id": "67c262fe25b499bca600a1ae",
     "landing_site": "sahare",
     "gear": "gill_nets_3",
-    "n": 223,
+    "n": 226,
     "metric": "median_cpue",
-    "value": 1.916666667
+    "value": 1.908333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fea",
+    "_id": "67c262fe25b499bca600a1af",
     "landing_site": "sahare",
     "gear": "gill_nets_3",
-    "n": 223,
+    "n": 226,
     "metric": "median_rpue",
-    "value": 4000
+    "value": 4019.230769231
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6feb",
+    "_id": "67c262fe25b499bca600a1b0",
     "landing_site": "sahare",
     "gear": "gill_nets_6",
-    "n": 196,
+    "n": 199,
     "metric": "median_cpue",
     "value": 4.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fec",
+    "_id": "67c262fe25b499bca600a1b1",
     "landing_site": "sahare",
     "gear": "gill_nets_6",
-    "n": 196,
+    "n": 199,
     "metric": "median_rpue",
     "value": 25000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fed",
+    "_id": "67c262fe25b499bca600a1b2",
     "landing_site": "sahare",
     "gear": "long_line_long",
-    "n": 245,
+    "n": 246,
     "metric": "median_cpue",
     "value": 4.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fee",
+    "_id": "67c262fe25b499bca600a1b3",
     "landing_site": "sahare",
     "gear": "long_line_long",
-    "n": 245,
+    "n": 246,
     "metric": "median_rpue",
-    "value": 31500
+    "value": 31375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fef",
+    "_id": "67c262fe25b499bca600a1b4",
     "landing_site": "sahare",
     "gear": "long_line_short",
     "n": 14,
@@ -5399,7 +5435,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff0",
+    "_id": "67c262fe25b499bca600a1b5",
     "landing_site": "sahare",
     "gear": "long_line_short",
     "n": 14,
@@ -5407,39 +5443,39 @@
     "value": 35000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff1",
+    "_id": "67c262fe25b499bca600a1b6",
     "landing_site": "sahare",
     "gear": "pole_line",
-    "n": 15,
+    "n": 17,
     "metric": "median_cpue",
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff2",
+    "_id": "67c262fe25b499bca600a1b7",
     "landing_site": "sahare",
     "gear": "pole_line",
-    "n": 15,
+    "n": 17,
     "metric": "median_rpue",
-    "value": 20250
+    "value": 21488.636363636
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff3",
+    "_id": "67c262fe25b499bca600a1b8",
     "landing_site": "sahare",
     "gear": "ring_nets",
-    "n": 348,
+    "n": 350,
     "metric": "median_cpue",
-    "value": 10.666666667
+    "value": 10.596491228
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff4",
+    "_id": "67c262fe25b499bca600a1b9",
     "landing_site": "sahare",
     "gear": "ring_nets",
-    "n": 348,
+    "n": 350,
     "metric": "median_rpue",
-    "value": 22163.742690058
+    "value": 21961.722488038
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff5",
+    "_id": "67c262fe25b499bca600a1ba",
     "landing_site": "sahare",
     "gear": "spear_gun",
     "n": 14,
@@ -5447,7 +5483,7 @@
     "value": 0.54
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff6",
+    "_id": "67c262fe25b499bca600a1bb",
     "landing_site": "sahare",
     "gear": "spear_gun",
     "n": 14,
@@ -5455,23 +5491,23 @@
     "value": 4320
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff7",
+    "_id": "67c262fe25b499bca600a1bc",
     "landing_site": "sahare",
     "gear": "traps",
-    "n": 569,
+    "n": 582,
     "metric": "median_cpue",
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff8",
+    "_id": "67c262fe25b499bca600a1bd",
     "landing_site": "sahare",
     "gear": "traps",
-    "n": 569,
+    "n": 582,
     "metric": "median_rpue",
-    "value": 21111.111111111
+    "value": 21299.873737374
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ff9",
+    "_id": "67c262fe25b499bca600a1be",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -5480,7 +5516,7 @@
     "value": 1.588235294
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ffa",
+    "_id": "67c262fe25b499bca600a1bf",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "gill_nets_3",
@@ -5489,7 +5525,7 @@
     "value": 9966.33126935
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ffb",
+    "_id": "67c262fe25b499bca600a1c0",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -5498,7 +5534,7 @@
     "value": 0.775862069
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ffc",
+    "_id": "67c262fe25b499bca600a1c1",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "gill_nets_6",
@@ -5507,7 +5543,7 @@
     "value": 5778.130671506
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ffd",
+    "_id": "67c262fe25b499bca600a1c2",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5516,7 +5552,7 @@
     "value": 5.625
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6ffe",
+    "_id": "67c262fe25b499bca600a1c3",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5525,7 +5561,7 @@
     "value": 11250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a6fff",
+    "_id": "67c262fe25b499bca600a1c4",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -5533,7 +5569,7 @@
     "metric": "median_cpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7000",
+    "_id": "67c262fe25b499bca600a1c5",
     "landing_site": "shumba_mjini",
     "habitat": "open_ocean",
     "gear": "pole_line",
@@ -5541,7 +5577,7 @@
     "metric": "median_rpue"
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7001",
+    "_id": "67c262fe25b499bca600a1c6",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5550,7 +5586,7 @@
     "value": 1.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7002",
+    "_id": "67c262fe25b499bca600a1c7",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5559,7 +5595,7 @@
     "value": 8309.595959596
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7003",
+    "_id": "67c262fe25b499bca600a1c8",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -5568,7 +5604,7 @@
     "value": 22.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7004",
+    "_id": "67c262fe25b499bca600a1c9",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "gill_nets_6",
@@ -5577,7 +5613,7 @@
     "value": 54392.929292929
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7005",
+    "_id": "67c262fe25b499bca600a1ca",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5586,7 +5622,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7006",
+    "_id": "67c262fe25b499bca600a1cb",
     "landing_site": "shumba_mjini",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5595,23 +5631,23 @@
     "value": 13184.523809524
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7007",
+    "_id": "67c262fe25b499bca600a1cc",
     "landing_site": "tongoni",
     "gear": "beach_seines",
-    "n": 330,
+    "n": 336,
     "metric": "median_cpue",
-    "value": 3.468269231
+    "value": 3.47826087
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7008",
+    "_id": "67c262fe25b499bca600a1cd",
     "landing_site": "tongoni",
     "gear": "beach_seines",
-    "n": 330,
+    "n": 336,
     "metric": "median_rpue",
-    "value": 16036.245608256
+    "value": 16116.477272727
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7009",
+    "_id": "67c262fe25b499bca600a1ce",
     "landing_site": "tongoni",
     "gear": "gill_nets_3",
     "n": 1,
@@ -5619,7 +5655,7 @@
     "value": 1.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700a",
+    "_id": "67c262fe25b499bca600a1cf",
     "landing_site": "tongoni",
     "gear": "gill_nets_3",
     "n": 1,
@@ -5627,7 +5663,7 @@
     "value": 12833.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700b",
+    "_id": "67c262fe25b499bca600a1d0",
     "landing_site": "tongoni",
     "gear": "gill_nets_6",
     "n": 10,
@@ -5635,7 +5671,7 @@
     "value": 1.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700c",
+    "_id": "67c262fe25b499bca600a1d1",
     "landing_site": "tongoni",
     "gear": "gill_nets_6",
     "n": 10,
@@ -5643,7 +5679,7 @@
     "value": 10375
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700d",
+    "_id": "67c262fe25b499bca600a1d2",
     "landing_site": "tongoni",
     "gear": "long_line_long",
     "n": 6,
@@ -5651,7 +5687,7 @@
     "value": 12.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700e",
+    "_id": "67c262fe25b499bca600a1d3",
     "landing_site": "tongoni",
     "gear": "long_line_long",
     "n": 6,
@@ -5659,7 +5695,7 @@
     "value": 66736.742424242
   },
   {
-    "_id": "67bd1bb6ad505f7c650a700f",
+    "_id": "67c262fe25b499bca600a1d4",
     "landing_site": "tongoni",
     "gear": "long_line_short",
     "n": 5,
@@ -5667,7 +5703,7 @@
     "value": 0.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7010",
+    "_id": "67c262fe25b499bca600a1d5",
     "landing_site": "tongoni",
     "gear": "long_line_short",
     "n": 5,
@@ -5675,7 +5711,7 @@
     "value": 4000
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7011",
+    "_id": "67c262fe25b499bca600a1d6",
     "landing_site": "tongoni",
     "gear": "pole_line",
     "n": 179,
@@ -5683,7 +5719,7 @@
     "value": 3
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7012",
+    "_id": "67c262fe25b499bca600a1d7",
     "landing_site": "tongoni",
     "gear": "pole_line",
     "n": 179,
@@ -5691,7 +5727,7 @@
     "value": 19750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7013",
+    "_id": "67c262fe25b499bca600a1d8",
     "landing_site": "tongoni",
     "gear": "ring_nets",
     "n": 4,
@@ -5699,7 +5735,7 @@
     "value": 5.833333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7014",
+    "_id": "67c262fe25b499bca600a1d9",
     "landing_site": "tongoni",
     "gear": "ring_nets",
     "n": 4,
@@ -5707,7 +5743,7 @@
     "value": 21579.797979798
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7015",
+    "_id": "67c262fe25b499bca600a1da",
     "landing_site": "tongoni",
     "gear": "spear_gun",
     "n": 132,
@@ -5715,7 +5751,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7016",
+    "_id": "67c262fe25b499bca600a1db",
     "landing_site": "tongoni",
     "gear": "spear_gun",
     "n": 132,
@@ -5723,7 +5759,7 @@
     "value": 18342.857142857
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7017",
+    "_id": "67c262fe25b499bca600a1dc",
     "landing_site": "tongoni",
     "gear": "traps",
     "n": 1,
@@ -5731,7 +5767,7 @@
     "value": 6.25
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7018",
+    "_id": "67c262fe25b499bca600a1dd",
     "landing_site": "tongoni",
     "gear": "traps",
     "n": 1,
@@ -5739,7 +5775,7 @@
     "value": 42708.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7019",
+    "_id": "67c262fe25b499bca600a1de",
     "landing_site": "wesha",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -5748,7 +5784,7 @@
     "value": 10.208333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701a",
+    "_id": "67c262fe25b499bca600a1df",
     "landing_site": "wesha",
     "habitat": "open_ocean",
     "gear": "long_line_long",
@@ -5757,7 +5793,7 @@
     "value": 76025.219298246
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701b",
+    "_id": "67c262fe25b499bca600a1e0",
     "landing_site": "wesha",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5766,7 +5802,7 @@
     "value": 2.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701c",
+    "_id": "67c262fe25b499bca600a1e1",
     "landing_site": "wesha",
     "habitat": "open_ocean",
     "gear": "long_line_short",
@@ -5775,7 +5811,7 @@
     "value": 19859.649122807
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701d",
+    "_id": "67c262fe25b499bca600a1e2",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -5784,7 +5820,7 @@
     "value": 2.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701e",
+    "_id": "67c262fe25b499bca600a1e3",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "beach_seines",
@@ -5793,7 +5829,7 @@
     "value": 11483.974358974
   },
   {
-    "_id": "67bd1bb6ad505f7c650a701f",
+    "_id": "67c262fe25b499bca600a1e4",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5802,7 +5838,7 @@
     "value": 0.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7020",
+    "_id": "67c262fe25b499bca600a1e5",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "gill_nets_3",
@@ -5811,7 +5847,7 @@
     "value": 5250
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7021",
+    "_id": "67c262fe25b499bca600a1e6",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -5820,7 +5856,7 @@
     "value": 1.75
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7022",
+    "_id": "67c262fe25b499bca600a1e7",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "long_line_long",
@@ -5829,7 +5865,7 @@
     "value": 11574.431818182
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7023",
+    "_id": "67c262fe25b499bca600a1e8",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5838,7 +5874,7 @@
     "value": 2.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7024",
+    "_id": "67c262fe25b499bca600a1e9",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "long_line_short",
@@ -5847,7 +5883,7 @@
     "value": 17500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7025",
+    "_id": "67c262fe25b499bca600a1ea",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -5856,7 +5892,7 @@
     "value": 0.3125
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7026",
+    "_id": "67c262fe25b499bca600a1eb",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "spear_gun",
@@ -5865,7 +5901,7 @@
     "value": 2500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7027",
+    "_id": "67c262fe25b499bca600a1ec",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "traps",
@@ -5874,7 +5910,7 @@
     "value": 0.875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7028",
+    "_id": "67c262fe25b499bca600a1ed",
     "landing_site": "wesha",
     "habitat": "reef",
     "gear": "traps",
@@ -5883,7 +5919,7 @@
     "value": 3102.083333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7029",
+    "_id": "67c262fe25b499bca600a1ee",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -5892,7 +5928,7 @@
     "value": 6.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702a",
+    "_id": "67c262fe25b499bca600a1ef",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "beach_seines",
@@ -5901,7 +5937,7 @@
     "value": 12708.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702b",
+    "_id": "67c262fe25b499bca600a1f0",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -5910,7 +5946,7 @@
     "value": 0.145833333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702c",
+    "_id": "67c262fe25b499bca600a1f1",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "gill_nets_3",
@@ -5919,7 +5955,7 @@
     "value": 923.611111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702d",
+    "_id": "67c262fe25b499bca600a1f2",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "traps",
@@ -5928,7 +5964,7 @@
     "value": 0.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702e",
+    "_id": "67c262fe25b499bca600a1f3",
     "landing_site": "wesha",
     "habitat": "seagrass",
     "gear": "traps",
@@ -5937,55 +5973,55 @@
     "value": 2111.111111111
   },
   {
-    "_id": "67bd1bb6ad505f7c650a702f",
+    "_id": "67c262fe25b499bca600a1f4",
     "landing_site": "wesha",
     "gear": "beach_seines",
-    "n": 289,
+    "n": 294,
     "metric": "median_cpue",
-    "value": 5.375
+    "value": 5.316666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7030",
+    "_id": "67c262fe25b499bca600a1f5",
     "landing_site": "wesha",
     "gear": "beach_seines",
-    "n": 289,
+    "n": 294,
     "metric": "median_rpue",
-    "value": 23428.571428571
+    "value": 23169.444444444
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7031",
+    "_id": "67c262fe25b499bca600a1f6",
     "landing_site": "wesha",
     "gear": "gill_nets_3",
-    "n": 42,
+    "n": 43,
     "metric": "median_cpue",
-    "value": 9.666666667
+    "value": 9.333333333
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7032",
+    "_id": "67c262fe25b499bca600a1f7",
     "landing_site": "wesha",
     "gear": "gill_nets_3",
-    "n": 42,
+    "n": 43,
     "metric": "median_rpue",
-    "value": 48364.318181818
+    "value": 46875
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7033",
+    "_id": "67c262fe25b499bca600a1f8",
     "landing_site": "wesha",
     "gear": "gill_nets_6",
-    "n": 45,
+    "n": 46,
     "metric": "median_cpue",
     "value": 10
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7034",
+    "_id": "67c262fe25b499bca600a1f9",
     "landing_site": "wesha",
     "gear": "gill_nets_6",
-    "n": 45,
+    "n": 46,
     "metric": "median_rpue",
     "value": 62500
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7035",
+    "_id": "67c262fe25b499bca600a1fa",
     "landing_site": "wesha",
     "gear": "long_line_long",
     "n": 6,
@@ -5993,7 +6029,7 @@
     "value": 10
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7036",
+    "_id": "67c262fe25b499bca600a1fb",
     "landing_site": "wesha",
     "gear": "long_line_long",
     "n": 6,
@@ -6001,7 +6037,7 @@
     "value": 43750
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7037",
+    "_id": "67c262fe25b499bca600a1fc",
     "landing_site": "wesha",
     "gear": "long_line_short",
     "n": 86,
@@ -6009,7 +6045,7 @@
     "value": 8
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7038",
+    "_id": "67c262fe25b499bca600a1fd",
     "landing_site": "wesha",
     "gear": "long_line_short",
     "n": 86,
@@ -6017,39 +6053,39 @@
     "value": 51130.952380952
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7039",
+    "_id": "67c262fe25b499bca600a1fe",
     "landing_site": "wesha",
     "gear": "pole_line",
-    "n": 1,
+    "n": 5,
     "metric": "median_cpue",
-    "value": 7.333333333
+    "value": 10
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703a",
+    "_id": "67c262fe25b499bca600a1ff",
     "landing_site": "wesha",
     "gear": "pole_line",
-    "n": 1,
+    "n": 5,
     "metric": "median_rpue",
     "value": 54614.035087719
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703b",
+    "_id": "67c262fe25b499bca600a200",
     "landing_site": "wesha",
     "gear": "ring_nets",
-    "n": 53,
+    "n": 55,
     "metric": "median_cpue",
-    "value": 26.666666667
+    "value": 32.4
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703c",
+    "_id": "67c262fe25b499bca600a201",
     "landing_site": "wesha",
     "gear": "ring_nets",
-    "n": 53,
+    "n": 55,
     "metric": "median_rpue",
-    "value": 80000
+    "value": 98166.666666667
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703d",
+    "_id": "67c262fe25b499bca600a202",
     "landing_site": "wesha",
     "gear": "spear_gun",
     "n": 11,
@@ -6057,7 +6093,7 @@
     "value": 5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703e",
+    "_id": "67c262fe25b499bca600a203",
     "landing_site": "wesha",
     "gear": "spear_gun",
     "n": 11,
@@ -6065,7 +6101,7 @@
     "value": 35372.159090909
   },
   {
-    "_id": "67bd1bb6ad505f7c650a703f",
+    "_id": "67c262fe25b499bca600a204",
     "landing_site": "wesha",
     "gear": "traps",
     "n": 202,
@@ -6073,7 +6109,7 @@
     "value": 6.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7040",
+    "_id": "67c262fe25b499bca600a205",
     "landing_site": "wesha",
     "gear": "traps",
     "n": 202,
@@ -6081,7 +6117,7 @@
     "value": 25388.068181818
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7041",
+    "_id": "67c262fe25b499bca600a206",
     "landing_site": "wete",
     "habitat": "reef",
     "gear": "traps",
@@ -6090,7 +6126,7 @@
     "value": 12.5
   },
   {
-    "_id": "67bd1bb6ad505f7c650a7042",
+    "_id": "67c262fe25b499bca600a207",
     "landing_site": "wete",
     "habitat": "reef",
     "gear": "traps",
